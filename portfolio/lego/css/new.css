@@ -1,0 +1,598 @@
+@charset 'utf-8';
+
+.inner {
+    width: 132rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../img/legoicon.svg);
+    background-size: contain;
+}
+
+.gnb {
+    display: flex;
+    list-style: none;
+    margin-left: 8rem; /* 필요에 따라 조정 */
+    z-index: 1;
+}
+
+.gnb li {
+    margin: 0 4rem;
+}
+
+.gnb a {
+    position: relative; /* ::after 가상 요소의 기준점 설정 */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* 밑줄이 나타날 공간 확보 */
+}
+
+.gnb a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* 텍스트 바로 아래에 라인이 생김 */
+    left: 0;
+    width: 0; /* 기본적으로 보이지 않음 */
+    height: 2px;
+    background-color: #ff0000; /* 라인의 색상은 레고 컬러인 빨간색 */
+    transition: width 0.3s ease; /* 부드럽게 나타나는 애니메이션 */
+}
+
+.gnb a:hover {
+    color: #ff0000; /* 호버 시 레고 컬러로 강조 */
+}
+
+.gnb a:hover::after {
+    width: 100%; /* 호버 시 100% 너비로 확장 */
+}
+
+.util-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 자동으로 설정 */
+    justify-content: flex-end; /* 내부 요소들을 오른쪽으로 정렬 */
+    z-index: 1;
+}
+
+.util-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.util-menu li {
+    margin-left: 20px;
+}
+
+.util-menu a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.util-menu a img:hover {
+    opacity: 0.7; /* 호버 시 투명도 조정 */
+}
+
+.menu {
+    display: none;
+}
+
+/*  */
+.visual {
+    background-image: url("../img/new-visual.jpg");
+    background-size: 80%;
+    background-position: center;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden; /* 자식 요소가 비주얼 영역을 벗어날 경우 숨김 */
+    flex-direction: column; /* 세로 배치로 변경 */
+    transform: translateY(-70px);
+    z-index: 0;
+}
+
+.visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 더 어두운 오버레이 */
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.visual-content {
+    position: relative;
+    z-index: 1; /* 텍스트가 오버레이 위에 보이도록 설정 */
+}
+
+.visual-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: -1.5rem;
+}
+
+.visual-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000; /* --main-color가 정의되지 않은 경우를 대비하여 기본 색상 설정 */
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    width: 19rem;
+    height: 5rem;
+    cursor: pointer;
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
+    margin: 0 auto;
+    margin-top: 6.4rem;
+}
+
+.visual-btn:hover {
+    background: #b91a1a;
+    color: #fff;
+}
+
+.visual-btn img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+/*  */
+
+.location {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--sub-color1);
+    width: 100%;
+    height: 6rem;
+    padding-left: 30rem;
+    transform: translateY(-70px);
+    gap: 1rem;
+}
+
+.home-link {
+    display: flex;
+}
+
+.home-link img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.4s;
+}
+
+.home-link img:hover {
+    opacity: 50%;
+}
+
+.arrow {
+    background-image: url(../img/arrow-right.svg);
+    width: 2rem;
+    height: 2rem;
+}
+
+.location-link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.location-link:hover {
+    opacity: 50%;
+}
+
+/*  */
+
+.new-products h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-top: 12.5rem;
+    color: var(--title-color);
+}
+
+.product-item {
+    width: 42.7rem;
+    height: 52.7rem;
+    margin-top: 3.6rem;
+}
+
+.product-item img {
+    width: 42.7rem;
+    height: 42rem;
+    border-radius: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.product-item dl dt {
+    font-weight: 700;
+    font-size: 3rem;
+    transition: 0.3s ease;
+}
+.product-item dl dd {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.product-item:hover .product-card dl dt {
+    color: var(--main-color); /* 호버 시 색상 변경 */
+}
+
+.wishlist-btn {
+    display: flex;
+    background-image: url(../img/wishlist-dark.svg);
+    cursor: pointer;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+.wishlist-btn.filled {
+    background-image: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+}
+/*  */
+.new-slider-wrap {
+    width: 100%; /* 슬라이더가 부모 요소의 전체 폭을 차지하도록 설정 */
+    max-width: 122.4rem; /* 예시로 설정한 최대 너비 */
+}
+
+.swiper {
+    width: 100%; /* 슬라이더의 너비를 100%로 설정 */
+    height: 68.7rem; /* 원하는 높이 설정 */
+}
+
+.new-slider {
+    margin: 0;
+    display: flex;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.new {
+    margin-top: 10rem;
+    display: flex;
+
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-card {
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    border-radius: 4rem 4rem 15rem 4rem;
+    width: 122.4rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+    width: 1.5rem;
+    border-radius: 30rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* '''''''' */
+
+.asset-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.asset-item {
+    display: flex;
+    gap: 2rem;
+}
+
+.asset-item img {
+    width: 14.1rem;
+    height: 14.1rem;
+}
+
+.asset-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35rem;
+}
+
+.asset-card p {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #9d9d9d;
+}
+.asset-card dt {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.asset-card dd {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.asset-item .asset-card dt {
+    transition: color 0.3s ease; /* 컬러 변경에 부드러운 전환 효과 추가 */
+}
+
+.asset-item:hover .asset-card dt {
+    color: var(--main-color); /* 호버 시 dt 요소의 텍스트 색상을 메인 컬러로 변경 */
+}
+
+.new-wish {
+    background-image: url(../img/new-wish.svg);
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateY(40px);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.new-wish:hover {
+    transform: scale(1.1);
+}
+
+.new-wish.filled {
+    background-image: url(../img/wishlist-fill2.svg); /* 채워진 하트 이미지 */
+}
+
+/* ''''''''''' */
+
+.journey h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-top: 12.5rem;
+    color: var(--title-color);
+}
+
+.journey-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.journey-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.journey-item h3 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #fff;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    z-index: 1;
+}
+
+.journey-item p {
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    z-index: 3;
+}
+
+.journey-item img {
+    border-radius: 2rem;
+    transition: 0.4s;
+}
+
+.journey-link {
+    width: 3.6rem;
+    height: 3.6rem;
+    background: var(--main-color);
+    position: absolute;
+    z-index: 1;
+    border-radius: 3rem;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.journey-link:hover {
+    background: #fff;
+}
+
+.journey-con img:hover {
+    filter: brightness(70%);
+}
+/*  */
+footer {
+    display: flex;
+    background: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 19rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 7rem;
+}
+
+.footer-logo a {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    /* text-decoration: underline; */
+    color: var(--sub-color1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    height: 6rem;
+}
+
+.social-links p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.social-icons img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+.legal-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-info .legal-info-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+footer .back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    background-color: #fff;
+    margin-right: 22rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .back-to-top img {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .back-to-top::before {
+    content: "";
+    font-size: 20px;
+}
+
+footer .back-to-top:hover {
+    background-color: #e0e0e0;
+}

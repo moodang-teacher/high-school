@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+
+/* header end */
+/* login start */
+.login {
+    height: auto;
+}
+
+.login-title {
+    padding: 100px 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login-wrap {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    padding: 30px;
+    border: 1px solid var(--black30);
+    width: 600px;
+}
+
+.member-join {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.member-join-btn {
+    color: var(--ceragem-main-color);
+}
+
+.input-id,
+.input-pw {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid var(--black30);
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 17px;
+    background-color: var(--ceragem-main-color);
+    border: 1px solid var(--ceragem-main-color);
+    color: var(--white90);
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background-color: var(--white90);
+    color: var(--ceragem-main-color);
+}
+
+.login {
+    padding: 20px 0 100px;
+}
+
+.login-bottom-menu {
+    padding: 20px 0;
+    display: flex;
+    float: right;
+}
+
+.login-bottom-menu li {
+    padding: 0 10px;
+}
+
+.login-bottom-menu li+li {
+    content: '';
+    display: block;
+    border-left: 1px solid var(--black30);
+}
+
+/* login end */

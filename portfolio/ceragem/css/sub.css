@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+/* main s */
+.products {
+    padding: 0 0 80px;
+}
+
+.all-products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1290px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.all-product-title {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 100px 0 0;
+    text-align: center;
+}
+
+.product-explanation {
+    font-size: 20px;
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+.product {
+    width: 360px;
+    text-align: center;
+    padding: 100px 0 25px;
+}
+
+.product figure {
+    width: 360px;
+    height: 360px;
+}
+
+.product figure img {
+    width: 360px;
+    height: 360px;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0 0;
+}
+
+.product-price {
+    font-size: 20px;
+    padding-top: 1.2rem;
+}
+
+.product dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    padding: 20px 0 0;
+}
+
+.purchase-button {
+    width: 150px;
+    height: 45px;
+    background: var(--ceragem-main-color);
+    color: var(--white90);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.product-preview-item dl dd {
+    padding: 0 0 20px;
+}
+
+.evaluate {
+    font-size: 15px;
+}
+
+#loadMore {
+    width: 150px;
+    height: 45px;
+    background: var(--ceragem-main-color);
+    color: var(--white90);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* main end */
+.customer-service-center .inner {
+    width: 1430px;
+    text-align: center;
+}
+
+.customer-service-center h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.customer-service-center h3 {
+    padding: 20px 0 0;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.customer-service-words {
+    padding: 20px 0 50px;
+    font-size: 18px;
+}
+
+.btn-customer-service {
+    padding: 15px 56px;
+    background-color: var(--ceragem-main-color);
+}
+
+.service-words {
+    color: var(--white90);
+}
+
+/* footer s */
+.f-logo img {
+    width: 200px;
+}
+
+.f-words {
+    width: 630px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding: 30px 0 0;
+}
+
+.f-sns {
+    display: flex;
+    float: right;
+}
+
+.f-sns li {
+    padding: 10px;
+}
+
+/* footer end */

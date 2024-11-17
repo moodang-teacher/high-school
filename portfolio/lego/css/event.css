@@ -1,0 +1,444 @@
+@charset 'utf-8';
+
+.inner {
+    width: 132rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../img/legoicon.svg);
+    background-size: contain;
+}
+
+.gnb {
+    display: flex;
+    list-style: none;
+    margin-left: 8rem; /* 필요에 따라 조정 */
+    z-index: 1;
+}
+
+.gnb li {
+    margin: 0 4rem;
+}
+
+.gnb a {
+    position: relative; /* ::after 가상 요소의 기준점 설정 */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* 밑줄이 나타날 공간 확보 */
+}
+
+.gnb a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* 텍스트 바로 아래에 라인이 생김 */
+    left: 0;
+    width: 0; /* 기본적으로 보이지 않음 */
+    height: 2px;
+    background-color: #ff0000; /* 라인의 색상은 레고 컬러인 빨간색 */
+    transition: width 0.3s ease; /* 부드럽게 나타나는 애니메이션 */
+}
+
+.gnb a:hover {
+    color: #ff0000; /* 호버 시 레고 컬러로 강조 */
+}
+
+.gnb a:hover::after {
+    width: 100%; /* 호버 시 100% 너비로 확장 */
+}
+
+.util-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 자동으로 설정 */
+    justify-content: flex-end; /* 내부 요소들을 오른쪽으로 정렬 */
+    z-index: 1;
+}
+
+.util-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.util-menu li {
+    margin-left: 20px;
+}
+
+.util-menu a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.util-menu a img:hover {
+    opacity: 0.7; /* 호버 시 투명도 조정 */
+}
+
+.menu {
+    display: none;
+}
+
+/* ''''''''''''' */
+
+.visual {
+    background-image: url("../img/event-visual.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden; /* 자식 요소가 비주얼 영역을 벗어날 경우 숨김 */
+    flex-direction: column; /* 세로 배치로 변경 */
+    transform: translateY(-70px);
+    z-index: 0;
+}
+
+.visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 더 어두운 오버레이 */
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.visual-content {
+    position: relative;
+    z-index: 1; /* 텍스트가 오버레이 위에 보이도록 설정 */
+}
+
+.visual-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: -1.5rem;
+}
+
+.visual-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000; /* --main-color가 정의되지 않은 경우를 대비하여 기본 색상 설정 */
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    width: 19rem;
+    height: 5rem;
+    cursor: pointer;
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
+    margin: 0 auto;
+    margin-top: 6.4rem;
+}
+
+.visual-btn:hover {
+    background: #b91a1a;
+    color: #fff;
+}
+
+.visual-btn img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+/* '''''''''' */
+
+.location {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--sub-color1);
+    width: 100%;
+    height: 6rem;
+    padding-left: 30rem;
+    transform: translateY(-70px);
+    gap: 1rem;
+}
+
+.home-link {
+    display: flex;
+}
+
+.home-link img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.4s;
+}
+
+.home-link img:hover {
+    opacity: 50%;
+}
+
+.arrow {
+    background-image: url(../img/arrow-right.svg);
+    width: 2rem;
+    height: 2rem;
+}
+
+.location-link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.location-link:hover {
+    opacity: 50%;
+}
+
+main {
+    background: #fafafa;
+}
+
+/* ''''''''''''' */
+
+.events {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    transform: translateY(-70px);
+}
+
+.events h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    color: var(--title-color);
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap; /* 카드가 영역을 넘으면 다음 줄로 감 */
+    gap: 1.9rem; /* 카드 간 간격 */
+}
+
+.event-con {
+    display: flex;
+    flex-direction: column;
+    width: 42.7rem; /* 카드 너비 */
+    height: 41.3rem; /* 카드 높이 */
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.event-card img {
+    width: 42.7rem;
+    height: 26rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.event-item {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.event-card dl dt {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #111;
+}
+
+.event-card dl dd {
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.event-card p {
+    font-size: 1.6rem;
+    color: #777;
+    margin-top: 3rem;
+}
+
+.evnet-list strong {
+    padding: 7px 10px;
+    font-size: 1.6rem;
+    background: #fff;
+    border-radius: 3rem;
+    display: flex;
+    position: absolute;
+    top: 36rem;
+    right: 2rem;
+}
+
+.coming {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    border: 1px solid #777;
+    color: #777;
+}
+
+.strikethrough::before,
+.strikethrough::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30px; /* 양옆 선 길이 조절 */
+    height: 1px; /* 선 두께 */
+    background-color: #333;
+}
+
+.event-con:hover {
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+/*  */
+
+footer {
+    display: flex;
+    background: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 13.2rem;
+}
+
+.footer-logo a {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    /* text-decoration: underline; */
+    color: var(--sub-color1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.social-links p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.social-icons img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+.legal-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-info .legal-info-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+footer .back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    background-color: #fff;
+    margin-right: 22rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .back-to-top img {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .back-to-top::before {
+    content: "";
+    font-size: 20px;
+}
+
+footer .back-to-top:hover {
+    background-color: #e0e0e0;
+}

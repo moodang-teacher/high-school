@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>프링글스</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/icon" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/script.js" defer></script>
+        <script src="./js/script2.js" defer></script>
+        <script src="./js/comman.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/splitting/dist/splitting.css"
+        />
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+        <script src="./js/ani.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <nav>
+                    <a href="index.html">
+                        <figure><img src="./img/logo.png" alt="로고" /></figure>
+                    </a>
+                    <ul class="desktop-menu">
+                        <li>
+                            <a href="product.html">제품소개</a>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="menu.html">메뉴</a>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="buy.html">구매처</a>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">☰</button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                            <a href="product.html">제품소개</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                            <a href="menu.html">메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                            <a href="buy.html">구매처</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <script>
+                    const TL = gsap.timeline();
+
+                    gsap.from("nav a figure", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li a", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li figure", {
+                        y: -100,
+                        // rotation: 90,
+                        duration: 3,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        stagger: 0.3,
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".mobile-menu-toggle", {
+                        x: 100,
+                        // rotation: 90,
+                        duration: 2,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+                </script>
+            </div>
+        </header>
+        <main>
+            <!-- 메인 비주얼 -->
+            <section class="visual">
+                <div class="main-swiper-wrap">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper main-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <section>
+                                    <h1 data-splitting>
+                                        한번 열면 멈추지 않는 즐거움!
+                                    </h1>
+                                    <figure>
+                                        <img src="./img/main1.png" alt="" />
+                                    </figure>
+                                </section>
+                            </div>
+                            <div class="swiper-slide visual2">
+                                <div class="visual-text">
+                                    <h2>프링글스 크리스프는</h2>
+                                    <p>
+                                        프링글스는 1968년 미국에서 론칭된
+                                        세계적인<br />
+                                        감자칩 브랜드로 긴 역사를 자랑하고
+                                        있습니다.
+                                        <br />
+                                        8가지가 넘는 다양한 맛과, 칩으로
+                                        즐기는<br />
+                                        여러가지 방법은 프링글스만의 독특한
+                                        차별점입니다.
+                                    </p>
+                                </div>
+                                <figure>
+                                    <img src="./img/main4.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide visual3">
+                                <h2 data-splitting>
+                                    함께하면 더 즐거운 프링글스!
+                                </h2>
+                                <figure>
+                                    <video
+                                        src="./img/main6.mp4"
+                                        autoplay
+                                        muted
+                                        loop
+                                    ></video>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                Splitting();
+            </script>
+
+            <!-- 신제품 -->
+            <section class="new-product">
+                <div class="inner">
+                    <div class="title">
+                        <div class="title-wrap new">
+                            <h2>신제품!</h2>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <strong>매콤 로제 떡볶이 맛</strong>
+                        <p>뚜껑 열면 시작 되는 <span>매운맛!</span>🔥</p>
+                    </div>
+
+                    <div class="product">
+                        <figure>
+                            <img src="./img/1/chip10.png" alt="" />
+                        </figure>
+                        <div class="video">
+                            <iframe
+                                src="https://www.youtube.com/embed/Kzh_Xw1BiW0?si=HjeJQrXHY5hl141J&mute=1&loop=1&playlist=Kzh_Xw1BiW0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <a href="buy.html" class="button"
+                            ><img src="./img/btn-icon1.svg" alt="" />구매하러
+                            가기</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- 메뉴 -->
+
+            <section class="card">
+                <div class="inner">
+                    <div class="card-title">
+                        <h2>다양한 맛들</h2>
+                        <p>
+                            프링글스의 다양한 맛들을 즐기며 늘 새로운 순간을
+                            만들어보세요!
+                        </p>
+                    </div>
+
+                    <div class="swiper card-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item1">
+                                <li>
+                                    <p>오리지널</p>
+                                    <figure>
+                                        <img src="./img/pringles1.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide item2">
+                                <li>
+                                    <p>사워 크림 & 어니언</p>
+                                    <figure>
+                                        <img src="./img/pringles2.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide item3">
+                                <li>
+                                    <p>바베큐</p>
+                                    <figure>
+                                        <img src="./img/pringles3.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide item4">
+                                <li>
+                                    <p>체다치즈</p>
+                                    <figure>
+                                        <img src="./img/pringles4.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide item5">
+                                <li>
+                                    <p>체다 & 사워크림</p>
+                                    <figure>
+                                        <img src="./img/pringles5.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide item6">
+                                <li>
+                                    <p>피자</p>
+                                    <figure>
+                                        <img src="./img/pringles6.png" alt="" />
+                                    </figure>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <a href="menu.html" class="button"
+                            ><img src="./img/btn-icon2.svg" alt="" />더
+                            찾아보기</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- 비디오 -->
+            <section class="SNS-video">
+                <div class="inner">
+                    <div class="title">
+                        <div class="title-wrap video-title">
+                            <h2>Video</h2>
+                        </div>
+                    </div>
+
+                    <div class="video-wrap">
+                        <div id="mainVideo" class="main-video">
+                            <figure>
+                                <img src="./img/logo.png" alt="" />
+                            </figure>
+                            <p>아래영상을 클릭!</p>
+                        </div>
+                        <div class="sub-video">
+                            <figure>
+                                <img
+                                    src="https://img.youtube.com/vi/nj7SQZItw9U/mqdefault.jpg"
+                                    alt="Video 1"
+                                    class="thumbnail"
+                                    data-id="nj7SQZItw9U"
+                                />
+                            </figure>
+                            <figure>
+                                <img
+                                    src="https://img.youtube.com/vi/f4tqXcB-QKQ/mqdefault.jpg"
+                                    alt="Video 2"
+                                    class="thumbnail"
+                                    data-id="f4tqXcB-QKQ"
+                                />
+                            </figure>
+                            <figure>
+                                <img
+                                    src="https://img.youtube.com/vi/YB-xEHwkS1w/mqdefault.jpg"
+                                    alt="Video 3"
+                                    class="thumbnail"
+                                    data-id="YB-xEHwkS1w"
+                                />
+                            </figure>
+                            <figure>
+                                <img
+                                    src="https://img.youtube.com/vi/V-rjxluow80/mqdefault.jpg"
+                                    alt="Video 4"
+                                    class="thumbnail"
+                                    data-id="V-rjxluow80"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- social -->
+
+            <section class="Social">
+                <div class="inner">
+                    <div class="title">
+                        <div class="title-wrap social-title">
+                            <h2>Social</h2>
+                        </div>
+                    </div>
+
+                    <div class="sns-menu">
+                        <button class="tab-button active" data-tab="tab1">
+                            All
+                        </button>
+                        <button class="tab-button" data-tab="tab2">
+                            Facebook
+                        </button>
+                        <button class="tab-button" data-tab="tab3">
+                            Instagram
+                        </button>
+                        <button class="tab-button" data-tab="tab4">
+                            TikTok
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border sns-border"></div>
+                <div class="inner">
+                    <div class="tabs">
+                        <div id="tab1" class="tab-content active">
+                            <ul class="SNS-grid">
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok1.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                National Empanada Day had us
+                                                thinkin'... would you try this?!
+                                                #fakeflavor #nationalempanadaday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Cy4FbWVusaM/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-2.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Do you think blondie likes
+                                                Pringles?
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What touchdown celebrations
+                                                should look like #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C0ra3nJM-lI/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-4.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What touchdown celebrations
+                                                should look like #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/ClGyLeerjvS/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-5.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>#IYKYK 👀</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-8.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Red, white & Mr. P 🌟
+                                                <br />Celebrate the #4thofJuly
+                                                with our Limited Edition
+                                                #Pringles cans that are sure to
+                                                get you in the patriotic mood 🇺🇸
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/CzB9JTdO2RG/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-7.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Which can would you bring back
+                                                from the dead? 👻 #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/CuR1mo1rU2r/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-8.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Red, white & Mr. P 🌟
+                                                <br />Celebrate the #4thofJuly
+                                                with our Limited Edition
+                                                #Pringles cans that are sure to
+                                                get you in the patriotic mood 🇺🇸
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C8XH0_puSet/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-9.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                It's National Martini Day
+                                                tomorrow and we can't stop
+                                                thinking about a dirty martini
+                                                Pringles flavor. #fakeflavor
+                                                #nationalmartiniday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-10.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                A fake flavor so fancy, we wish
+                                                it was real. #NationalCaviarDay
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                It's National Martini Day
+                                                tomorrow and we can't stop
+                                                thinking about a dirty martini
+                                                Pringles flavor. #fakeflavor
+                                                #nationalmartiniday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Ch7mO--LPJg/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-12.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What’s the hottest level of
+                                                #Pringles #HotOnes you’ve been
+                                                able to handle? 🔥
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <ul class="SNS-grid">
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-1.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                National Empanada Day had us
+                                                thinkin'... would you try this?!
+                                                #fakeflavor #nationalempanadaday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Do you think blondie likes
+                                                Pringles?
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-3.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What's better than #Pringles?
+                                                Pringles Holiday Cans🎄🎁✨
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-4.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What touchdown celebrations
+                                                should look like #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>#IYKYK 👀</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-6.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                ❗️Big Game Flavors❗️ Which of
+                                                these fake flavors do you think
+                                                would win the game on flavor
+                                                alone?! 👇😆#pringles
+                                                #fakeflavor
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-7.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Which can would you bring back
+                                                from the dead? 👻 #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-8.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Red, white & Mr. P 🌟
+                                                <br />Celebrate the #4thofJuly
+                                                with our Limited Edition
+                                                #Pringles cans that are sure to
+                                                get you in the patriotic mood 🇺🇸
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                It's National Martini Day
+                                                tomorrow and we can't stop
+                                                thinking about a dirty martini
+                                                Pringles flavor. #fakeflavor
+                                                #nationalmartiniday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-10.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                A fake flavor so fancy, we wish
+                                                it was real. #NationalCaviarDay
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-11.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                #StuckInPringles tick tock, tick
+                                                tock … 2.12.23
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://https://www.facebook.com/PringlesUS/?locale=ko_KR"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/facebook-img-12.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content facebook">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon3.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What's the hottest level of
+                                                #Pringles #HotOnes you've been
+                                                able to handle? 🔥
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab3" class="tab-content">
+                            <ul class="SNS-grid">
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C5hEmaiAjm5/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-1.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                National Empanada Day had us
+                                                thinkin'... would you try this?!
+                                                #fakeflavor #nationalempanadaday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Cy4FbWVusaM/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-2.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Do you think blondie likes
+                                                Pringles?
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Cloii1tpsjq/?img_index=1"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-3.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What’s better than #Pringles?
+                                                Pringles Holiday Cans🎄🎁✨
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C0ra3nJM-lI/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-4.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What touchdown celebrations
+                                                should look like #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/ClGyLeerjvS/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-5.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>#IYKYK 👀</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C2rzJber8Ec/?img_index=1"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-6.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                ❗️Big Game Flavors❗️ Which of
+                                                these fake flavors do you think
+                                                would win the game on flavor
+                                                alone?! 👇😆#pringles
+                                                #fakeflavor
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/CzB9JTdO2RG/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-7.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Which can would you bring back
+                                                from the dead? 👻 #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/CuR1mo1rU2r/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-8.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Red, white & Mr. P 🌟
+                                                <br />Celebrate the #4thofJuly
+                                                with our Limited Edition
+                                                #Pringles cans that are sure to
+                                                get you in the patriotic mood 🇺🇸
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/C8XH0_puSet/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-9.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                It's National Martini Day
+                                                tomorrow and we can't stop
+                                                thinking about a dirty martini
+                                                Pringles flavor. #fakeflavor
+                                                #nationalmartiniday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Cu2f4qdv8l9/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-10.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                A fake flavor so fancy, we wish
+                                                it was real. #NationalCaviarDay
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/CnhGWUnuV2w/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-11.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                #StuckInPringles tick tock, tick
+                                                tock … 2.12.23
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.instagram.com/pringles/p/Ch7mO--LPJg/"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-img-12.jpg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What’s the hottest level of
+                                                #Pringles #HotOnes you’ve been
+                                                able to handle? 🔥
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab4" class="tab-content">
+                            <ul class="SNS-grid">
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok1.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                National Empanada Day had us
+                                                thinkin'... would you try this?!
+                                                #fakeflavor #nationalempanadaday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Do you think blondie likes
+                                                Pringles?
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok3.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What's better than #Pringles?
+                                                Pringles Holiday Cans🎄🎁✨
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What touchdown celebrations
+                                                should look like #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>#IYKYK 👀</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok6.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                ❗️Big Game Flavors❗️ Which of
+                                                these fake flavors do you think
+                                                would win the game on flavor
+                                                alone?! 👇😆#pringles
+                                                #fakeflavor
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Which can would you bring back
+                                                from the dead? 👻 #pringles
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok8.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                Red, white & Mr. P 🌟
+                                                <br />Celebrate the #4thofJuly
+                                                with our Limited Edition
+                                                #Pringles cans that are sure to
+                                                get you in the patriotic mood 🇺🇸
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                It's National Martini Day
+                                                tomorrow and we can't stop
+                                                thinking about a dirty martini
+                                                Pringles flavor. #fakeflavor
+                                                #nationalmartiniday
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok10.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                A fake flavor so fancy, we wish
+                                                it was real. #NationalCaviarDay
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok11.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                #StuckInPringles tick tock, tick
+                                                tock … 2.12.23
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="SNS-item">
+                                    <a
+                                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fchannel%2Fpringles-flavors&psig=AOvVaw1j3Qm9LQGePGlS7tyECpBh&ust=1729299449169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjmmM3clokDFQAAAAAdAAAAABAm"
+                                    >
+                                        <div class="content">
+                                            <figure>
+                                                <img
+                                                    src="./img/tiktok12.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                        <div class="hover-content tiktok">
+                                            <figure>
+                                                <img
+                                                    src="./img/hover-icon2.svg"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                            <p>
+                                                What's the hottest level of
+                                                #Pringles #HotOnes you've been
+                                                able to handle? 🔥
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.png" alt="" /></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border footer-border"></div>
+            </div>
+
+            <div class="inner">
+                <div class="footer-content">
+                    <div class="foot-text">
+                        <a href="">고객센터</a>
+                        <a href="">FAQ</a>
+                        <a href="">문의하기</a>
+                        <a href="">개인정보 보호정책</a>
+                        <a href="">이용약관</a>
+                        <a href="">접근성</a>
+                    </div>
+
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/PringlesUS">
+                            <figure>
+                                <img src="./img/facebook.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/pringles/">
+                            <figure>
+                                <img src="./img/instargram.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.tiktok.com/@pringles">
+                            <figure>
+                                <img src="./img/tiktok.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://x.com/Pringles">
+                            <figure>
+                                <img src="./img/x-logo.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/Pringles">
+                            <figure>
+                                <img src="./img/youtube.svg" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Kellanova</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden"></i></a>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/btn.js"></script>
+    </body>
+</html>

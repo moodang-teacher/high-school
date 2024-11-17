@@ -1,0 +1,1527 @@
+header {
+  padding: 2rem;
+  background-color: #ff0000;
+  /* padding: 1rem 0; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.collapse {
+  display: flex;
+}
+
+.logo {
+  width: 25rem;
+  height: 4rem;
+}
+nav a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  /* margin: 0 15px; */
+  font-weight: bold;
+}
+
+.gnb-wrap {
+  margin: 0 auto;
+  display: flex;
+}
+
+.gnb-wrap li {
+  display: flex;
+  margin-left: 3.5rem;
+}
+
+.gnb-wrap li a {
+  transition: 0.4s;
+}
+
+.gnb-wrap li a:hover {
+  color: #000;
+}
+
+.btn-menu {
+  display: none;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url("path/to/coca-cola-bottle-image.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.visual {
+  background: #f00;
+  position: relative;
+  height: 60rem;
+}
+
+.coca {
+  position: absolute;
+  /* left: 18.1875%; */
+  /* top: 15%; */
+  left: 29%;
+  top: 50%;
+  transform: translate(-29%, -50%) !important;
+}
+
+.product-img {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 123rem;
+}
+
+.cola {
+  position: absolute;
+  /* right: 18.7083%; */
+  right: 15%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-15%, -50%) !important;
+}
+
+#other {
+  display: flex;
+}
+
+/* 코카콜라 소개 시작 */
+
+.product {
+  width: 50%;
+  height: 35.3rem;
+  background: url(../img/coca-visual.jpeg) no-repeat center center;
+  position: relative;
+}
+
+.product::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* 빈 값으로 넣어야 가상의 요소 생성; */
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+}
+
+.product:hover::after {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.product-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+.product-text h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.product-text p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.product-text a {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 50px;
+
+  display: flex;
+  width: 18rem;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.product-text a:hover {
+  border: none;
+  background: #f00;
+}
+
+/* 코카콜라 소개 끝 */
+
+/* 다른 브랜드 소개 시작 */
+
+.other-brand {
+  width: 50%;
+  height: 35.3rem;
+  background: url(../img/brand-visual.jpeg) no-repeat center center / cover;
+  position: relative;
+}
+
+.other-brand::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* 빈 값으로 넣어야 가상의 요소 생성; */
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+}
+
+.other-brand:hover::after {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.other-brand-text h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.other-brand-text p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.other-brand-text a {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 50px;
+
+  display: flex;
+  width: 18rem;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.other-brand-text a:hover {
+  border: none;
+  background: #f00;
+}
+
+.other-brand-text {
+  position: absolute;
+  /* right: 30%;
+  top: 18%; */
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+/* 다른 브랜드 소개 끝 */
+
+/* 캠페인 시작 */
+
+#campaigns {
+  margin-top: 36rem;
+  overflow: hidden;
+  /* height: 40rem; */
+}
+
+.camp-wrap {
+  height: 43.5rem;
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.campaigns-text {
+  /* background: #ff0; */
+  width: 100%;
+  color: #000;
+}
+
+.campaigns-text h2 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.campaigns-text p {
+  font-weight: 500;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.campaigns-text a {
+  font-weight: 600;
+  font-size: 2rem;
+  width: 11.5rem;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.campaigns-text a:hover {
+  border: none;
+  background: #f00;
+  color: #fff;
+}
+
+.swiper {
+  border-radius: 30px;
+  overflow-x: hidden;
+}
+
+.swiper-con {
+  /* background: #f00; */
+  position: absolute;
+  left: 57rem;
+  top: 0;
+  /* width: 119rem; */
+  height: 100%;
+
+  padding-bottom: 5rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 38.5rem !important;
+  aspect-ratio: 1/1;
+  /* height: 38.5rem; */
+  text-align: center;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+}
+
+.swiper-slide img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* 빈 값으로 넣어야 가상의 요소 생성; */
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.swiper-slide p {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 70%;
+  left: 40%;
+  transform: translate(-30%, -30%);
+  text-align: left;
+
+  font-weight: 600;
+  font-size: 2.8rem;
+
+  width: 35rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 1rem;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+  top: auto !important;
+  left: -80rem !important;
+}
+
+.swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  transition: 0.4s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f00;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+/* .swiper-con {
+  width: 80%;
+  height: 500px;
+  margin: 50px auto;
+  border: 10px solid black;
+  position: relative;
+}
+
+
+
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* 캠페인 끝 */
+
+/* 지속 가능한 미래 시작 */
+
+#sustainability {
+  margin-top: 16rem;
+  color: #000;
+}
+
+.sustainability-text {
+  margin-bottom: 2.6rem;
+}
+
+.sustainability-text h4 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.sustainability-text p {
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+.sustainability-img-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.sustainability-img-list li {
+  position: relative;
+  transition: 0.4s;
+}
+/* 
+.sustainability-img-list li:hover::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 30px;
+} */
+
+.sustainability-img-list li figure {
+  position: relative;
+  /* width: 52rem;
+  height: 50rem; */
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.sustainability-img-list li figure img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  /* overflow: hidden; */
+}
+
+.sustainability-img-list li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: 0.4s;
+}
+
+.sustainability-img-list li:hover figure::after {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.sustainability-text-con {
+  position: absolute;
+  color: #fff;
+  top: 70.5882%;
+  left: 11.5384%;
+  z-index: 2;
+  transition: opacity 0.4s;
+}
+
+.sustainability-text-con dl dt {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sustainability-text-con dl dd {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.sustainability-text-wrap a:hover {
+  background: white;
+  color: #000;
+}
+
+/* .sustainability-text-wrap {
+  position: absolute;
+  top: 19.2307%;
+  left: 10.7845%;
+  z-index: 10;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s;
+} */
+
+/* .sustainability-text-wrap {
+  position: absolute;
+  bottom: -100%;
+  left: 10.7845%;
+  z-index: 10;
+  color: #fff;
+  width: 80%;
+  transition: bottom 0.4s ease-out;
+} */
+
+.sustainability-text-wrap {
+  position: absolute;
+  bottom: -20%;
+  left: 10.7845%;
+  z-index: 10;
+  color: #fff;
+  width: 80%;
+  transition: bottom 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* .sustainability-img-list li:hover .sustainability-text-wrap {
+  opacity: 1;
+} */
+
+.sustainability-img-list li:hover .sustainability-text-wrap {
+  bottom: 20%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sustainability-img-list li:hover .sustainability-text-con {
+  opacity: 0;
+}
+
+.sustainability-text-wrap dl dt {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sustainability-text-wrap dl dd {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.sustainability-text-wrap a {
+  display: flex;
+  width: 20rem;
+  height: 4.5rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* 지속 가능한 미래 끝 */
+
+/* History Section Styles */
+#history {
+  margin-top: 18.5rem;
+  padding: 14rem 0;
+  background-color: #000;
+}
+
+#history h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 8rem;
+}
+
+.history-timeline {
+  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.history-timeline li {
+  text-align: center;
+  z-index: 1;
+}
+
+.history-timeline li figure img {
+  width: 33rem;
+  height: 33rem;
+  border-radius: 100%;
+  margin-bottom: 3rem;
+}
+
+.history-timeline dl dt strong {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #f00;
+}
+
+.history-timeline dl dt {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.history-timeline dl dd {
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.history-timeline::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border: 1px solid white;
+  position: absolute;
+  /* z-index: -1; */
+  top: 35%;
+
+  transform: translateY(-35%);
+}
+
+/* 슬로건 시작 */
+.slogan-wrap {
+  height: 75rem;
+  position: relative;
+}
+
+.slogan-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slogan-wrap::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.slogan-text {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "cocacola", sans-serif;
+
+  color: #fff;
+  font-size: 17rem;
+  z-index: 1;
+}
+
+/* Footer Styles */
+footer {
+  background: #0d0d0d;
+  height: 50rem;
+  padding: 15rem 0;
+}
+
+.top-con {
+  margin-bottom: 8rem;
+}
+
+.top-con figure {
+  width: 26rem;
+}
+
+.bottom-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.con-list {
+  display: flex;
+  gap: 6rem;
+}
+
+.con-list li {
+  color: #fff;
+}
+
+.con-list li dl dt {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.con-list li dl dd {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.sns-wrap {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.left-con p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.sns-wrap li {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.sns-wrap li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sns-wrap li:nth-child(1) {
+  background: url(../img/youtube.svg) no-repeat center center;
+}
+.sns-wrap li:nth-child(2) {
+  background: url(../img/X.svg) no-repeat center center;
+}
+.sns-wrap li:nth-child(3) {
+  background: url(../img/instagram.svg) no-repeat center center;
+}
+.sns-wrap li:nth-child(4) {
+  background: url(../img/facebook.svg) no-repeat center center;
+}
+
+@media screen and (max-width: 1750px) {
+  .coca {
+    left: 24%;
+  }
+  .cola {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .cola {
+    right: 5%;
+  }
+
+  .sustainability-text-con {
+    top: 65.5882%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .inner {
+    /* max-width: 71%; */
+  }
+
+  .coca {
+    left: 20%;
+  }
+
+  /* .product-img {
+    left: 35.6%;
+  } */
+
+  .cola {
+    right: 0%;
+  }
+
+  .container {
+    max-width: 85%; /* 1200px / 1410px ≈ 85% */
+  }
+
+  .main {
+    padding: 4% 2%; /* 4rem을 퍼센트로 대략적으로 변환 */
+  }
+
+  .title {
+    font-size: 2.5rem; /* rem 단위는 그대로 유지 */
+  }
+
+  .description {
+    font-size: 1.1rem; /* rem 단위는 그대로 유지 */
+  }
+
+  .campaigns-text p {
+    display: none;
+  }
+  .campaigns-text a {
+    display: none;
+  }
+
+  #campaigns {
+    height: 50rem;
+  }
+
+  .swiper-con {
+    position: static;
+    left: 0;
+    top: 10rem;
+    width: 100%;
+  }
+
+  .camp-wrap {
+    height: 40rem;
+  }
+
+  .swiper-pagination {
+    left: 0 !important;
+    bottom: -100px !important;
+  }
+  .sustainability-text p {
+    display: none;
+  }
+
+  .sustainability-img-list {
+    flex-direction: column;
+  }
+
+  .sustainability-img-list li {
+    margin-bottom: 3rem;
+  }
+
+  .sustainability-img-list li figure {
+    width: 100%;
+  }
+
+  .sustainability-text-con {
+    left: 7.2485%;
+    top: 75.1025%;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 5rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 3.4rem;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .text-space {
+    display: none;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 5rem;
+    width: 50rem;
+    height: 10rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 20%;
+  }
+
+  .history-timeline {
+    width: 100%;
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 10rem;
+  }
+
+  .history-timeline li figure img {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .history-timeline dl dt strong {
+    font-size: 5rem;
+  }
+
+  .history-timeline dl dt {
+    font-size: 4rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 3.6rem;
+  }
+
+  .history-timeline::after {
+    width: 200%;
+  }
+
+  /* 그리드 레이아웃 조정 */
+  .grid {
+    gap: 2%;
+  }
+
+  .card {
+    padding: 2%; /* 1.25rem을 퍼센트로 대략적으로 변환 */
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .coca {
+    left: 16%;
+  }
+  .cola {
+    right: -5%;
+  }
+
+  .history-timeline::after {
+    width: 300%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .inner {
+    /* width: 95.703125%; */
+  }
+
+  .gnb-wrap {
+    display: none;
+  }
+
+  .btn-wrap {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .collapse:not(.show) {
+    display: flex !important;
+  }
+
+  .navbar-collapse {
+    flex-basis: inherit;
+  }
+
+  .gnb-wrap li {
+    display: none;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .visual {
+    height: 32rem;
+  }
+
+  .coca {
+    width: 37rem;
+    height: 23.3rem;
+    left: 20.57%;
+  }
+
+  .product-img {
+    width: 23.4rem;
+    height: 65.5rem;
+    /* left: 43%; */
+  }
+
+  .cola {
+    width: 38rem;
+    height: 23.4rem;
+    right: 0%;
+  }
+
+  .product {
+    height: 19rem;
+  }
+
+  .other-brand {
+    height: 19rem;
+  }
+
+  .product-text {
+    text-align: center;
+  }
+
+  .product-text h2 {
+    font-size: 3rem;
+  }
+
+  /* .other-brand-text {
+    top: 15%;
+  } */
+
+  .other-brand-text h2 {
+    font-size: 3rem;
+  }
+
+  .product-text p {
+    display: none;
+  }
+
+  .other-brand-text p {
+    display: none;
+  }
+
+  .campaigns-text p {
+    display: none;
+  }
+  .campaigns-text a {
+    display: none;
+  }
+
+  #campaigns {
+    height: 70rem;
+  }
+
+  .camp-wrap {
+    height: 50rem;
+  }
+
+  .swiper-con {
+    position: static;
+    left: 0;
+    top: 10rem;
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    left: 0 !important;
+  }
+
+  .sustainability-text p {
+    display: none;
+  }
+
+  .sustainability-img-list {
+    flex-direction: column;
+  }
+
+  .sustainability-img-list li {
+    margin-bottom: 3rem;
+  }
+
+  .sustainability-img-list li figure {
+    width: 100%;
+  }
+
+  .sustainability-text-con {
+    left: 7.2485%;
+    top: 70.1025%;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 4rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 3rem;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 4rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 2rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 2.4rem;
+    width: 30rem;
+    height: 6rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 17%;
+  }
+
+  .history-timeline {
+    width: 100%;
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 10rem;
+  }
+
+  .history-timeline::-webkit-scrollbar {
+    display: none;
+  }
+  .slogan-text {
+    font-size: 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    padding: 2.4rem 0;
+    height: 20rem;
+  }
+
+  .footer-content {
+    margin: 0 auto;
+    width: fit-content;
+    width: 20rem;
+  }
+
+  .top-con figure img {
+    width: 12.5em;
+    height: 2rem;
+    object-fit: contain;
+  }
+
+  .top-con {
+    margin-bottom: 2rem;
+  }
+
+  .sns-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .bottom-con {
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-con {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .coca {
+    width: 24rem;
+    height: 15.2rem;
+    object-fit: cover;
+    left: 20%;
+  }
+
+  .product-img {
+    width: 21.2rem !important;
+    width: 59.5rem;
+    object-fit: cover;
+    /* left: 27%; */
+  }
+
+  .cola {
+    width: 24.8rem;
+    height: 15.3rem;
+    object-fit: cover;
+    right: 3%;
+  }
+
+  #hero {
+    height: 50rem;
+    background: #f00;
+  }
+
+  #other {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    display: block;
+    height: 30rem;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .product-text h2 {
+    font-size: 5rem;
+  }
+
+  .product-text a {
+    font-size: 4rem;
+    width: 30rem;
+  }
+
+  .other-brand {
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 30rem;
+  }
+
+  .other-brand-text h2 {
+    font-size: 5rem;
+  }
+
+  .other-brand-text a {
+    font-size: 4rem;
+    width: 30rem;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 3rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 3rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 3rem;
+  }
+
+  .history-timeline::after {
+    width: 350%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sustainability-text-wrap dl dt {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .history-timeline li figure img {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .history-timeline::after {
+    top: 32%;
+    width: 380%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sustainability-text-con {
+    left: 10.2485%;
+    top: 60.1025%;
+  }
+  .sustainability-text-con dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 1.8rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 1.8rem;
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 20%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .history-timeline li figure img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .history-timeline::after {
+    width: 440%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coca {
+    left: 16%;
+  }
+
+  .cola {
+    right: -20px;
+  }
+
+  .history-timeline::after {
+    width: 480%;
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 440px) {
+  .inner {
+    width: 90.909%;
+  }
+
+  .collapse:not(.show) {
+    display: flex;
+  }
+
+  .visual {
+    height: 49rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .coca {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+    left: 13%;
+
+    object-fit: contain;
+  }
+
+  .product-img {
+    width: 14rem !important;
+    height: 55rem;
+    object-fit: contain;
+  }
+
+  .cola {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+    right: -5%;
+  }
+
+  /* #other {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    display: block;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .other-brand {
+    width: 100%;
+    display: block;
+    text-align: center;
+  } */
+
+  #campaigns {
+    margin-top: 14rem;
+  }
+
+  .campaigns-text {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .sustainability-img-list li {
+    margin-bottom: 0;
+  }
+
+  .sustainability-text-con {
+    top: 65%;
+  }
+
+  .sustainability-text h4 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 1.4rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 10%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 1.8rem;
+  }
+
+  #history h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item::after {
+    left: 15px;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .history-timeline::after {
+    width: 500%;
+  }
+
+  .history-timeline dl dt strong {
+    font-size: 2.4rem;
+  }
+
+  .history-timeline dl dt {
+    font-size: 2.2rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 1.8rem;
+  }
+
+  .slogan-text {
+    font-size: 6rem;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .top-con {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-con {
+    justify-content: center;
+  }
+
+  .sns-wrap {
+    justify-content: center;
+  }
+
+  .con-list {
+    display: none;
+  }
+
+  .left-con p {
+    font-size: 1rem;
+  }
+}

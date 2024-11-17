@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7-ELEVEN</title>
+        <link rel="shortcut icon" href="./img/logo=favicon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>
+                <a href="index.html"
+                    ><figure class="main-logo"><img src="./img/logo 1.svg" alt="7-ELEVEN" /></figure
+                ></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="sub.html">브랜드 스토리</a></li>
+                    <li><a href="sub2.html">상품·서비스</a></li>
+                    <li><a href="sub3.html">브랜드 소개</a></li>
+                    <li><a href="#">창업안내</a></li>
+                    <li><a href="#">새로운 소식</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <span>KR</span>
+                    <ul class="language-options">
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">JP</a></li>
+                        <li><a href="#">CN</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section class="hero">
+                            <div class="inner">
+                                <h2>세븐일레븐만의 정서가 담긴</h2>
+                                <p>이국적인 경험을 함께하세요</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="hero">
+                            <div class="inner">
+                                <h2>일상 속 소소한 행복 이벤트</h2>
+                                <p>세븐일레븐에서 일상이 더 즐거워지는 순간, 함께해요!</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="hero">
+                            <div class="inner">
+                                <h2>세븐일레븐의 다정한 선물</h2>
+                                <p>기분 좋은 하루를 선사해 드립니다.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="hero">
+                            <div class="inner">
+                                <h2>행복을 나누는 세븐일레븐</h2>
+                                <p>작은 쇼핑이 큰 즐거움으로 변하는 순간을 함께해요</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <a href="#" class="sp-event">특별이벤트 보러가기</a>
+                <div class="btn">
+                    <div class="swiper-button-prev"></div>
+                    <button type="button" class="btn-stop"></button>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="num">
+                    <div class="current-slide">1</div>
+                    <div class="total-slide">1</div>
+                </div>
+            </div>
+
+            <section class="products">
+                <div class="inner">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link" href="#">1+1 상품</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">2+1 상품</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">이벤트 상품</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">신상품</a></li>
+                    </ul>
+                    <div class="products-row">
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products1.png" alt="상품1" />
+
+                                <h3 class="product-name">PB&#41;오구초코타임200ml</h3>
+                                <p class="product-price">1,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products2.png" alt="상품2" />
+
+                                <h3 class="product-name">PB&#41;오구딸기타임200ml</h3>
+                                <p class="product-price">1,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products3.png" alt="상품3" />
+
+                                <h3 class="product-name">다논&#41;액티비아업플레인210ml</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products4.png" alt="상품4" />
+
+                                <h3 class="product-name">다논&#41;액티비아업딸기210ml</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products5.png" alt="상품5" />
+
+                                <h3 class="product-name">풀무원&#41;요거톡스타볼132g</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products6.png" alt="상품6" />
+
+                                <h3 class="product-name">풀무원&#41;초코그래놀라129g</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products7.png" alt="상품7" />
+
+                                <h3 class="product-name">서울&#41;마이픽딸기초코링120g</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+                        <div class="products-item-sec">
+                            <figure class="product-item">
+                                <div class="badge">1+1</div>
+                                <img src="./img/products8.png" alt="상품8" />
+
+                                <h3 class="product-name">서울&#41;마이픽플레인쿠키링131g</h3>
+                                <p class="product-price">2,200원</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="more-btn"><a href="sub2.html" class="more-link">더보기</a></button>
+                </div>
+            </section>
+
+            <section class="brand-story">
+                <div class="inner">
+                    <a href="sub.html">
+                        <div class="brand-img">
+                            <h2>행복충전소 세븐일레븐</h2>
+                            <p>세븐일레븐이 만들어온 다양한 행복들을 만나보세요!</p>
+                            <div class="moer-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="event">
+                <div class="deco"></div>
+                <h3>특별 이벤트</h3>
+                <!-- Swiper -->
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="event-con">
+                                <img src="./img/EVNTE.jpg" alt="이벤트 이미지" />
+                                <dl>
+                                    <dt>그랑크뤼 가을 축제에 <br />초대합니다!</dt>
+                                    <dd>샤또 딸보 1종 행사 카드 결제 시 25% 현장할인!</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="event-con">
+                                <img src="./img/sp-event1.jpg" alt="이벤트 이미지" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="event-con">
+                                <img src="./img/sp-event2.jpg" alt="이벤트 이미지" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="event-con">
+                                <img src="./img/sp-even3.jpg" alt="이벤트 이미지" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="event-con">
+                                <img src="./img/sp-even4.jpg" alt="이벤트 이미지" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="make">
+                <div class="inner">
+                    <div class="make-sec">
+                        <h4>점주님들과 함께 하는 7ELEVEN</h4>
+                        <p>7ELEVEN의 가족이 되어보세요!</p>
+                        <button class="mak-btn">창업안내</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search">
+                <div class="inner">
+                    <div class="search-title">
+                        <h2>물건을 찾고싶을때에는?</h2>
+                        <p>7ELEVEN의 다양한 상품들을 만나보세요!</p>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="검색어를 입력하세요" />
+                        <button type="submit">
+                            <i class="btn-search"></i>
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <a href="#" class="tag">#음료</a>
+                        <a href="#" class="tag">#과자</a>
+                        <a href="#" class="tag">#도시락</a>
+                        <a href="#" class="tag">#생활용품</a>
+                    </div>
+                </div>
+
+                <div class="search-right">
+                    <div class="search-results">
+                        <div class="badge">1+1</div>
+                        <h3>빙그레&#41;아이스티복숭아300ml</h3>
+                        <p>1,400원</p>
+                    </div>
+                </div>
+            </section>
+            <section class="NMIXX">
+                <a href="">
+                    <div class="NMIXX-sec">
+                        <h4>매장찾기</h4>
+                        <p>간편하고 빠르게 만나보는 <br />세븐일레븐</p>
+                        <div class="NMIXX-img"></div>
+                        <div class="NMIXX-arrow"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="NMIXX-sec-2">
+                        <h4>고객센터</h4>
+                        <p>필요할 때 언제든지, <br />세븐일레븐 고객센터</p>
+                        <div class="NMIXX-img-2"></div>
+                        <div class="NMIXX-arrow-2"></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="swiper-section3">
+                <h2>세븐일레븐의 <strong>희망찬</strong> 이야기</h2>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg1.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>잔망루피 티머니카드 출시 기념 이벤트</dt>
+                                        <dd>
+                                            이렇게 무해하게 귀여운 티머니카드는 <br />꼭 하나쯤 소장해야 하잖아요?!!
+                                            o(≧∀≦)o
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#💘귀욤주의💘</span>
+                                        <span>#잔망루피</span>
+                                        <span>#티머니카드</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg2.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>(두) 세븐일레븐 동대문 던던점 OPEN (둥)</dt>
+                                        <dd>
+                                            세븐일레븐 동대문 던던점에 발도장을 찍는 순간 <br />시간이 순-삭 할 수
+                                            있으니 주의하세요 !🤩
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#없는게없는</span>
+                                        <span>#티머니카드</span>
+                                        <span>#던던점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg3.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>✨FC 7-ELEVEN 팝업스토어 부산 상륙</dt>
+                                        <dd>
+                                            🔎FC세븐일레븐 앵콜 팝업스토어 in 부산 <br />추가 안내 사항 췤췤하고
+                                            방문하세요 🏃‍♀️🧡
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#💘귀욤주의💘</span>
+                                        <span>#산리오</span>
+                                        <span>#부산으로!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg4.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>뜨거운 여름을 더욱 HOT하게 </dt>
+                                        <dd>
+                                            🌊올여름을 시원하게!🌊 <br />세븐일레븐 서핑 페스타 현장 속으로 초대합니다
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#강원도</span>
+                                        <span>#다이나믹듀오</span>
+                                        <span>#HOT하게</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg5.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>응원에는 뭐다? 맥주다! 🍺</dt>
+                                        <dd>세븐일레븐과 함께 시원~~하게 대한민국 경기 응원 Let’s Go 📢🙌⚾ 야구</dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#대한민국</span>
+                                        <span>#걍기응원</span>
+                                        <span>#맥주</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg6.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    햣
+                                    <dl>
+                                        <dt>💗세븐일레븐 X Hattie Stewart💗</dt>
+                                        <dd>
+                                            코 앞으로 다가온 빼빼로데이 <br />특별한 빼빼로데이는 세븐일레븐 그리고
+                                            해티와 함께!
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#귀여움주의</span>
+                                        <span>#특별굿즈</span>
+                                        <span>#해티</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <!-- 이미지 영역 -->
+                                    <img src="./img/newsimg7.jpg" alt="" />
+                                </div>
+                                <div class="news-text">
+                                    <dl>
+                                        <dt>모두가~좋아하는~쏘맥~할인~할인~스타트🎵</dt>
+                                        <dd>
+                                            유튜브에 나온 그 상품 그대로 👉APT 쏘맥 할인행사 <br />
+                                            쏘맥 즐기러 세븐일레븐으로 출발해 볼까요?🍺🍻
+                                        </dd>
+                                    </dl>
+                                    <div class="hashtags">
+                                        <span>#APT</span>
+                                        <span>#쏘맥</span>
+                                        <span>#착한가격</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="# " class="footer-logo"></a>
+                    <p class="footer-address">
+                        서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 TEL 1577-0711 / FAX 02-2679-6860<br />
+                        세븐일레븐 고객센터 : 1577-0711<br />
+                        <i>롯데택배 고객센터 : 1688-1211</i>
+                    </p>
+                    <p class="footer-copyright">COPYRIGHT 2014 KOREA SEVEN CO, LTD. All Rights Reserved.</p>
+                    <div class="sns">
+                        <a href="#" class="sns-link"></a>
+                        <a href="#" class="sns-link"></a>
+                        <a href="#" class="sns-link"></a>
+                        <a href="#" class="sns-link"></a>
+                        <a href="#" class="sns-link"></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-menu">
+                        <div class="menu-column">
+                            <h3>안전·보건경영</h3>
+                            <ul>
+                                <li><a href="#">불공정거래신고</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-column">
+                            <h3>RECRUIT</h3>
+                            <ul>
+                                <li><a href="#">가맹점</a></li>
+                                <li><a href="#">MATE</a></li>
+                                <li><a href="#">윤리경영</a></li>
+                                <li><a href="#">입점문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-column">
+                            <h3>CUSTOMER</h3>
+                            <ul>
+                                <li><a href="#">고객의 소리</a></li>
+                                <li><a href="#">제품정보</a></li>
+                                <li><a href="#">창업상담</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

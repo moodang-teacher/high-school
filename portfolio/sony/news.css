@@ -1,0 +1,241 @@
+@charset 'utf-8';
+
+.inner {
+    width: 1520px;
+    height: 100%;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.09) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+
+    position: fixed;
+    z-index: 10;
+}
+#header nav {
+    display: flex;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+#header nav .logo a {
+    display: block;
+    width: 149px;
+    height: 26px;
+    background: url(../img/logo-dark.svg) no-repeat 0 0 / contain;
+}
+#header nav .gnb {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--title-dark-color);
+}
+.util-menu {
+    gap: 21px;
+
+    display: flex;
+    flex-direction: row;
+}
+.util-menu a {
+    color: var(--title-dark-color);
+    font-size: 35px;
+}
+#header nav .gnb a:hover {
+    color: var(--main-color);
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+#header.active::after {
+    height: 300px;
+}
+
+.gnb > li {
+    position: relative;
+    /* border: 1px solid #0f0; */
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 33px;
+    width: 180px;
+    text-align: center;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #f00; */
+    background: #fff;
+
+    display: none;
+}
+.sub-menu li {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+/* --main-- */
+
+.visual {
+    height: 520px;
+}
+
+.top h1 {
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--title-dark-color);
+
+    margin-top: 30px;
+}
+.top {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 180px 0 100px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header strong {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--black60);
+}
+.header > .link > li {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--black60);
+}
+.link {
+    display: flex;
+    gap: 8px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 80px;
+}
+.bottom-con {
+    display: flex;
+    gap: 26px;
+
+    justify-content: flex-end;
+}
+.item-filter {
+    width: 157px;
+    height: 52px;
+}
+.item-list {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+
+    padding: 14px 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+.list-con {
+    margin-top: 6px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    border: 1px solid var(--black40);
+    padding: 0 0;
+    display: none;
+    background: #fff;
+
+    overflow: hidden;
+}
+.list-con li {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.list-con li:hover {
+    background: var(--main-color);
+    color: #fff;
+
+    /* border-radius: 30px;
+    width: 95%;
+    margin-left: 5px; */
+}
+.search-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f2f2f2;
+
+    padding: 13px 24px;
+}
+.search-con input {
+    border: none;
+    background: none;
+}
+.search-con input[type="text"] {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black60);
+
+    padding-right: 130px;
+}
+input:focus {
+    outline: none; /* outline 테두리 없애기 */
+}
+.search-con .ri-search-line {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.news-list li a {
+    display: flex;
+
+    align-items: center;
+
+    padding: 48px 76px;
+}
+.news-list li a span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black40);
+}
+.news-list .num {
+    padding: 0 76px;
+}
+
+.news-list li a .title {
+    font-weight: 600;
+    font-size: 24px;
+}

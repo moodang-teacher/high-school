@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQ</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/icon" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/comman.js"></script>
+        <script src="./js/tabmanu.js"></script>
+        <script src="./js/FAQ.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <nav>
+                    <a href="index.html">
+                        <figure><img src="./img/logo.png" alt="로고" /></figure>
+                    </a>
+                    <ul class="desktop-menu">
+                        <li>
+                            <a href="product.html">제품소개</a>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="menu.html">메뉴</a>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="buy.html">구매처</a>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">☰</button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                            <a href="product.html">제품소개</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                            <a href="menu.html">메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                            <a href="buy.html">구매처</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <script>
+                    const TL = gsap.timeline();
+
+                    gsap.from("nav a figure", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li a", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li figure", {
+                        y: -100,
+                        // rotation: 90,
+                        duration: 3,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        stagger: 0.3,
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".mobile-menu-toggle", {
+                        x: 100,
+                        // rotation: 90,
+                        duration: 2,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+                </script>
+            </div>
+        </header>
+        <main>
+            <section class="sub">
+                <div class="inner">
+                    <div class="top-content">
+                        <h1>FAQ</h1>
+                    </div>
+                </div>
+
+                <div class="border-container">
+                    <div class="border footer-border"></div>
+                </div>
+
+                <div class="inner">
+                    <div class="FAQ-tab">
+                        <ul class="FAQ-tab-menu">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">제품</a></li>
+                            <li><a href="">문의</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+
+                        <div class="FAQ-tab-con">
+                            <div class="FAQ-tab-con-item">
+                                <div class="faq-wrap">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >프링글스는 맛있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 맛있어요! <br />
+                                                    다양한 맛이 있어 취향에 맞게
+                                                    즐길 수 있고, 바삭한 식감도
+                                                    매력적입니다. 한 번 시작하면
+                                                    멈추기 어려운 중독적인
+                                                    맛이에요.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스의 새로운 맛을 어떻게
+                                                만들어지나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스의 새로운 맛은
+                                                    실험과 연구를 통해
+                                                    만들어집니다.
+                                                    <br />프링글스는 시장의
+                                                    트렌드와 소비자들의 피드백을
+                                                    반영해 새로운 맛을
+                                                    개발합니다. <br />
+                                                    전문가들이 다양한 재료와
+                                                    조리법을 테스트하여 맛의
+                                                    균형을 맞춥니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스 칩을 집에서
+                                                만들고싶습니다.</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    집에서 프링글스와 비슷한
+                                                    칩을 만들 수는 있지만,
+                                                    완벽한 프링글스의 바삭하고
+                                                    고유한 식감을 재현하기는
+                                                    어렵습니다. <br />
+                                                    프링글스는 특수한 조리
+                                                    공정과 기계로 제작됩니다.
+                                                    하지만, 어느정도 형태는 만들
+                                                    수 있죠!
+
+                                                    <br />
+                                                    기본적으로 감자, 전분,
+                                                    식용유, 소금, 그리고 원하는
+                                                    향미(치즈, 바베큐 등)가
+                                                    필요합니다.
+                                                    <br />
+                                                    이를 섞어 반죽을 만든 후
+                                                    얇게 펼쳐서 튀기면 비슷한
+                                                    맛의 칩을 만들 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스 캔을 버리는 방법이
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스 캔은 보통 플라스틱
+                                                    뚜껑과 금속 캔으로 이루어져
+                                                    있습니다. <br />
+                                                    뚜껑은 일반적으로
+                                                    플라스틱이므로 플라스틱
+                                                    분리수거통에 버리고, 금속
+                                                    캔은 금속 분리수거통에
+                                                    넣어주세요. <br />
+                                                    하지만 또 다른 방법도
+                                                    있습니다. 프링글스 캔은
+                                                    다양한 DIY 프로젝트에
+                                                    재사용할 수 있습니다. 예를
+                                                    들어, 작은 화분이나 필통으로
+                                                    활용하거나, 장난감, 악세사리
+                                                    등을 만들 수 있습니다.
+                                                    재활용 외에도 창의적인
+                                                    방법으로 활용할 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스 본사는 어디에
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 미국 오하이오주에
+                                                    본사를 두고 있는 프록터 앤드
+                                                    갬블(P&G)의 브랜드였으나,
+                                                    <br />
+                                                    현재는 켈로그(Kellogg's)
+                                                    회사 소속입니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스에 입사하고
+                                                싶습니다.</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스에서 일하려면
+                                                    일반적으로 해당 직무에
+                                                    필요한 학력과 경험이
+                                                    요구됩니다. <br />
+                                                    예를 들어, 마케팅, 영업,
+                                                    연구개발, 생산 등 다양한
+                                                    부문에서 자격 조건이 달라질
+                                                    수 있습니다. <br />
+                                                    관련 분야의 학위와 경험,
+                                                    그리고 팀워크와 문제 해결
+                                                    능력 등이 중요합니다. <br />
+                                                    프링글스는
+                                                    켈로그(Kellogg's)의
+                                                    브랜드이므로, 켈로그의 공식
+                                                    웹사이트나 채용 플랫폼을
+                                                    통해 채용 공고를 확인하고
+                                                    지원할 수 있습니다. 켈로그는
+                                                    다양한 직무와 지역에서
+                                                    채용을 진행하므로, 자신에게
+                                                    맞는 포지션을 찾아
+                                                    지원하세요.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="FAQ-tab-con-item">
+                                <div class="faq-wrap">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >프링글스는 맛있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 맛있어요! <br />
+                                                    다양한 맛이 있어 취향에 맞게
+                                                    즐길 수 있고, 바삭한 식감도
+                                                    매력적입니다. 한 번 시작하면
+                                                    멈추기 어려운 중독적인
+                                                    맛이에요.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스의 새로운 맛을 어떻게
+                                                만들어지나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스의 새로운 맛은
+                                                    실험과 연구를 통해
+                                                    만들어집니다.
+                                                    <br />프링글스는 시장의
+                                                    트렌드와 소비자들의 피드백을
+                                                    반영해 새로운 맛을
+                                                    개발합니다. <br />
+                                                    전문가들이 다양한 재료와
+                                                    조리법을 테스트하여 맛의
+                                                    균형을 맞춥니다.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <strong
+                                                >프링글스 캔을 버리는 방법이
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스 캔은 보통 플라스틱
+                                                    뚜껑과 금속 캔으로 이루어져
+                                                    있습니다. <br />
+                                                    뚜껑은 일반적으로
+                                                    플라스틱이므로 플라스틱
+                                                    분리수거통에 버리고, 금속
+                                                    캔은 금속 분리수거통에
+                                                    넣어주세요. <br />
+                                                    하지만 또 다른 방법도
+                                                    있습니다. 프링글스 캔은
+                                                    다양한 DIY 프로젝트에
+                                                    재사용할 수 있습니다. 예를
+                                                    들어, 작은 화분이나 필통으로
+                                                    활용하거나, 장난감, 악세사리
+                                                    등을 만들 수 있습니다.
+                                                    재활용 외에도 창의적인
+                                                    방법으로 활용할 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스는 어떤 원료로
+                                                만들어지나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 감자, 옥수수
+                                                    전분, 밀가루, 식용유, 소금
+                                                    등의 원료로 만들어집니다.
+                                                    <br />
+                                                    각 맛에 따라 치즈, 바베큐
+                                                    가루 등 추가적인 조미료가
+                                                    포함될 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스는 알레르기 유발 성분이
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    일부 프링글스 제품에는
+                                                    알레르기 유발 성분이
+                                                    포함되어 있을 수 있습니다.
+                                                    <br />
+                                                    예를 들어, 유제품, 밀, 콩
+                                                    등이 포함될 수 있으므로,
+                                                    알레르기가 있는 사람은 제품
+                                                    라벨을 확인하고 구매하는
+                                                    것이 중요합니다
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="FAQ-tab-con-item">
+                                <div class="faq-wrap">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >프링글스 칩을 집에서
+                                                만들고싶습니다.</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    집에서 프링글스와 비슷한
+                                                    칩을 만들 수는 있지만,
+                                                    완벽한 프링글스의 바삭하고
+                                                    고유한 식감을 재현하기는
+                                                    어렵습니다. <br />
+                                                    프링글스는 특수한 조리
+                                                    공정과 기계로 제작됩니다.
+                                                    하지만, 어느정도 형태는 만들
+                                                    수 있죠!
+
+                                                    <br />
+                                                    기본적으로 감자, 전분,
+                                                    식용유, 소금, 그리고 원하는
+                                                    향미(치즈, 바베큐 등)가
+                                                    필요합니다.
+                                                    <br />
+                                                    이를 섞어 반죽을 만든 후
+                                                    얇게 펼쳐서 튀기면 비슷한
+                                                    맛의 칩을 만들 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스 캔을 버리는 방법이
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스 캔은 보통 플라스틱
+                                                    뚜껑과 금속 캔으로 이루어져
+                                                    있습니다. <br />
+                                                    뚜껑은 일반적으로
+                                                    플라스틱이므로 플라스틱
+                                                    분리수거통에 버리고, 금속
+                                                    캔은 금속 분리수거통에
+                                                    넣어주세요. <br />
+                                                    하지만 또 다른 방법도
+                                                    있습니다. 프링글스 캔은
+                                                    다양한 DIY 프로젝트에
+                                                    재사용할 수 있습니다. 예를
+                                                    들어, 작은 화분이나 필통으로
+                                                    활용하거나, 장난감, 악세사리
+                                                    등을 만들 수 있습니다.
+                                                    재활용 외에도 창의적인
+                                                    방법으로 활용할 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스 본사는 어디에
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 미국 오하이오주에
+                                                    본사를 두고 있는 프록터 앤드
+                                                    갬블(P&G)의 브랜드였으나,
+                                                    <br />
+                                                    현재는 켈로그(Kellogg's)
+                                                    회사 소속입니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스에 입사하고
+                                                싶습니다.</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스에서 일하려면
+                                                    일반적으로 해당 직무에
+                                                    필요한 학력과 경험이
+                                                    요구됩니다. <br />
+                                                    예를 들어, 마케팅, 영업,
+                                                    연구개발, 생산 등 다양한
+                                                    부문에서 자격 조건이 달라질
+                                                    수 있습니다. <br />
+                                                    관련 분야의 학위와 경험,
+                                                    그리고 팀워크와 문제 해결
+                                                    능력 등이 중요합니다. <br />
+                                                    프링글스는
+                                                    켈로그(Kellogg's)의
+                                                    브랜드이므로, 켈로그의 공식
+                                                    웹사이트나 채용 플랫폼을
+                                                    통해 채용 공고를 확인하고
+                                                    지원할 수 있습니다. 켈로그는
+                                                    다양한 직무와 지역에서
+                                                    채용을 진행하므로, 자신에게
+                                                    맞는 포지션을 찾아
+                                                    지원하세요.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="FAQ-tab-con-item">
+                                <div class="faq-wrap">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >프링글스는
+                                                비건(vegan)인가요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    대부분의 프링글스 제품은
+                                                    비건에 적합하지 않습니다.
+                                                    일부 맛에는 유제품이
+                                                    포함되어 있기 때문입니다.
+                                                    <br />
+                                                    비건 제품을 원하신다면 제품
+                                                    라벨을 확인하거나, 비건 전용
+                                                    프링글스를 찾아보는 것이
+                                                    좋습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스는 글루텐이 포함되어
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    대부분의 프링글스 제품에는
+                                                    글루텐이 포함되어 있습니다.
+                                                    <br />
+                                                    다만, 일부 특정 제품군은
+                                                    글루텐 프리로 출시될 수
+                                                    있으므로, 패키지의 성분
+                                                    표기를 반드시 확인해야
+                                                    합니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스는 어떤 유통기한이
+                                                있나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    링글스의 유통기한은
+                                                    일반적으로 제조일로부터 약
+                                                    6개월에서 1년 사이입니다.
+                                                    <br />
+                                                    패키지에 인쇄된 유통기한을
+                                                    참고하여 구매 후 적절한 기간
+                                                    내에 소비하는 것이 좋습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스를 한 번에 많이 먹어도
+                                                되나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 고칼로리
+                                                    간식이므로 과도하게 섭취하지
+                                                    않도록 주의해야 합니다.
+                                                    <br />한 번에 너무 많이
+                                                    먹으면 건강에 좋지 않을 수
+                                                    있습니다. 적당량을 즐기는
+                                                    것이 가장 바람직합니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong
+                                                >프링글스는 어떻게 해외로
+                                                수출되나요?</strong
+                                            >
+                                            <div class="answer-wrap">
+                                                <p>
+                                                    프링글스는 전 세계 여러
+                                                    국가에 수출되고 있습니다.
+                                                    <br />이를 위해 제품은
+                                                    각국의 법규와 소비자 취향에
+                                                    맞게 포장, 유통,
+                                                    마케팅됩니다. <br />또한,
+                                                    현지의 식품 규제를 준수하며
+                                                    글로벌 공급망을 통해
+                                                    배급됩니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.png" alt="" /></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border footer-border"></div>
+            </div>
+
+            <div class="inner">
+                <div class="footer-content">
+                    <div class="foot-text">
+                        <a href="">고객센터</a>
+                        <a href="">FAQ</a>
+                        <a href="">문의하기</a>
+                        <a href="">개인정보 보호정책</a>
+                        <a href="">이용약관</a>
+                        <a href="">접근성</a>
+                    </div>
+
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/PringlesUS">
+                            <figure>
+                                <img src="./img/facebook.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/pringles/">
+                            <figure>
+                                <img src="./img/instargram.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.tiktok.com/@pringles">
+                            <figure>
+                                <img src="./img/tiktok.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://x.com/Pringles">
+                            <figure>
+                                <img src="./img/x-logo.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/Pringles">
+                            <figure>
+                                <img src="./img/youtube.svg" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Kellanova</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden"></i></a>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/btn.js"></script>
+    </body>
+</html>

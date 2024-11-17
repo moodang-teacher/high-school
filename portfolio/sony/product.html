@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SONY.product</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/product.css" />
+
+        <link rel="apple-touch-icon-precomposed" href="./img/Group 72.png" />
+        <link rel="icon" href="./img/Group 72.png" sizes="64x64" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/product.js"></script>
+    </head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <i class="hidden">logo</i>
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="story.html">소니 이야기</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">SONY</a></li>
+                                <li><a href="#">소니와 환경</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html">제품</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">카메라</a></li>
+                                <li><a href="#">렌즈</a></li>
+                                <li><a href="#">오디오</a></li>
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="news.html">소식</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="store.html">스토어</a></li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href="#"><i class="ri-search-line"></i></a>
+                        <a href="#"><i class="ri-menu-line"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+            <section class="visual">
+                <div class="inner">
+                    <div class="top">
+                        <h1 class="section-title">오디오</h1>
+
+                        <div class="header">
+                            <strong>제품</strong>
+                            <ul class="link">
+                                <li><a href="#">Home</a></li>
+                                <li><i class="ri-arrow-right-s-line"></i></li>
+                                <li><a href="#">제품</a></li>
+                                <li><i class="ri-arrow-right-s-line"></i></li>
+                                <li><a href="#">오디오</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //e:top -->
+                    <!-- s:search -->
+                    <div class="search">
+                        <h3><i class="hidden">search</i></h3>
+                        <div class="search-con">
+                            <input type="text" placeholder="검색어를 입력해 주세요." />
+                            <i class="ri-search-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- //e:search -->
+            </section>
+
+            <!-- s:menu -->
+            <section class="menu">
+                <h3><i class="hidden">search</i></h3>
+                <div class="inner">
+                    <div class="menu-list">
+                        <div class="product-filter">
+                            <div class="list-title">
+                                <p class="filter">전체상품</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="list-con">
+                                <li>홈 오디오</li>
+                                <li>헤드폰/이어폰</li>
+                                <li>무선 스피커</li>
+                                <li>워크맨/녹음기</li>
+                            </ul>
+                        </div>
+                        <div class="product-filter">
+                            <div class="sort-list-title">
+                                <p class="sort">정렬순</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="list-con">
+                                <li>신상품</li>
+                                <li>인기 상품</li>
+                                <li>높은 가격</li>
+                                <li>낮은 가격</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e:menu -->
+
+            <!-- s:product -->
+            <section class="product">
+                <h4><i class="hidden">product</i></h4>
+                <div class="inner">
+                    <div class="product-list">
+                        <h4>26개의 제품</h4>
+                        <ul class="list-01">
+                            <li>
+                                <a href="#">
+                                    <span class="new">NEW</span>
+                                    <figure><img src="./img/image1.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-M1</dt>
+                                        <dd>밀폐형 모니터링 헤드폰의 새로운 표준</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span class="new">NEW</span>
+                                    <figure><img src="./img/image2.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>WF-C510</dt>
+                                        <dd>일상을 함께하는 나의 데일리 이어폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span class="new">NEW</span>
+                                    <figure><img src="./img/image3.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>ULT WEAR | 얼트 웨어</dt>
+                                        <dd>베이스 부스터 노이즈 캔슬링 헤드폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image4.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>INZONE Buds</dt>
+                                        <dd>게이머를 위한 완벽한 이어폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="banner-wrap">
+                            <ul class="list-02">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/image5.png" alt="" /></figure>
+                                        <dl>
+                                            <dt>WH-1000XM5</dt>
+                                            <dd>#몰입의 즐거움 #스터디헤드폰</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="color-list">
+                                        <span class="color"><i class="hidden">white</i></span>
+                                        <span class="color"><i class="hidden">black</i></span>
+                                        <span class="color"><i class="hidden">gray</i></span>
+                                        <span class="color"><i class="hidden">pink</i></span>
+                                        <span class="color"><i class="hidden">blue</i></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/image6.png" alt="" /></figure>
+                                        <dl>
+                                            <dt>WF-1000XM5</dt>
+                                            <dd>이것은 작게 진화한 헤드폰</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="color-list">
+                                        <span class="color"><i class="hidden">white</i></span>
+                                        <span class="color"><i class="hidden">black</i></span>
+                                        <span class="color"><i class="hidden">gray</i></span>
+                                        <span class="color"><i class="hidden">pink</i></span>
+                                        <span class="color"><i class="hidden">blue</i></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="banner">
+                                <a href="#">
+                                    <figure><img src="./img/banner-01.png" alt="" /></figure>
+                                    <div class="banner-con">
+                                        <strong>WH-1000XM5 | Smoky Pink</strong>
+                                        <dl>
+                                            <dt>새로운 컬러를 만나보세요</dt>
+                                            <dd>무선 노이즈 캔슬링 헤드폰</dd>
+                                        </dl>
+                                        <p>만나러가기 <i class="ri-arrow-right-up-line"></i></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="list-03">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image7.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>INZONE H9</dt>
+                                        <dd>무선 노이즈 캔슬링 게이밍 헤드셋</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image8.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>INZONE H5</dt>
+                                        <dd>압도적인 사운드는 그대로. 편안함은 배로</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image9.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-MV1</dt>
+                                        <dd>압도적 공간감의 오픈형 레퍼런스 헤드폰</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image10.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>C-80</dt>
+                                        <dd>프로를 위한 스튜디오 마이크</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-04">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image11.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>WF-C700N</dt>
+                                        <dd>노이즈 캔슬링 이어폰의 시작</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image12.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>WH-CH720N</dt>
+                                        <dd>가장 가벼운 노이즈 캔슬링 헤드폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image13.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>WH-CH520</dt>
+                                        <dd>가볍고 편한 데일리 헤드폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image14.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>플로트 런 Float Run</dt>
+                                        <dd>달리면서 느끼는 진정한 자유로움</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-05">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image15.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>INZONE H3</dt>
+                                        <dd>유선 게이밍 헤드셋</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image16.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>WH-1000XM4</dt>
+                                        <dd>몰입을 넘어 소통까지 #벗지않는헤드폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image17.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-7506</dt>
+                                        <dd>내 아티스트의 선택</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image18.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDRZX310APB</dt>
+                                        <dd>가벼운 핸즈프리 유선 헤드폰</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-06">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image19.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-EX15AP</dt>
+                                        <dd>커널형 핸즈프리 유선 이어폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image20.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>링크버즈 S</dt>
+                                        <dd>편안하게 몰입하다, 링크버즈 S</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image21.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>IER-Z1R</dt>
+                                        <dd>Signature Series In-ear Headphone</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image22.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-Z7M2</dt>
+                                        <dd>한발 더 진보한 사운드를 만나다.</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-07">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image23.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDREX255AP</dt>
+                                        <dd>컬러풀 사운드 MDR-EX255AP</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image24.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDREX155AP</dt>
+                                        <dd>컬러풀 사운드 MDR-EX155AP</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image25.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDR-Z1R</dt>
+                                        <dd>플래그쉽 시그니쳐 헤드폰</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./img/image26.png" alt="" /></figure>
+                                    <dl>
+                                        <dt>MDRZX110AP</dt>
+                                        <dd>폴딩형 핸즈프리 유선 헤드폰</dd>
+                                    </dl>
+                                </a>
+                                <div class="color-list">
+                                    <span class="color"><i class="hidden">white</i></span>
+                                    <span class="color"><i class="hidden">black</i></span>
+                                    <span class="color"><i class="hidden">gray</i></span>
+                                    <span class="color"><i class="hidden">pink</i></span>
+                                    <span class="color"><i class="hidden">blue</i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="foot-con">
+                    <div class="foot-logo">
+                        <h1>
+                            <a href="#"><i class="hidden">SONY</i></a>
+                        </h1>
+                    </div>
+                    <div class="foot-middle">
+                        <dl>
+                            <dt>(주)소니코리아</dt>
+                            <dd>서울특별시 영등포구 국제금융로 10 원아이에프씨 24F</dd>
+                        </dl>
+                        <ul class="foot-list">
+                            <li>
+                                <dl>
+                                    <dt>대표</dt>
+                                    <dd>Okura Kikuo</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>106-81-23810</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화</dt>
+                                    <dd>소니코리아 고객지원센터 1588-091</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p>Copyright © Sony Korea Corporation. All rights reserved.</p>
+                    </div>
+                    <div class="foot-sns">
+                        <ul class="sns-list">
+                            <li><a href="#"></a><i class="hidden">insta</i><i class="ri-instagram-line"></i></li>
+                            <li><a href="#"></a><i class="hidden">facebook</i><i class="ri-facebook-fill"></i></li>
+                            <li><a href="#"></a><i class="hidden">youtude</i><i class="ri-youtube-line"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- button.btn-top>i.hidden{TOP} -->
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    </body>
+</html>

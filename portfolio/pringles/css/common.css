@@ -1,0 +1,447 @@
+@charset 'utf-8';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@font-face {
+    font-family: "Paperlogy-9Black";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2")
+        format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Paperlogy-8ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2")
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Paperlogy-7Bold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Paperlogy-6SemiBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2")
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Paperlogy-5Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
+        format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Paperlogy-4Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Pretendard", sans-serif;
+}
+
+:root {
+    font-size: 62.5%; /* 10px --> 1rem */
+    --main-color: #ea002a;
+    --title-color: #1c1c1a;
+}
+
+.inner {
+    width: 144rem;
+    margin: 0 auto;
+    /* background: #ff5; */
+}
+
+header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+
+    border-bottom: 5px solid var(--title-color);
+}
+
+nav {
+    display: flex;
+
+    margin: 3rem 0;
+}
+
+nav figure img {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17.7rem;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    transition: 0.4s;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: Paperlogy-7Bold;
+
+    text-decoration: none;
+}
+
+.desktop-menu li:hover {
+    filter: invert(100%);
+    scale: 1.1;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.mobile-menu-toggle:hover {
+    filter: invert(100%);
+}
+
+.mobile-menu li:hover {
+    filter: invert(100%);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.border {
+    border-top: 5px solid #000;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-wrap {
+    background: url(../img/title-img.svg) no-repeat center / 100% 100%;
+    width: 17.01%; /* 24.5rem / 1440 * 100 */
+    height: 15.7rem; /* 15.7rem / 157 * 100, which is exactly 100% */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+.title-wrap h2 {
+    color: #fff;
+    font-family: Paperlogy-7Bold;
+    font-size: 4.5rem;
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.online h2,
+.offline h2 {
+    font-size: 3.5rem;
+}
+
+.sub {
+    margin: 10rem 0;
+}
+
+.top-content {
+    margin-bottom: 4.7rem;
+    animation: fade-in-bottom 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.top-content h1 {
+    font-size: 7.5rem;
+    font-family: Paperlogy-8ExtraBold;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    background: var(--main-color);
+    padding: 5rem 0;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2.5rem;
+}
+
+.foot-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 35rem;
+}
+
+.foot-text a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.foot-text a:hover {
+    font-weight: 700;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 48.5rem;
+
+    margin-bottom: 3rem;
+}
+
+.footer-icon figure {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.footer-icon figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-icon figure img {
+    transition: 0.4s;
+}
+
+.footer-icon figure img:hover {
+    transform: scale(1.5);
+    filter: invert(100%);
+}
+
+.footer-content .copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .copyright p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 20.7rem;
+    right: 2%;
+    width: 5.4rem;
+    height: 5.4rem;
+    background: #000 url(../img/btn-vector.svg) no-repeat 50%;
+    border-radius: 50%;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: 0.4s;
+
+    background-color: var(--main-color);
+    /* border: 2px solid #fff; */
+
+    z-index: 100;
+}
+
+.btn-top.active {
+    opacity: 1;
+    bottom: 15.7rem;
+}
+
+@media screen and (max-width: 1520px) {
+    nav ul {
+        gap: 0;
+        margin: 0 8rem;
+
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+    .inner {
+        width: 83.5rem;
+        width: 81.54%; /* 83.5rem / 1024px * 100 */
+    }
+
+    .foot-text {
+        margin: 5rem 10rem;
+    }
+
+    .footer-icon {
+        margin: 0 18.5rem;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+    }
+
+    .title-wrap {
+        width: 27.01%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-icon figure {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .foot-text {
+        margin: 3rem 10rem;
+    }
+
+    .title-wrap h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .inner {
+        width: 83.33333333333%;
+    }
+
+    :root {
+        font-size: 50%;
+    }
+
+    .footer-icon {
+        margin: 0 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .foot-text {
+        margin: 3rem 5rem;
+    }
+
+    .foot-text a {
+        font-size: 1.2rem;
+    }
+
+    .footer-icon figure {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    nav {
+        margin: 2rem 0;
+        position: relative;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav figure {
+        width: 4.2rem;
+        height: 5.1rem;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2.4rem;
+        color: #fff;
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        font-size: 3.5rem;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 1rem 0;
+
+        z-index: 100;
+
+        border: 2px solid #000;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-menu li {
+        padding: 1rem;
+    }
+
+    .mobile-menu li a {
+        color: #fff;
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-family: Paperlogy-7Bold;
+    }
+}
+
+@media screen and (max-width: 550px) {
+}

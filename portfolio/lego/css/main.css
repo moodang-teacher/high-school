@@ -1,0 +1,1570 @@
+@charset 'utf-8';
+
+.inner {
+    width: 132rem;
+    margin: 0 auto;
+    /* background: rgba(121, 121, 7, 0.3); */
+    /* display: flex; */
+    justify-content: space-between; /* 안쪽에 있는 요소들 양쪽으로 배치 */
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../img/legoicon.svg);
+    background-size: contain;
+}
+
+.gnb {
+    display: flex;
+    list-style: none;
+    margin-left: 8rem;
+    z-index: 1;
+}
+
+.gnb li {
+    margin: 0 4rem;
+}
+
+.gnb a {
+    position: relative; /* ::after 가상 요소의 기준점 설정 */
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* 밑줄이 나타날 공간 확보 */
+}
+
+.gnb a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* 텍스트 바로 아래에 라인이 생김 */
+    left: 0;
+    width: 0; /* 기본적으로 보이지 않음 */
+    height: 2px;
+    background-color: #ff0000; /* 라인의 색상은 레고 컬러인 빨간색 */
+    transition: width 0.3s ease; /* 부드럽게 나타나는 애니메이션 */
+}
+
+.gnb a:hover {
+    color: #ff0000; /* 호버 시 레고 컬러로 강조 */
+}
+
+.gnb a:hover::after {
+    width: 100%; /* 호버 시 100% 너비로 확장 */
+}
+
+.util-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 자동으로 설정 */
+    justify-content: flex-end; /* 내부 요소들을 오른쪽으로 정렬 */
+    z-index: 1;
+}
+
+.util-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.util-menu li {
+    margin-left: 20px;
+}
+
+.util-menu a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.util-menu a img:hover {
+    opacity: 0.7; /* 호버 시 투명도 조정 */
+}
+
+/*  */
+
+.visual {
+    background-image: url("../img/visual-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 화면 전체 높이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden; /* 자식 요소가 비주얼 영역을 벗어날 경우 숨김 */
+    flex-direction: column; /* 세로 배치로 변경 */
+    transform: translateY(-70px);
+    z-index: 0;
+}
+
+.visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 더 어두운 오버레이 */
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.visual-content {
+    position: relative;
+    z-index: 1; /* 텍스트가 오버레이 위에 보이도록 설정 */
+}
+
+.visual strong {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.visual p {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 6rem;
+}
+
+.visual-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: -1.5rem;
+}
+
+.visual-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    width: 19rem;
+    height: 5rem;
+    cursor: pointer;
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
+    margin: 0 auto;
+    margin-top: 6.4rem;
+}
+
+.visual-btn:hover {
+    background: #b91a1a;
+    color: #fff;
+}
+
+.visual-btn img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+/*  */
+
+.utility-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.util-menu-bottom {
+    display: flex;
+    margin-right: -36px;
+}
+
+.menu {
+    display: none;
+}
+
+.icon-button {
+    background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 3.8rem;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* z-index 값을 1로 변경 */
+}
+
+.icon-button:hover {
+    background-color: #f5f5f5;
+}
+
+.icon-button img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    z-index: 2; /* z-index 값을 1로 변경 */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="search"] {
+    width: 31.5rem;
+    height: 4.5rem;
+    padding: 10px 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 3.8rem;
+    transform: translateX(44px);
+    color: var(--text-color);
+}
+
+.search-button {
+    margin-top: 3.8rem;
+    background-color: #333;
+    border: none;
+    border-radius: 30px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.search-button img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 2; /* z-index 값을 1로 변경 */
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.hidden img {
+    display: inline;
+}
+
+/* 신제품 */
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.new-products h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 3rem 0 3rem 0;
+    color: var(--title-color);
+}
+
+.product-card {
+    position: relative;
+}
+
+.card-info p {
+    display: flex;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 3rem;
+    transform: translateY(460%);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card-info a {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 3rem;
+}
+
+.product-card img {
+    display: flex;
+    width: 985px;
+    height: 420px;
+    border-radius: 20px;
+}
+
+.bricks-info p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translateY(800%);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bricks-info a {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-bottom: 3rem;
+}
+
+.product-bricks img {
+    width: 315px;
+    height: 420px;
+    border-radius: 20px;
+}
+
+.product-bricks {
+    position: relative;
+}
+
+.btn-card {
+    display: flex;
+    width: 13.8rem;
+    height: 4rem;
+    border-radius: 30rem;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn-card img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.btn-card:hover {
+    background: #b91a1a;
+    color: #fff;
+}
+
+/* 베스트 */
+
+.best {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.best .inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.bestsellers-slider {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19rem;
+    /* overflow: hidden; */
+}
+
+.best-header {
+    width: 44.1rem;
+    height: 43.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    margin-top: 19rem;
+    margin-right: 12rem;
+    z-index: 2;
+    padding-right: 6rem;
+}
+
+.best-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15.4%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.top-slider {
+    overflow: visible !important; /* hidden을 제거하고 visible로 변경 */
+    width: 103.8rem;
+    height: 43.5rem;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 자동으로 설정 */
+    padding: 1rem;
+    z-index: 1;
+}
+
+.best-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: left;
+    z-index: 2;
+}
+
+.best-header h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: left;
+    z-index: 2;
+}
+
+.best-header p {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: left;
+    z-index: 2;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    width: 31.7rem;
+    height: 43.5rem;
+}
+
+.slider-item img {
+    width: 31.5rem;
+    height: 32.5rem;
+    border-radius: 2rem;
+    transition: 0.4s;
+}
+
+.slider-item dt {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.slider-item dd {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.slider-item dl dt {
+    transition: color 0.3s ease;
+}
+
+.slider-item:hover dl dt {
+    color: var(--main-color);
+}
+
+.wishlist-btn {
+    background-image: url(../img/wishlist-dark.svg);
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+.wishlist-btn.filled {
+    background: url(../img/wishlist-fill.svg);
+}
+
+.slider-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 이벤트 */
+
+.event {
+    background: #f7f7f7;
+    margin-top: 9.4rem;
+}
+.event h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding-top: 19rem;
+    color: var(--title-color);
+}
+
+.event p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.event-slider-wrap {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.swiper-container img {
+    border-radius: 2rem;
+    width: 132rem;
+    height: 21.6rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffff;
+    padding: 2rem;
+}
+
+.swiper-pagination {
+    text-align: left;
+    padding: 0 0 0 2rem;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+    width: 1rem;
+    height: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+    width: 2rem;
+    border-radius: 30rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 세일 */
+.sale {
+    padding: 19rem 0;
+    background: #f7f7f7;
+}
+
+.sale-header h3 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+.sale-header p {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.sale-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.sale-item img {
+    width: 42.7rem;
+    height: 42rem;
+    border-radius: 2rem;
+}
+
+.sale-info h4 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.sale-item:hover {
+    color: var(--main-color);
+}
+
+.sale-info-content p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sale-info-content p del {
+    color: #666;
+    font-size: 2rem;
+}
+
+.discount-badge {
+    display: flex;
+    width: 8rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    margin: 2rem;
+}
+
+.sale-item {
+    position: relative;
+}
+
+.sale-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 테마 */
+
+.Theme h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-top: 19rem;
+    color: var(--title-color);
+}
+
+.theme-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tab-button {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.tab-button.active {
+    color: #fff;
+    background-color: var(--main-color);
+}
+.tab-button.active:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.tab-button:hover {
+    color: var(--main-color);
+}
+
+.theme-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.theme-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.theme-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    text-align: left;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.theme-card dt {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    transition: color 0.3s ease;
+}
+
+.theme-card dd {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.theme-info:hover .theme-card dt {
+    color: var(--main-color);
+}
+.theme-info:hover .theme-card dd {
+    color: var(--text-color);
+}
+
+.wish-btn {
+    background-image: url(../img/wishlist-dark.svg);
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    align-self: center;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.wish-btn:hover {
+    transform: scale(1.1);
+}
+.wish-btn.filled {
+    background: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+}
+
+/*  */
+
+/* 푸터 */
+footer {
+    display: flex;
+    background: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 19rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 7rem;
+}
+
+.footer-logo a {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    /* text-decoration: underline; */
+    color: var(--sub-color1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    height: 6rem;
+}
+
+.social-links p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.social-icons img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+.legal-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-info .legal-info-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+footer .back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    background-color: #fff;
+    margin-right: 22rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .back-to-top img {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .back-to-top::before {
+    content: "";
+    font-size: 20px;
+}
+
+footer .back-to-top:hover {
+    background-color: #e0e0e0;
+}
+
+/*  */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .inner {
+        width: 90%; /* 테블릿에서는 90% 너비 사용 */
+        padding: 0 2rem; /* 좌우 패딩 추가 */
+        margin-left: auto; /* 왼쪽 여백 자동 설정 */
+        margin-right: auto; /* 오른쪽 여백 자동 설정 */
+    }
+
+    /* body {
+        overflow-x: hidden;
+    } */
+
+    .logo a {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .gnb {
+        flex-direction: row; /* 메뉴를 가로로 배치 */
+        justify-content: space-between; /* 양쪽 정렬 */
+    }
+
+    .gnb a:hover {
+        color: var(--main-color);
+    }
+
+    .gnb li {
+        margin: 0 2.5rem; /* 작은 화면에서는 간격을 줄임 */
+    }
+
+    .menu {
+        display: none;
+    }
+    /*  */
+    .visual {
+        width: 100%;
+        height: 53rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visual p {
+        font-size: 2.5rem; /* 텍스트 크기 조정 */
+        margin-bottom: 1rem;
+    }
+
+    .visual-title {
+        font-size: 3rem; /* 제목 크기 조정 */
+    }
+
+    .visual-btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        width: 16rem;
+        height: 4rem;
+    }
+
+    .visual strong {
+        font-size: 1.6rem;
+    }
+
+    .product-cards {
+        flex-direction: row;
+        justify-content: center; /* 가운데 정렬 추가 */
+        gap: 1.5rem;
+    }
+
+    .product-card img {
+        width: 56.8rem;
+        height: 27.4rem;
+        width: 100%; /* 이미지 너비를 100%로 설정 */
+    }
+
+    .product-bricks {
+        width: 27.2rem;
+        height: 27.4rem;
+        /* aspect-ratio: 1 / 1; */
+    }
+
+    .product-bricks img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-info p {
+        font-size: 2rem;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .bricks-info p {
+        font-size: 1.4rem;
+        margin: 0;
+        transform: translateY(800%);
+    }
+
+    .card-info img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .bricks-info img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card-info a {
+        margin: 2rem;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bricks-info a {
+        margin: 2rem;
+        left: 0;
+        bottom: 0;
+    }
+
+    /*  */
+
+    .best-title p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .best-title h2 {
+        font-size: 4.6rem;
+        font-weight: 700;
+    }
+
+    .best-header {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .best-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .event h2 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        padding-top: 8rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .sale {
+        padding: 9rem 0;
+        background: #f7f7f7;
+    }
+
+    .sale-items {
+        height: 32.9rem;
+        flex-direction: row; /* 가로 배치 */
+        justify-content: space-between; /* 양쪽 정렬 */
+    }
+
+    .sale-item img {
+        width: 27.5rem;
+        height: 27rem;
+    }
+
+    .sale-info h4 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .sale-info-content p del {
+        color: #666;
+        font-size: 1.6rem;
+    }
+
+    .sale-info-content p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .sale-info-content p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    .discount-badge {
+        font-size: 1.8rem;
+        width: 6rem;
+        height: 3.5rem;
+    }
+    .theme-slider {
+        flex-direction: row; /* 가로 배치 */
+        justify-content: space-between; /* 양쪽 정렬 */
+    }
+
+    .theme-info {
+        width: 27.5rem;
+    }
+
+    .tab-button {
+        font-size: 2rem;
+    }
+
+    /* 여섯 개를 초과하는 .theme-info 요소 숨기기 */
+    .theme-info:nth-child(n + 7) {
+        display: none;
+    }
+
+    .theme-card dt {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .theme-card dd {
+        font-size: 1.8rem;
+    }
+
+    /*  */
+    .legal-info .legal-info-text {
+        font-size: 1.2rem;
+    }
+
+    footer .back-to-top {
+        right: 0;
+        margin-right: 175rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner {
+        width: 95%; /* 테블릿에서는 90% 너비 사용 */
+        padding: 0 2rem; /* 좌우 패딩 추가 */
+        margin-left: auto; /* 왼쪽 여백 자동 설정 */
+        margin-right: auto; /* 오른쪽 여백 자동 설정 */
+    }
+
+    .logo a {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nav {
+        justify-content: flex-end; /* 오른쪽 정렬 */
+    }
+
+    .gnb {
+        background-image: url(../img/app-gnb.svg);
+    }
+
+    .gnb li {
+        display: none;
+    }
+
+    .visual {
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .visual-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .visual-btn {
+        width: 11rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .visual-btn img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .visual strong {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .visual p {
+        font-size: 2.4rem; /* 텍스트 크기 조정 */
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .visual-title {
+        font-size: 3.2rem; /* 제목 크기 조정 */
+        line-height: 1.2; /* 줄간격 줄이기 */
+    }
+
+    .utility-bar {
+        justify-content: flex-start;
+        transform: translateX(-12%);
+    }
+
+    .util-menu-bottom {
+        display: none;
+    }
+
+    .util-menu li {
+        margin: 0;
+        padding: 0 8px;
+    }
+
+    .search-form input[type="search"] {
+        width: 39.8rem;
+        height: 5rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /*  */
+
+    .new-products h2 {
+        margin: 3rem 0 1rem 0;
+        font-size: 3rem;
+    }
+
+    .product-cards {
+        flex-direction: row; /* 카드 세로 배치 */
+        justify-content: start;
+    }
+
+    .product-card img {
+        width: 18.9rem;
+        height: 18.9rem;
+    }
+
+    .btn-card img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card-info p {
+        display: flex;
+    }
+
+    .card-info a {
+        margin: 0;
+    }
+
+    .btn-card {
+        font-size: 1.3rem;
+        width: 9.8rem;
+        height: 3rem;
+    }
+
+    /*  */
+
+    .product-bricks img {
+        width: 18.9rem;
+        height: 18.9rem;
+    }
+
+    .bricks-info a {
+        margin: 0;
+    }
+
+    .btn-card img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card-info p {
+        display: none;
+    }
+
+    .bricks-info p {
+        display: none;
+    }
+
+    /*  */
+    .best .inner {
+        display: block;
+    }
+    .best {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6rem;
+    }
+    .best-header {
+        margin-right: 0rem;
+        padding-right: 4rem;
+        display: block;
+        text-align: center;
+        background: none;
+        margin-top: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .best-header h2 {
+        font-size: 3.6rem;
+        color: var(--text-color);
+    }
+
+    .best-header p {
+        display: none;
+    }
+
+    .best-header::before {
+        width: 0;
+    }
+
+    .bestsellers-slider {
+        margin-top: 5rem;
+        justify-content: start;
+        width: 19rem;
+    }
+
+    .top-slider {
+        padding: 0;
+        width: 57.4rem;
+        height: 25rem;
+    }
+
+    .slider-item {
+        width: 18.8rem;
+        height: 25.9rem;
+    }
+
+    .slider-info {
+        display: flex;
+    }
+
+    .slider-item img {
+        width: 18.7rem;
+        height: 19.4rem;
+    }
+
+    .slider-item dt {
+        font-size: 1.8rem;
+    }
+
+    .slider-item dd {
+        font-size: 1.4rem;
+    }
+
+    .wishlist-btn {
+        width: 2rem;
+        height: 2rem;
+        background: url(../img/wishlist-dark2.svg) no-repeat center;
+        transform: translateX(120%);
+    }
+
+    /*  */
+
+    .event .inner {
+        width: 100%;
+    }
+
+    .event {
+        margin-top: 5rem;
+    }
+
+    .event h2 {
+        padding-top: 4rem;
+        font-size: 3rem;
+    }
+
+    .event p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .event-slider-wrap {
+        border-radius: 1.5rem;
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 11rem;
+    }
+
+    .swiper-pagination {
+        font-size: 1rem; /* 기존 크기보다 작게 조정 */
+        bottom: 1rem; /* 하단 여백 줄임 */
+        right: 1rem; /* 우측 여백 줄임 */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    /*  */
+
+    .sale {
+        padding: 0;
+        padding-top: 5rem;
+    }
+
+    .sale-header h3 {
+        font-size: 3rem;
+    }
+    .sale-header p {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .sale-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 39.7rem;
+        align-items: start;
+        padding-bottom: 8rem;
+    }
+
+    .sale-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sale-item img {
+        width: 18.9rem;
+        height: 18.9rem;
+
+        border-radius: 2rem;
+    }
+
+    .sale-info {
+        margin: 1rem 0 0 1rem;
+    }
+
+    .sale-info h4 {
+        font-size: 2rem;
+        margin: 0;
+        width: 18.7rem;
+    }
+
+    .sale-info-content p {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        width: 13.2rem;
+    }
+    .sale-info-content p del {
+        font-size: 1.6rem;
+        width: 13.2rem;
+    }
+
+    .sale-info .wishlist-btn {
+        background-image: url(../img/wishlist-dark.svg);
+        width: 3.3rem;
+        height: 3.3rem;
+        transform: translateX(-90%);
+    }
+
+    .discount-badge {
+        font-size: 1.6rem;
+
+        width: 6rem;
+        height: 3.5rem;
+        margin: 1.5rem;
+    }
+
+    /*  */
+    .theme-slider {
+        width: 100%;
+        max-width: 39rem;
+        overflow: hidden;
+    }
+
+    .Theme h2 {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    .tab-button {
+        font-size: 1.6rem;
+        margin: 6px;
+        padding: 6px;
+    }
+
+    .theme-info img {
+        width: 18.9rem;
+        height: 18.9rem;
+        border-radius: 1.5rem;
+    }
+    .theme-card {
+        margin-bottom: 2rem;
+    }
+
+    .theme-card dt {
+        font-size: 2rem;
+    }
+
+    .theme-card dd {
+        font-size: 1.6rem;
+    }
+
+    .theme-item .wish-btn {
+        background: url(../img/wishlist-dark2.svg) no-repeat center;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .theme-slider {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 여섯 개를 초과하는 .theme-info 요소 숨기기 */
+    .theme-info:nth-child(n + 5) {
+        display: none;
+    }
+
+    /*  */
+
+    .footer-logo {
+        width: 1.9rem;
+    }
+
+    footer a {
+        margin-right: 1rem;
+    }
+
+    .legal-info p {
+        padding-bottom: 7rem;
+    }
+
+    .legal-info .legal-info-text {
+        display: none;
+    }
+
+    footer .back-to-top {
+        display: none;
+    }
+}

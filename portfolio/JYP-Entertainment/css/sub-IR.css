@@ -1,0 +1,170 @@
+.tabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #009be6;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 2.2rem;
+    border-radius: 10px;
+}
+
+.tab-button.active {
+    background-color: #009be6;
+    color: #fff;
+    /* border: 1.5px solid #009be6; */
+    /* border-bottom: none; */
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem auto 10rem;
+}
+
+.chart-container {
+    width: 330px;
+    height: 330px;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 16.67%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: right;
+
+    border-right: none;
+    border-left: none;
+}
+
+thead > tr {
+    border-top: 2.5px solid var(--main-color);
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+td {
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #fff;
+}
+
+td:first-child {
+    font-size: 1.6rem;
+}
+
+th,
+td:first-child {
+    font-weight: 600;
+    text-align: center;
+}
+
+tbody tr:nth-child(1) td {
+    background: #eee;
+}
+
+tbody tr:nth-child(1) td:hover {
+    background: rgba(0, 184, 235, 0.2);
+}
+tbody tr:nth-child(3) td {
+    background: #eee;
+}
+
+tbody tr:nth-child(3) td:hover {
+    background: rgba(0, 184, 235, 0.2);
+}
+tbody tr:nth-child(5) td {
+    background: #eee;
+}
+
+tbody tr:nth-child(5) td:hover {
+    background: rgba(0, 184, 235, 0.2);
+}
+tbody tr:nth-child(10) td {
+    background: #eee;
+}
+
+tbody tr:nth-child(10) td:hover {
+    background: rgba(0, 184, 235, 0.2);
+}
+tbody tr:nth-child(12) td {
+    background: #eee;
+}
+
+tbody tr:nth-child(12) td:hover {
+    background: rgba(0, 184, 235, 0.2);
+}
+
+@media (max-width: 600px) {
+    .tab-button {
+        padding: 16px;
+        font-size: 1.8rem;
+    }
+    .tabs {
+        gap: 0.5rem;
+    }
+    .tab-content {
+        padding-top: 5px;
+    }
+    .charts {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .chart-container {
+        width: 100%;
+        margin: 0;
+    }
+    th {
+        font-size: 1.5rem;
+    }
+    td {
+        font-size: 1.2rem;
+    }
+    td:first-child {
+        font-size: 1.3rem;
+    }
+
+    table {
+        width: 100%; /* 화면 너비에 맞춤 */
+        overflow-x: auto; /* 가로 스크롤 추가 */
+        display: block;
+    }
+    th,
+    td {
+        padding: 10px; /* 셀 여백 조정 */
+    }
+}

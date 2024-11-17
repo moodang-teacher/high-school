@@ -1,0 +1,876 @@
+@charset 'UTF-8';
+
+.menu {
+    margin: 12rem 0;
+}
+
+.top-con {
+    display: flex;
+    justify-content: center; /* 중앙 정렬로 변경 */
+    align-items: flex-end;
+    margin-bottom: 4.7rem;
+    animation: fade-in-bottom 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.top-con h1 {
+    position: absolute; /* 절대 위치로 설정 */
+    left: 50%; /* 중앙 정렬을 위해 */
+    transform: translateX(-50%); /* 정확한 중앙 정렬을 위한 오프셋 */
+    font-size: 7.5rem;
+    font-family: Paperlogy-8ExtraBold;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.click {
+    margin-left: auto;
+}
+
+.select {
+    width: 20.3rem;
+    height: 5.6rem;
+
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+
+    font-size: 2rem;
+
+    color: var(--main-color);
+
+    display: flex;
+
+    padding: 0 1rem;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    margin-bottom: 8.5rem;
+    overflow-x: auto;
+}
+
+.button {
+    width: 18rem;
+    height: 6.5rem;
+
+    border-radius: 0 0 2.5rem 2.5rem;
+
+    font-size: 2.3rem;
+
+    background-color: transparent;
+
+    transition: 0.4s;
+
+    font-family: Paperlogy-5Medium;
+
+    flex: 0 0 auto; /* 크기 고정 */
+}
+
+.btn1:hover {
+    color: var(--main-color);
+}
+
+.btn2:hover {
+    color: #7b1818;
+}
+
+.btn3:hover {
+    color: #ffa734;
+}
+
+.btn4:hover {
+    color: #25c166;
+}
+
+.btn5:hover {
+    color: #e3c850;
+}
+
+.btn1.active {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.btn2.active {
+    background-color: #5e2724;
+    color: #fff;
+}
+.btn3.active {
+    background: #ffd900;
+    color: #fff;
+}
+.btn4.active {
+    background: #25c166;
+    color: #fff;
+}
+.btn5.active {
+    background: #d5b445;
+    color: #fff;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slider-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slider-list li {
+    width: 36.5rem;
+    width: 32%; /* 데스크탑: 3개씩 */
+    /* width: 25.3472%; */
+    /* height: 51rem;
+    margin-bottom: 8rem; */
+
+    cursor: pointer;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    padding: 5rem 0;
+    gap: 3rem;
+}
+
+.slider-text h2 {
+    width: 29.5rem;
+    height: 7.7rem;
+    border-radius: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Paperlogy-6SemiBold;
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+.text1 h2 {
+    background-color: var(--main-color);
+}
+
+.text2 h2 {
+    background-color: #44a63d;
+}
+.text3 h2 {
+    background-color: #6c0d33;
+}
+.text4 h2 {
+    background-color: #ffa734;
+}
+.text5 h2 {
+    background-color: #0ca9cd;
+}
+.text6 h2 {
+    background-color: #e1e1e1;
+    color: #000;
+}
+.text7 h2 {
+    background-color: #334553;
+}
+.text8 h2 {
+    background-color: #1fada9;
+}
+.text9 h2 {
+    background-color: #1186bb;
+}
+.text10 h2 {
+    background-color: #e35200;
+}
+.text11 h2 {
+    background-color: #dbaf34;
+}
+.text12 h2 {
+    background-color: #4c4a4b;
+}
+
+.text13 h2 {
+    background-color: #1966b4;
+}
+
+.text14 h2 {
+    background-color: #c0c93d;
+}
+
+.text15 h2 {
+    background-color: #e05ab7;
+}
+
+.text16 h2 {
+    background: #240101;
+}
+
+.text17 h2 {
+    background: #2f307c;
+}
+.text18 h2 {
+    background: #f88220;
+}
+.text19 h2 {
+    background: #494484;
+}
+.text20 h2 {
+    background: #3562a9;
+}
+.text21 h2 {
+    background: #57328c;
+}
+.text22 h2 {
+    background: #e450a2;
+}
+.text23 h2 {
+    background: #57328c;
+}
+
+.slider-text {
+    display: block;
+}
+
+.slider-text p {
+    margin-top: 1.5rem;
+
+    text-align: center;
+    font-size: 2rem;
+
+    line-height: 1.5;
+
+    font-family: Paperlogy-4Regular;
+}
+
+.slider-content figure {
+    width: 11rem;
+    height: 33.6rem;
+}
+
+.slider-content figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    gap: 3.6rem;
+    margin-top: 4rem;
+}
+
+.page-number {
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: 1.7rem;
+    font-size: 3.5rem;
+
+    font-weight: 800;
+
+    transition: 0.4s;
+}
+
+.page-number:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.page-number.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* 구매처 */
+
+.title .online {
+    margin-bottom: 5.5rem;
+}
+
+.title .offline {
+    margin-bottom: 5.5rem;
+}
+
+.online-wrap {
+    margin-top: 7rem;
+    margin-bottom: 9rem;
+}
+
+.offline-wrap {
+    padding-bottom: 5rem;
+}
+
+.buy-wrap .buy {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5.5rem 9.5rem;
+
+    /* padding: 9.5rem; */
+
+    justify-content: center;
+}
+
+.buy li {
+    width: 24.5rem;
+    height: 24.5rem;
+    border: 3px solid #000;
+
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    gap: 1.5rem;
+
+    border-radius: 2rem;
+}
+
+.buy li figure {
+    width: 16rem;
+    height: 10.9rem;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy li a {
+    width: 12.5rem;
+    height: 4.4rem;
+    display: flex;
+    background: var(--main-color);
+
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: "Paperlogy-4Regular";
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 1.5rem;
+
+    transition: 0.4s;
+}
+
+.buy li a figure {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.buy li a:hover {
+    scale: 1.2;
+}
+
+/* FAQ */
+
+.FAQ-tab {
+    display: grid;
+    justify-content: center;
+
+    margin-top: 9rem;
+}
+
+.FAQ-tab-con {
+    margin-top: 2rem;
+}
+
+.FAQ-tab-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.FAQ-tab-menu li {
+    width: 19.6rem;
+    height: 5.8rem;
+
+    border: 3px solid var(--main-color);
+
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ-tab-menu li a {
+    font-size: 3.2rem;
+    font-family: "Paperlogy-5Medium";
+    text-decoration: none;
+    color: #000;
+}
+
+.FAQ-tab-menu li.on {
+    background: var(--main-color);
+    border: none;
+}
+
+.FAQ-tab-menu li.on a {
+    color: #fff;
+}
+
+.faq-wrap ul li {
+    border: 3px solid var(--main-color);
+    margin-bottom: 1.5rem;
+
+    border-radius: 3rem;
+    width: 126.5rem;
+}
+
+.faq-wrap ul li strong {
+    font-size: 3rem;
+    font-family: "Paperlogy-4Regular";
+    display: flex;
+    padding: 3.5rem 4rem;
+
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.faq-wrap > ul > li > strong::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: solid var(--main-color);
+    /* bdw2-2-0-0 */
+    border-width: 3px 3px 0 0;
+
+    transform: translateY(-50%) rotate(135deg);
+
+    transition: 0.3s;
+}
+
+.faq-wrap > ul > li.on > strong::after {
+    transform: rotate(315deg);
+}
+
+.answer-wrap {
+    /* background: #f5f5f5; */
+    padding: 4rem;
+    /* jQuery의 효과 메서드(slideDown)를 위한 준비 */
+    display: none;
+
+    border-top: 3px solid #000;
+    clip-path: inset(0 3rem); /* 좌우 각각 100px씩 잘라냄 */
+}
+
+.answer-wrap p {
+    font-size: 2.3rem;
+    font-family: "Paperlogy-4Regular";
+
+    line-height: 1.3;
+}
+
+/* 제품소개 */
+
+.pringles {
+    margin-top: 9.7rem;
+}
+
+.product-wrap {
+    display: grid;
+    justify-content: center;
+
+    gap: 4rem;
+}
+
+.product-title {
+    display: grid;
+    justify-items: center;
+
+    gap: 3rem;
+}
+
+.product-title h2 {
+    font-size: 5.2rem;
+    font-family: "Paperlogy-5Medium";
+    color: #fff;
+
+    width: 46rem;
+    height: 10rem;
+    border-radius: 3rem;
+    background: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-title p {
+    font-size: 2.4rem;
+    font-family: "Paperlogy-4Regular";
+}
+
+.product-wrap figure {
+    width: 126rem;
+    height: 71.5rem;
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+    border: 5px solid var(--main-color);
+}
+.product-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-title p {
+    text-align: center;
+    line-height: 1.3;
+}
+
+.idea-wrap {
+    margin-top: 9rem;
+}
+
+.idea-title {
+    display: grid;
+    justify-items: center;
+
+    gap: 1.5rem;
+}
+
+.idea-title h2 {
+    font-family: "Paperlogy-6SemiBold";
+    font-size: 4.9rem;
+    color: var(--main-color);
+}
+.idea-title p {
+    font-size: 2.4rem;
+    font-family: "Paperlogy-4Regular";
+    text-align: center;
+    line-height: 1.3;
+}
+
+.idea-img-wrap {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+
+    margin-top: 6.5rem;
+}
+
+.idea-img-wrap li {
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.idea-img-wrap li figure {
+    width: 26.5rem;
+    height: 33.7rem;
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.idea-img-wrap li figure:hover {
+    /* scale: 1.1; */
+    transform: translateY(-4rem);
+    box-shadow: 0 0 0 3px var(--main-color);
+}
+.idea-img-wrap li figure img {
+    width: 100%;
+    height: 100%;
+}
+.idea-img-wrap li p {
+    font-family: "Paperlogy-5Medium";
+    font-size: 2.3rem;
+}
+
+.brand-story {
+    margin-top: 27.8rem;
+}
+
+.story-wrap {
+    display: flex;
+    gap: 15rem;
+}
+
+.story-wrap figure {
+    width: 50rem;
+    height: 50rem;
+
+    border-radius: 3rem;
+    overflow: hidden;
+
+    animation: pulsate-bck 3s ease-in-out infinite both;
+}
+.story-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.story-title h2 {
+    font-family: "Paperlogy-6SemiBold";
+    font-size: 4.9rem;
+    color: #fff;
+
+    width: 49.3rem;
+    height: 9.5rem;
+
+    background: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+
+    margin-bottom: 2rem;
+}
+.story-title strong {
+    font-family: "Paperlogy-5Medium";
+    font-size: 3rem;
+}
+.story-title p {
+    font-family: "Paperlogy-4Regular";
+    font-size: 2.4rem;
+    line-height: 1.3;
+
+    margin-top: 4.5rem;
+}
+
+.brand-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15rem;
+
+    margin-top: 23rem;
+}
+
+.brand-wrap figure {
+    width: 50rem;
+    height: 50rem;
+
+    border-radius: 3rem;
+    overflow: hidden;
+
+    animation: pulsate-bck 3s ease-in-out infinite both;
+}
+.brand-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.brand-title h2 {
+    font-family: "Paperlogy-6SemiBold";
+    font-size: 4.9rem;
+    color: #fff;
+
+    width: 49.3rem;
+    height: 9.5rem;
+
+    background: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+
+    margin-bottom: 2rem;
+}
+.brand-title strong {
+    font-family: "Paperlogy-5Medium";
+    font-size: 3rem;
+}
+.brand-title p {
+    font-family: "Paperlogy-4Regular";
+    font-size: 2.4rem;
+    line-height: 1.3;
+
+    margin-top: 4.5rem;
+}
+
+.end {
+    margin-top: 17rem;
+}
+
+.end-title {
+    display: grid;
+    justify-items: center;
+}
+
+.end-wrap figure {
+    margin-top: 5.5rem;
+}
+
+.end-title h2 {
+    font-size: 6.4rem;
+    font-family: "Paperlogy-7Bold";
+}
+.end-title h2 strong {
+    color: var(--main-color);
+}
+.end-title p {
+    font-family: "Paperlogy-4Regular";
+    font-size: 3.6rem;
+
+    margin-top: 2rem;
+}
+
+.end-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes pulsate-bck {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1520px) {
+    .slider-list li {
+        /* width: 48.5%; 태블릿: 2개씩 */
+        margin-bottom: 5%;
+    }
+
+    .menu-btn {
+        overflow-x: auto;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider-list li:nth-child(9) {
+        /* 9번째 아이템 숨김 */
+        display: none;
+    }
+
+    .slider-list.cheese li:nth-child(7) {
+        display: none;
+    }
+
+    .slider-list {
+        gap: 3%;
+    }
+
+    .slider-list li {
+        width: calc(50% - 2rem); /* 2개씩 표시하도록 50%로 변경 */
+        min-width: 180px; /* 최소 너비 조정 */
+        margin-bottom: 3rem; /* 세로 간격 추가 */
+    }
+
+    .online h2,
+    .offline h2 {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu {
+        margin: 6rem 0;
+    }
+
+    .top-con {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 2.7rem;
+    }
+
+    .top-con h1 {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    .select {
+        width: 18.3rem;
+        height: 3.6rem;
+    }
+
+    .slider-list {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* 반응형에서 컨텐츠 크기 조정 */
+    .slider-text h2 {
+        width: 22.5rem;
+        font-size: 2.2rem;
+        height: 6rem; /* 높이 조정 */
+    }
+
+    .slider-text p {
+        font-size: 1.6rem;
+    }
+
+    .slider-content figure {
+        width: 9rem;
+        height: 28rem;
+    }
+
+    .slider-content {
+        padding: 2rem 0; /* 패딩 축소 */
+        gap: 2rem; /* 간격 축소 */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slider-list li {
+        margin: 0 20% 3%; /* 중앙 정렬 및 세로 간격 증가 */
+    }
+
+    .slider-text h2 {
+        font-size: 2.5rem;
+        width: 30.6rem;
+    }
+
+    .slider-text p {
+        font-size: 2rem;
+    }
+
+    .online h2,
+    .offline h2 {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>메뉴</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/icon" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/script3.js" defer></script>
+        <script src="./js/tabmanu.js"></script>
+        <script src="./js/comman.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <nav>
+                    <a href="index.html">
+                        <figure><img src="./img/logo.png" alt="로고" /></figure>
+                    </a>
+                    <ul class="desktop-menu">
+                        <li>
+                            <a href="product.html">제품소개</a>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="menu.html">메뉴</a>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="buy.html">구매처</a>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">☰</button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                            <a href="product.html">제품소개</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                            <a href="menu.html">메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                            <a href="buy.html">구매처</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <script>
+                    const TL = gsap.timeline();
+
+                    gsap.from("nav a figure", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li a", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li figure", {
+                        y: -100,
+                        // rotation: 90,
+                        duration: 3,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        stagger: 0.3,
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".mobile-menu-toggle", {
+                        x: 100,
+                        // rotation: 90,
+                        duration: 2,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+                </script>
+            </div>
+        </header>
+        <main>
+            <section class="menu">
+                <div class="inner">
+                    <div class="top-con">
+                        <h1>메뉴</h1>
+
+                        <div class="click">
+                            <select class="select">
+                                <option value="#">전체보기</option>
+                                <option value="#">신제품순</option>
+                                <option value="#">인기순</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-container">
+                    <div class="border footer-border"></div>
+                </div>
+
+                <div class="inner">
+                    <div class="menu-btn">
+                        <button
+                            class="button btn1 active"
+                            data-category="original"
+                        >
+                            오리지널
+                        </button>
+                        <button class="button btn2" data-category="hot-spicy">
+                            핫 & 스파이시
+                        </button>
+                        <button
+                            class="button btn3"
+                            data-category="cheese-cream"
+                        >
+                            치즈 & 크림
+                        </button>
+                        <button class="button btn4" data-category="theme">
+                            테마 시리즈
+                        </button>
+                        <button class="button btn5" data-category="limited">
+                            한정판
+                        </button>
+                    </div>
+
+                    <div class="slider-container">
+                        <div class="slider active" data-category="original">
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content">
+                                            <div class="slider-text text1">
+                                                <h2>오리지널</h2>
+                                                <p>
+                                                    담백하고 풍부한 감자의
+                                                    맛,<br />
+                                                    누구에게나 사랑받는 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip1.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text2">
+                                            <div class="slider-text">
+                                                <h2>사워 크림 & 어니언</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text3">
+                                            <div class="slider-text">
+                                                <h2>바베큐</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip3.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>체다치즈</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text5">
+                                            <div class="slider-text">
+                                                <h2>체다 & 사워 크림</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text6">
+                                            <div class="slider-text">
+                                                <h2>피자</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip6.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text7">
+                                            <div class="slider-text">
+                                                <h2>버번 바베큐</h2>
+                                                <p>
+                                                    달콤하고 짭짤한 바베큐의<br />
+                                                    단짠단짠 유혹!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>랜치</h2>
+                                                <p>
+                                                    크리미한 랜치 드레싱의<br />
+                                                    부드럽고 가벼운 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip8.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text9">
+                                            <div class="slider-text">
+                                                <h2>소금 & 식초</h2>
+                                                <p>
+                                                    톡 쏘는 식초와 짭쪼롭한
+                                                    소금의<br />
+                                                    계속 생각나는 깔끔한 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content">
+                                            <div class="slider-text text1">
+                                                <h2>오리지널</h2>
+                                                <p>
+                                                    담백하고 풍부한 감자의
+                                                    맛,<br />
+                                                    누구에게나 사랑받는 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip1.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text2">
+                                            <div class="slider-text">
+                                                <h2>사워 크림 & 어니언</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text3">
+                                            <div class="slider-text">
+                                                <h2>바베큐</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip3.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>체다치즈</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text5">
+                                            <div class="slider-text">
+                                                <h2>체다 & 사워 크림</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text6">
+                                            <div class="slider-text">
+                                                <h2>피자</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip6.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text7">
+                                            <div class="slider-text">
+                                                <h2>버번 바베큐</h2>
+                                                <p>
+                                                    달콤하고 짭짤한 바베큐의<br />
+                                                    단짠단짠 유혹!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>랜치</h2>
+                                                <p>
+                                                    크리미한 랜치 드레싱의<br />
+                                                    부드럽고 가벼운 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip8.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text9">
+                                            <div class="slider-text">
+                                                <h2>소금 & 식초</h2>
+                                                <p>
+                                                    톡 쏘는 식초와 짭쪼롭한
+                                                    소금의<br />
+                                                    계속 생각나는 깔끔한 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content">
+                                            <div class="slider-text text1">
+                                                <h2>오리지널</h2>
+                                                <p>
+                                                    담백하고 풍부한 감자의
+                                                    맛,<br />
+                                                    누구에게나 사랑받는 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip1.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text2">
+                                            <div class="slider-text">
+                                                <h2>사워 크림 & 어니언</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text3">
+                                            <div class="slider-text">
+                                                <h2>바베큐</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip3.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>체다치즈</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text5">
+                                            <div class="slider-text">
+                                                <h2>체다 & 사워 크림</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text6">
+                                            <div class="slider-text">
+                                                <h2>피자</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip6.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text7">
+                                            <div class="slider-text">
+                                                <h2>버번 바베큐</h2>
+                                                <p>
+                                                    달콤하고 짭짤한 바베큐의<br />
+                                                    단짠단짠 유혹!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>랜치</h2>
+                                                <p>
+                                                    크리미한 랜치 드레싱의<br />
+                                                    부드럽고 가벼운 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip8.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text9">
+                                            <div class="slider-text">
+                                                <h2>소금 & 식초</h2>
+                                                <p>
+                                                    톡 쏘는 식초와 짭쪼롭한
+                                                    소금의<br />
+                                                    계속 생각나는 깔끔한 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip9.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider" data-category="hot-spicy">
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content text10">
+                                            <div class="slider-text">
+                                                <h2>매콤 로제 떡볶이</h2>
+                                                <p>
+                                                    로제 떡볶이의 부드러움
+                                                    뒤에<br />
+                                                    중독적인 매콤함이 매끄럽게
+                                                    이어진다!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip10.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text7">
+                                            <div class="slider-text">
+                                                <h2>버번 바베큐</h2>
+                                                <p>
+                                                    달콤하고 짭짤한 바베큐의<br />
+                                                    단짠단짠 유혹!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text3">
+                                            <div class="slider-text">
+                                                <h2>바베큐</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip3.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>스코친 버팔로</h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    버팔로맛의 짭쪼름함!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip12.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>
+                                                    스코친 사워크림 & 어니언
+                                                </h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    사워크림과 어니언의 새콤함!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip13.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>스코친 체다치즈</h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    풍미넘치는 체다치즈맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip14.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="slider-content text16">
+                                            <div class="slider-text">
+                                                <h2>핫 온스 로호</h2>
+                                                <p>
+                                                    Hot Ones시리즈와 함께한다!
+                                                    <br />
+                                                    할라피뇨와 하바네로가 합쳐진
+                                                    진한 매운맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip28.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text16">
+                                            <div class="slider-text">
+                                                <h2>핫 온스 바르바코아</h2>
+                                                <p>
+                                                    Hot Ones시리즈와 함께한다!
+                                                    <br />
+                                                    불 그 자체를 담은듯한
+                                                    바베큐맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip29.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text16">
+                                            <div class="slider-text">
+                                                <h2>핫 온스 베르데</h2>
+                                                <p>
+                                                    Hot Ones시리즈와 함께한다!
+                                                    <br />
+                                                    토마티요와 풋고추가 합쳐진
+                                                    알싸한 매운맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip30.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider" data-category="cheese-cream">
+                            <div class="slide">
+                                <ul class="slider-list cheese">
+                                    <li>
+                                        <div class="slider-content text2">
+                                            <div class="slider-text">
+                                                <h2>사워 크림 & 어니언</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip2.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>체다치즈</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip4.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text5">
+                                            <div class="slider-text">
+                                                <h2>체다 & 사워 크림</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip5.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text11">
+                                            <div class="slider-text">
+                                                <h2>허니 머스타드</h2>
+                                                <p>
+                                                    달콤한 꿀과 부드러운
+                                                    머스타드의<br />
+                                                    새콤달콤한 시간!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip11.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text10">
+                                            <div class="slider-text">
+                                                <h2>매콤 로제 떡볶이</h2>
+                                                <p>
+                                                    로제 떡볶이의 부드러움
+                                                    뒤에<br />
+                                                    중독적인 매콤함이 매끄럽게
+                                                    이어진다!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip10.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text6">
+                                            <div class="slider-text">
+                                                <h2>피자</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip6.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>랜치</h2>
+                                                <p>
+                                                    크리미한 랜치 드레싱의<br />
+                                                    부드럽고 가벼운 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip8.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider" data-category="theme">
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content">
+                                            <div class="slider-text text17">
+                                                <h2>남미식 찹스테이크</h2>
+                                                <p>
+                                                    담백하고 풍부한 감자의
+                                                    맛,<br />
+                                                    누구에게나 사랑받는 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip19.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text18">
+                                            <div class="slider-text">
+                                                <h2>한국식 숯불 갈비맛</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip20.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text19">
+                                            <div class="slider-text">
+                                                <h2>베이글</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip21.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text20">
+                                            <div class="slider-text">
+                                                <h2>올 드레싱</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip22.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text21">
+                                            <div class="slider-text">
+                                                <h2>아도바다</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip15.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text22">
+                                            <div class="slider-text">
+                                                <h2>하바네라스</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip23.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>농장가 체다치즈</h2>
+                                                <p>
+                                                    검은콩과 각종 곡물들을
+                                                    섞고<br />
+                                                    숙성 체다치즈의 맛을 함께한
+                                                    농가의 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip24.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>홈 스타일 랜치</h2>
+                                                <p>
+                                                    각종 곡물들과 홈 스타일<br />
+                                                    렌치의 맛으로 가볍고
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip25.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text9">
+                                            <div class="slider-text">
+                                                <h2>바다 소금</h2>
+                                                <p>
+                                                    바다의 향이 담긴 바다
+                                                    소금으로<br />
+                                                    담백하고 짭짤한맛을
+                                                    선사한다!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip26.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider" data-category="limited">
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content text7">
+                                            <div class="slider-text">
+                                                <h2>버번 바베큐</h2>
+                                                <p>
+                                                    달콤하고 짭짤한 바베큐의<br />
+                                                    단짠단짠 유혹!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip7.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text11">
+                                            <div class="slider-text">
+                                                <h2>허니 머스타드</h2>
+                                                <p>
+                                                    달콤한 꿀과 부드러운
+                                                    머스타드의<br />
+                                                    새콤달콤한 시간!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip11.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text10">
+                                            <div class="slider-text">
+                                                <h2>매콤 로제 떡볶이</h2>
+                                                <p>
+                                                    로제 떡볶이의 부드러움
+                                                    뒤에<br />
+                                                    중독적인 매콤함이 매끄럽게
+                                                    이어진다!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip10.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>스코친 버팔로</h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    버팔로맛의 짭쪼름함!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip12.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>
+                                                    스코친 사워크림 & 어니언
+                                                </h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    사워크림과 어니언의 새콤함!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip13.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="slider-content text12">
+                                            <div class="slider-text">
+                                                <h2>스코친 체다치즈</h2>
+                                                <p>
+                                                    매운맛 강타 스코친
+                                                    시리즈!<br />
+                                                    풍미넘치는 체다치즈맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip14.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text13">
+                                            <div class="slider-text">
+                                                <h2>필리치즈 스테이크</h2>
+                                                <p>
+                                                    치즈의 고소함과 스테이크의
+                                                    만남!<br />
+                                                    필리치즈 스테이크의 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip17.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text14">
+                                            <div class="slider-text">
+                                                <h2>딜 피클</h2>
+                                                <p>
+                                                    피클의 새콤달달한 맛을 이
+                                                    곳에!<br />
+                                                    딜 피클, 딜리셔스한 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip18.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text15">
+                                            <div class="slider-text">
+                                                <h2>카르니타스 타코</h2>
+                                                <p>
+                                                    토르티야에 싸먹는 타코
+                                                    그대로!<br />
+                                                    카르니타스 타코, 멕시코의
+                                                    맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip16.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slide">
+                                <ul class="slider-list">
+                                    <li>
+                                        <div class="slider-content">
+                                            <div class="slider-text text17">
+                                                <h2>남미식 찹스테이크</h2>
+                                                <p>
+                                                    담백하고 풍부한 감자의
+                                                    맛,<br />
+                                                    누구에게나 사랑받는 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip19.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text18">
+                                            <div class="slider-text">
+                                                <h2>한국식 숯불 갈비맛</h2>
+                                                <p>
+                                                    상큼한 사워크림과 향긋한
+                                                    어니언의<br />
+                                                    새콤짭짤 완벽한 조화!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip20.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text19">
+                                            <div class="slider-text">
+                                                <h2>베이글</h2>
+                                                <p>
+                                                    진한 바베큐 소스의 맛과
+                                                    풍미를<br />
+                                                    감자칩 하나에!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip21.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text20">
+                                            <div class="slider-text">
+                                                <h2>올 드레싱</h2>
+                                                <p>
+                                                    고소한 체다치즈의 깊은
+                                                    맛에<br />
+                                                    멈추지 않는 손!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip22.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text21">
+                                            <div class="slider-text">
+                                                <h2>아도바다</h2>
+                                                <p>
+                                                    체다치즈와 사워크림의<br />
+                                                    환상적인 콤비네이션!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip15.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text22">
+                                            <div class="slider-text">
+                                                <h2>하바네라스</h2>
+                                                <p>
+                                                    계속 생각나는 피자의 맛을<br />
+                                                    그대로 담은 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip23.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text4">
+                                            <div class="slider-text">
+                                                <h2>농장가 체다치즈</h2>
+                                                <p>
+                                                    검은콩과 각종 곡물들을
+                                                    섞고<br />
+                                                    숙성 체다치즈의 맛을 함께한
+                                                    농가의 맛!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip24.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text8">
+                                            <div class="slider-text">
+                                                <h2>홈 스타일 랜치</h2>
+                                                <p>
+                                                    각종 곡물들과 홈 스타일<br />
+                                                    렌치의 맛으로 가볍고
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip25.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-content text9">
+                                            <div class="slider-text">
+                                                <h2>바다 소금</h2>
+                                                <p>
+                                                    바다의 향이 담긴 바다
+                                                    소금으로<br />
+                                                    담백하고 짭짤한맛을
+                                                    선사한다!
+                                                </p>
+                                            </div>
+                                            <figure>
+                                                <img
+                                                    src="./img/1/chip26.png"
+                                                    alt=""
+                                                />
+                                            </figure>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.png" alt="" /></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border footer-border"></div>
+            </div>
+
+            <div class="inner">
+                <div class="footer-content">
+                    <div class="foot-text">
+                        <a href="">고객센터</a>
+                        <a href="">FAQ</a>
+                        <a href="">문의하기</a>
+                        <a href="">개인정보 보호정책</a>
+                        <a href="">이용약관</a>
+                        <a href="">접근성</a>
+                    </div>
+
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/PringlesUS">
+                            <figure>
+                                <img src="./img/facebook.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/pringles/">
+                            <figure>
+                                <img src="./img/instargram.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.tiktok.com/@pringles">
+                            <figure>
+                                <img src="./img/tiktok.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://x.com/Pringles">
+                            <figure>
+                                <img src="./img/x-logo.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/Pringles">
+                            <figure>
+                                <img src="./img/youtube.svg" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Kellanova</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden"></i></a>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/btn.js"></script>
+    </body>
+</html>

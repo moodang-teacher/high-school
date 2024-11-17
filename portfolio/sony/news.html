@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NEWS</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/news.css" />
+
+        <link rel="apple-touch-icon-precomposed" href="./img/Group 72.png" />
+        <link rel="icon" href="./img/Group 72.png" sizes="64x64" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/news.js"></script>
+    </head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <i class="hidden">logo</i>
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="story.html">소니 이야기</a>
+                            <ul class="sub-menu">
+                                <li><a href="">SONY</a></li>
+                                <li><a href="">소니와 환경</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html">제품</a>
+                            <ul class="sub-menu">
+                                <li><a href="">카메라</a></li>
+                                <li><a href="">렌즈</a></li>
+                                <li><a href="">오디오</a></li>
+                                <li><a href="">액세서리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="news.html">소식</a>
+                            <ul class="sub-menu">
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="store.html">스토어</a></li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href=""><i class="ri-search-line"></i></a>
+                        <a href=""><i class="ri-menu-line"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main">
+            <!-- s: visual -->
+            <section class="visual">
+                <div class="inner">
+                    <div class="top">
+                        <h1 class="section-title">
+                            소니의 새로운 소식을 <br />
+                            확인해 보세요
+                        </h1>
+
+                        <div class="header">
+                            <strong>소식</strong>
+                            <ul class="link">
+                                <li><a href="">Home</a></li>
+                                <li><i class="ri-arrow-right-s-line"></i></li>
+                                <li><a href="">소식</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: visual -->
+
+            <!-- s: serach -->
+            <section class="bottom">
+                <div class="inner">
+                    <div class="bottom-con">
+                        <div class="item-filter">
+                            <div class="item-list">
+                                <p class="item">전체</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="list-con">
+                                <li>공지사항</li>
+                                <li>QnA</li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <h3><i class="hidden">search</i></h3>
+                            <div class="search-con">
+                                <input type="text" placeholder="검색어를 입력해 주세요." />
+                                <i class="ri-search-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: serach -->
+
+            <!-- s: news -->
+            <section class="news">
+                <div class="inner">
+                    <ul class="news-list">
+                        <li>
+                            <a href="#">
+                                <span class="num">1</span>
+                                <p class="title">소니코리아, 밀폐형 모니터링 헤드폰 ‘MDR-M1’ 출시</p>
+                                <span class="date">2024-09-26</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="num">2</span>
+                                <p class="title">소니코리아, 1000XM5 스모키 핑크 에디션 출시</p>
+                                <span class="date">2024-09-23</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="num">3</span>
+                                <p class="title">소니코리아, 가장 작은 데일리 무선 이어폰 WF-C510 출시</p>
+                                <span class="date">2024-09-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="num">4</span>
+                                <p class="title">소니코리아, ‘티처스’ 팝업스토어 스터디헤드폰 체험존 운영</p>
+                                <span class="date">2024-09-12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="num">5</span>
+                                <p class="title">소니코리아, 크리에이터를 위한 ‘ZV 라인업’ 정품등록 프로모션 실시</p>
+                                <span class="date">2024-08-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="num">6</span>
+                                <p class="title">소니코리아, 알파 풀프레임 미러리스 카메라 정품등록 프로모션 진행</p>
+                                <span class="date">2024-08-12</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="pagination">
+                        <a href="#" class="prev"><i class="ri-arrow-left-s-line"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="next"><i class="ri-arrow-right-s-line"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: news -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="foot-con">
+                    <div class="foot-logo">
+                        <h1>
+                            <a href=""><i class="hidden">SONY</i></a>
+                        </h1>
+                    </div>
+                    <div class="foot-middle">
+                        <dl>
+                            <dt>(주)소니코리아</dt>
+                            <dd>서울특별시 영등포구 국제금융로 10 원아이에프씨 24F</dd>
+                        </dl>
+                        <ul class="foot-list">
+                            <li>
+                                <dl>
+                                    <dt>대표</dt>
+                                    <dd>Okura Kikuo</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>106-81-23810</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화</dt>
+                                    <dd>소니코리아 고객지원센터 1588-091</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p>Copyright © Sony Korea Corporation. All rights reserved.</p>
+                    </div>
+                    <div class="foot-sns">
+                        <ul class="sns-list">
+                            <li><a href=""></a><i class="hidden">insta</i><i class="ri-instagram-line"></i></li>
+                            <li><a href=""></a><i class="hidden">facebook</i><i class="ri-facebook-fill"></i></li>
+                            <li><a href=""></a><i class="hidden">youtude</i><i class="ri-youtube-line"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- button.btn-top>i.hidden{TOP} -->
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    </body>
+</html>

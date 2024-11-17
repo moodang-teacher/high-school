@@ -1,0 +1,310 @@
+@charset 'utf-8';
+
+.ESG h3 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.esg-body {
+    margin-top: 2.5rem;
+    display: flex;
+    /* background: #000000; */
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.esg-txt {
+    /* width: 45%; */
+    flex: 1 1 max(420px, 45%);
+    padding: 5.5rem;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(0, 155, 230, 80%); /* 배경색 */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* 이미지와 배경색 섞임 */
+}
+
+/*
+.esg-txt:nth-child(1) {
+    background-image: url(../img/esg/Vision.jpg);
+}
+.esg-txt:nth-child(2) {
+    background-image: url(../img/esg/Leadership.jpg);
+}
+.esg-txt:nth-child(3) {
+    background-image: url(../img/esg/Sustainable.jpg);
+}
+.esg-txt:nth-child(4) {
+    background-image: url(../img/esg/Social.jpg);
+}
+.esg-txt:nth-child(5) {
+    background-image: url(../img/esg/Environmental.jpg);
+}
+    */
+
+.back {
+    height: 100%;
+}
+
+.back strong {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.back strong b {
+    font-size: 2rem;
+}
+.back p {
+    margin-top: 1.6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+/* l-body */
+
+.l-body {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin: 2.5rem auto;
+}
+
+.l-body figure {
+    width: 80rem;
+    height: 45rem;
+    /* border-radius: 10px; */
+}
+.l-body img {
+    border-radius: 10px;
+}
+
+.body-txt {
+    /* width: 65rem; */
+    flex: 1 1 max(420px, 45%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.body-txt h4 {
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+.body-txt h4 b {
+    color: var(--main-color);
+}
+
+.body-txt strong {
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+.body-txt ul li {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+/* ESG-SYSTEM */
+
+.ESG-SYSTEM {
+    background: #f1f1f1;
+    text-align: center;
+}
+.ESG-SYSTEM h4 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+.ESG-SYSTEM p {
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.ESG-SYSTEM-body strong {
+    display: block;
+    text-align: left;
+    padding: 1.5rem 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.flex-ESG {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-ESG li {
+    background: rgb(255, 255, 255);
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    padding: 5.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: #000000;
+    width: 400px;
+    width: 30%;
+}
+
+.flex-ESG li .txt-system::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: no-repeat 50%;
+    transition: 0.3s;
+}
+
+.flex-ESG li:nth-child(1) .txt-system::before {
+    background-image: url(../img/esg/earth-line.png);
+}
+.flex-ESG li:nth-child(2) .txt-system::before {
+    background-image: url(../img/esg/team-line.png);
+}
+.flex-ESG li:nth-child(3) .txt-system::before {
+    background-image: url(../img/esg/hearts-line.png);
+}
+
+.flex-ESG li:nth-child(1):hover .txt-system::before {
+    background-image: url(../img/esg/earth-fill.png);
+}
+.flex-ESG li:nth-child(2):hover .txt-system::before {
+    background-image: url(../img/esg/team-fill.png);
+}
+.flex-ESG li:nth-child(3):hover .txt-system::before {
+    background-image: url(../img/esg/hearts-fill.png);
+}
+
+.txt-system {
+    width: 100%;
+    text-align: center;
+}
+
+.txt-system strong {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.9rem;
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
+.txt-system p {
+    padding: 0;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 1100px) {
+    .esg-txt strong {
+        font-size: 2.5rem;
+    }
+    .esg-txt strong b {
+        font-size: 1.5rem;
+    }
+    .esg-txt p {
+        font-size: 1.7rem;
+    }
+    .ESG-SYSTEM h4 {
+        font-size: 2.4rem;
+    }
+    .ESG-SYSTEM p {
+        font-size: 1.5rem;
+    }
+    .ESG-SYSTEM-body strong {
+        font-size: 1.9rem;
+    }
+    .txt-system strong {
+        font-size: 1.9rem;
+    }
+    .txt-system p {
+        font-size: 1.3rem;
+    }
+
+    .l-body {
+        margin: 7rem auto;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 800px) {
+    .txt-system p {
+        font-size: 1rem;
+    }
+    .flex-ESG li {
+        padding: 5.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-title {
+        font-size: 2rem;
+    }
+    .ESG h3 {
+        font-size: 2rem;
+    }
+    .esg-txt strong b {
+        font-size: 1.2rem;
+    }
+    .esg-txt strong {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .l-body figure {
+        width: 100%;
+    }
+    .l-body {
+        flex-direction: column;
+        gap: 0;
+        align-items: normal;
+    }
+
+    .body-txt strong {
+        font-size: 2rem;
+    }
+    .body-txt ul li {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .ESG-SYSTEM p {
+        font-size: 1.3rem;
+    }
+
+    .flex-ESG {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .flex-ESG li {
+        width: 100%;
+    }
+    .txt-system strong {
+        font-size: 2.9rem;
+    }
+    .txt-system p {
+        font-size: 2rem;
+    }
+
+    .esg-txt {
+        width: 90%;
+    }
+    .body-txt {
+        padding: 0;
+        padding-top: 3.5rem;
+        padding-bottom: 0.5rem;
+        width: 35.2rem;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>구매처</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/icon" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/comman.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <nav>
+                    <a href="index.html">
+                        <figure><img src="./img/logo.png" alt="로고" /></figure>
+                    </a>
+                    <ul class="desktop-menu">
+                        <li>
+                            <a href="product.html">제품소개</a>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="menu.html">메뉴</a>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="buy.html">구매처</a>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">☰</button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                            <a href="product.html">제품소개</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                            <a href="menu.html">메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                            <a href="buy.html">구매처</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <script>
+                    const TL = gsap.timeline();
+
+                    gsap.from("nav a figure", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li a", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li figure", {
+                        y: -100,
+                        // rotation: 90,
+                        duration: 3,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        stagger: 0.3,
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".mobile-menu-toggle", {
+                        x: 100,
+                        // rotation: 90,
+                        duration: 2,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+                </script>
+            </div>
+        </header>
+        <main>
+            <section class="sub">
+                <div class="inner">
+                    <div class="top-content">
+                        <h1>구매처</h1>
+                    </div>
+                </div>
+
+                <div class="border-container">
+                    <div class="border footer-border"></div>
+                </div>
+
+                <div class="inner">
+                    <div class="online-wrap">
+                        <div class="title">
+                            <div class="title-wrap online">
+                                <h2>온라인 매장</h2>
+                            </div>
+                        </div>
+
+                        <div class="buy-wrap">
+                            <ul class="buy">
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo1.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://www.gmarket.co.kr/n/search?keyword=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo2.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://www.auction.co.kr/n/search?keyword=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4&itemno=&nickname=&arraycategory=&frm=&dom=auction&isSuggestion=No&retry=&Fwk=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4&acode=SRP_SU_0100&encKeyword=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo3.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://emart.ssg.com/search.ssg?query=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo4.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://www.lotteon.com/search/search/search.ecn?render=search&platform=pc&q=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4&mallId=4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo5.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://www.ssg.com/search.ssg?target=all&query=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo6.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://www.amazon.com/s?k=pringles&crid=1G7AUEGVT168K&sprefix=pringles%2Caps%2C333&ref=nb_sb_ss_ts-doa-p_1_8"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo7.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://search.11st.co.kr/pc/total-search?kwd=%25ED%2594%2584%25EB%25A7%2581%25EA%25B8%2580%25EC%258A%25A4&tabId=TOTAL_SEARCH"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo8.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://mfront.homeplus.co.kr/search?entry=direct&keyword=%ED%94%84%EB%A7%81%EA%B8%80%EC%8A%A4"
+                                        >바로가기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offline-wrap">
+                        <div class="title">
+                            <div class="title-wrap offline">
+                                <h2>오프라인 매장</h2>
+                            </div>
+                        </div>
+
+                        <div class="buy-wrap">
+                            <ul class="buy">
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo9.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://gs25.gsretail.com/gscvs/ko/store-services/locations"
+                                        >매장찾기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo10.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a
+                                        href="https://cu.bgfretail.com/store/list.do?category=store"
+                                        >매장찾기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo11.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a href="https://www.7-eleven.co.kr/"
+                                        >매장찾기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img
+                                            src="./img/logo/logo12.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <a href="https://www.emart24.co.kr/store"
+                                        >매장찾기
+                                        <figure>
+                                            <img
+                                                src="./img/urllogo.png"
+                                                alt=""
+                                            /></figure
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.png" alt="" /></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border footer-border"></div>
+            </div>
+
+            <div class="inner">
+                <div class="footer-content">
+                    <div class="foot-text">
+                        <a href="">고객센터</a>
+                        <a href="">FAQ</a>
+                        <a href="">문의하기</a>
+                        <a href="">개인정보 보호정책</a>
+                        <a href="">이용약관</a>
+                        <a href="">접근성</a>
+                    </div>
+
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/PringlesUS">
+                            <figure>
+                                <img src="./img/facebook.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/pringles/">
+                            <figure>
+                                <img src="./img/instargram.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.tiktok.com/@pringles">
+                            <figure>
+                                <img src="./img/tiktok.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://x.com/Pringles">
+                            <figure>
+                                <img src="./img/x-logo.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/Pringles">
+                            <figure>
+                                <img src="./img/youtube.svg" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Kellanova</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden"></i></a>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/btn.js"></script>
+    </body>
+</html>

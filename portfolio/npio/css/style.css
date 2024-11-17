@@ -1,0 +1,765 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+body {
+  font: 1rem/1.6 "Pretendard" !important;
+  margin: 0;
+  padding: 0;
+}
+.inner {
+  width: 82.5rem;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+.visual {
+  display: flex;
+  transition: 0.3s;
+  /* padding: 10vw 0; */
+  /* padding-bottom: 10vw 0; */
+}
+.visual-wrap {
+  width: 100%;
+  /* height: 677px; */
+  aspect-ratio: 1/0.5129;
+  /* border: 1px solid #000; */
+}
+.logo {
+  width: 110px;
+  height: 50px;
+}
+.visual-slide {
+  height: 100%;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.gnb {
+  display: block;
+  display: flex;
+}
+
+.gnb ul {
+  display: flex;
+  gap: 40px;
+}
+
+.gnb li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+  padding: 5px;
+}
+.gnb li a:hover {
+  border-bottom: 3px solid #000;
+}
+
+.artist_card {
+  /* margin-top: 225px; */
+  /* margin-bottom: 225px; */
+  padding-top: 10vw;
+  /* padding-bottom: 10vw; */
+  /* padding: 10px; */
+  /* padding: 10vw 0; */
+}
+.artist_card h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  /* padding-bottom: 113px; */
+  padding-bottom: 10vw;
+}
+.artist-swiper {
+  width: 100%;
+  height: 501px;
+  margin: 0 auto;
+}
+
+.artist-swiper .swiper-slide {
+  aspect-ratio: 1/1.6;
+  border: 2px solid #000;
+}
+
+.card {
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card figure {
+  height: 74%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card dl {
+  background-color: #fff;
+  height: 26%;
+  padding: 20px;
+}
+.card dt {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.card a {
+  text-decoration: none;
+}
+.card_plus {
+  background: #000;
+  border: 1px solid #000;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 70px;
+  margin: 0 auto;
+}
+.card_plus img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  /* margin: 0 auto; */
+}
+.card dd {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #666;
+  width: 30px;
+  height: 30px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: static;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.new-production {
+  /* padding: 10vw 0; */
+  /* background: #ff5; */
+  padding: 10px;
+  padding: 10vw;
+}
+
+.newproduction-slide {
+  margin-top: 10vw;
+}
+.production-slide {
+  aspect-ratio: 1/1.44;
+  border: 2px solid #000;
+}
+.production-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.production-slide .product-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.production-slide:hover .product-name {
+  opacity: 1;
+}
+.inner h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  /* padding-bottom: 113px; */
+  padding-bottom: 10vw;
+  padding: 0;
+  /* margin-bottom: 5vw; */
+}
+.new-production h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.recent-news {
+  width: 650px;
+  height: 317px;
+  border: 2px solid #000;
+  /* border-radius: 30px; */
+  gap: 16px;
+}
+.recent-news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 30px; */
+}
+
+.recent-news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-bottom: 225px; */
+  /* margin-bottom: 10vw; */
+  /* margin-top: 100vw; */
+}
+
+.recent-news {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+/* 부모요소 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10vw;
+  padding: 10px;
+}
+/* 자식 */
+.behind {
+  flex: 1 1 20%;
+  aspect-ratio: 1/1.12;
+
+  /* width: 300px; */
+  /* height: 335px; */
+  border: 2px solid #000;
+}
+h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 10vw 0;
+}
+.container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* margin-bottom: 225px; */
+  margin-bottom: 10vw;
+}
+
+.container section {
+  margin: 0;
+}
+
+.notice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-bottom: 225px; */
+  margin-bottom: 10vw;
+  gap: 20px;
+}
+.notice-news {
+  width: 650px;
+  height: 317px;
+  aspect-ratio: 1/1.05;
+  border: 2px solid #000;
+  /* border-radius: 20px; */
+}
+.notice-news dt {
+  text-align: left;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  /* text-align: center; */
+}
+.notice-news dd {
+  text-align: right;
+  padding: 10px;
+  width: 100px;
+  position: absolute;
+  display: none;
+}
+.notice-news .text {
+  padding: 10px 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 30px;
+}
+.notice-news a {
+  text-decoration: none;
+  color: #000;
+}
+.notice-news dt:hover {
+  color: #666;
+}
+.footer-logo {
+  width: 110px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  margin-bottom: 15px;
+}
+.footer-copyright {
+  text-align: center;
+  font-size: 20px;
+}
+.footer-content {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 300px;
+}
+.footer-sns {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.footer-sns img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 60%; /* Could be more or less, depending on screen size */
+  display: fixed;
+}
+.modal-content iframe {
+  width: 100%;
+  /* margin: 0 auto; */
+  height: 550px;
+  /* margin: 0 auto; */
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.behind {
+  margin: 10px;
+}
+
+.thumbnail {
+  width: 150px; /* Adjust as necessary */
+  height: auto;
+  cursor: pointer;
+  /* border-radius: 5px; */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup iframe {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.behind img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hamburger-menu {
+  display: none; /* 기본적으로는 숨김 */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20px;
+  width: 30px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+.inner h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  /* padding-bottom: 113px; */
+  padding-bottom: 10vw;
+}
+.footer-copyright {
+  font-weight: 500;
+  font-size: 20px;
+}
+@media (max-width: 1325px) {
+  .inner {
+    width: 100%;
+  }
+
+  .new-production,
+  .production-slide {
+    width: 100%;
+  }
+  .header .gnb ul a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .logo {
+    width: 80px;
+  }
+
+  .artist_card h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .new-production h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .production-slide {
+    width: calc(100% / 4 - 10px); /* 4열로 배치, 10px는 간격 */
+  }
+
+  /* Show only 8 thumbnails */
+  .behind {
+    display: none;
+  }
+
+  .behind:nth-child(-n + 8) {
+    display: block;
+  }
+  .notice-news dt {
+    font-size: 16px; /* Adjust font size for titles */
+    font-weight: 700;
+  }
+
+  .notice-news dd {
+    font-size: 14px; /* Adjust font size for dates */
+  }
+
+  .text {
+    font-size: 14px; /* Adjust font size for notice text */
+    padding: 0 10px;
+    font: 1rem/1.6 "Pretendard";
+  }
+  .notice-container {
+    margin: 0px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vw;
+  }
+  .footer-copyright {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .video-modal iframe {
+    width: 70%; /* Adjust iframe width for mid-sized screens */
+    height: 70%; /* Adjust iframe height for mid-sized screens */
+  }
+}
+
+@media (max-width: 770px) {
+  .logo {
+    width: 70px;
+  }
+  .logo img {
+    padding: 0;
+  }
+  .gnb ul li {
+    gap: 20px;
+  }
+
+  .inner {
+    width: 90%;
+    padding: 0px;
+  }
+
+  .recent-news,
+  .notice-news {
+    width: 100%;
+    height: 280px;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .production-slide .product-name {
+    font-size: 9px;
+  }
+
+  .gnb ul li a {
+    font-size: 9px;
+    font-weight: 700;
+  }
+  .gnb {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex; /* 햄버거 메뉴 보이기 */
+    z-index: 9999;
+  }
+
+  .gnb.active {
+    display: block; /* 햄버거 메뉴 클릭 시 네비게이션 보이기 */
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); /* Optional: Make the background slightly transparent */
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  }
+
+  .gnb ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gnb ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .gnb ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+  }
+  /* 햄버거 메뉴 스타일 */
+  .hamburger-menu {
+    display: none; /* 기본적으로는 숨김 */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    width: 30px;
+    z-index: 9999;
+    position: relative;
+  }
+
+  /* 햄버거 메뉴가 화면 상단에 고정되도록 설정 (필요시) */
+  .hamburger-menu.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  .artist_card h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .new-production h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .production-slide {
+    width: calc(100% / 2 - 10px); /* 2열로 배치 */
+  }
+
+  .video-modal iframe {
+    width: 90%; /* Adjust iframe width for smaller screens */
+    height: 90%; /* Adjust iframe height for smaller screens */
+  }
+  .text {
+    font-size: 14px; /* Adjust font size for notice text */
+    padding: 0 10px;
+    font: 1rem/1.6 "Pretendard";
+  }
+  .new-production {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .container .behind {
+    flex: 1 1 25%;
+  }
+}
+/* 770px 이하일 때 햄버거 메뉴 보이기 */
+@media (max-width: 770px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .gnb.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    /* background-color: #fff; */
+    width: 100%;
+    text-align: center;
+    z-index: 9998;
+  }
+}
+
+@media (max-width: 490px) {
+  .visual-wrap {
+    height: 200px;
+  }
+  .logo {
+    width: 80px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .behind {
+    flex: 1 1 50%;
+  }
+
+  .gnb ul li a {
+    font-size: 7px;
+    font-weight: 700;
+  }
+  .artist_card h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .new-production h1 {
+    font-size: 39px;
+    font-weight: 700;
+  }
+  .production-slide {
+    width: 100%; /* 1열로 배치 */
+  }
+
+  .text {
+    font-size: 14px; /* Adjust font size for notice text */
+    padding: 0 10px;
+    font: 1rem/1.6 "Pretendard";
+  }
+
+  .footer-sns img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    padding: 5px;
+  }
+  .notice-news .text {
+    font-weight: 700;
+    /* font-size: 10px; */
+    font-size: 15px;
+  }
+  .footer-copyright {
+    font-size: 10px;
+  }
+
+  /* Modal content style */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    /* width: 100%; */
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+    /* max-width: 500px; */
+    /* background-color: #fff; */
+    justify-content: center;
+    /* margin: 0 auto; */
+  }
+
+  /* Close button */
+  .modal .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .artist-swiper {
+    width: 375px;
+    height: 370px;
+    padding: 0 10px 10px;
+  }
+
+  /* iFrame styling for responsiveness */
+}
+.notice-news .textv {
+  font-size: 10px;
+}
+
+.video-modal iframe {
+  width: 95%;
+  height: 200px;
+}
+.footer-sns img {
+  width: 30px;
+  height: 30px;
+  gap: 5px;
+  padding: 2px;
+}

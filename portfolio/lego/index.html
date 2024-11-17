@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LEGO Korea</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="shortcut icon" href="./img/legoicon.svg" type="image/x-icon" />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+        <script src="./js/script.js" defer></script>
+
+        <!-- 기본 메타 태그 (SEO 최적화) -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="LEGO는 창의적이고 상상력을 자극하는 다양한 제품을 제공하는 글로벌 브랜드입니다. 모든 연령대의 팬들을 위한 LEGO 제품을 만나보세요."
+        />
+        <meta name="keywords" content="LEGO, 장난감, 창의력, 상상력, 블록, 어린이, 성인, 선물, 테마" />
+        <meta name="author" content="LEGO Korea" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="LEGO 공식 사이트 | 창의력과 상상력의 세계" />
+        <meta
+            property="og:description"
+            content="LEGO는 아이와 어른 모두에게 창의적이고 다양한 블록을 제공합니다. 다양한 테마와 새로운 제품을 지금 만나보세요!"
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <!-- 공유 시 나타날 이미지 -->
+        <meta property="og:url" content="https://www.lego.com/ko-kr" />
+        <meta property="og:site_name" content="LEGO Korea" />
+
+        <!-- 트위터 카드 메타 태그 (SNS 최적화) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@LEGO" />
+        <meta name="twitter:title" content="LEGO 공식 사이트 | 창의력과 상상력의 세계" />
+        <meta
+            name="twitter:description"
+            content="LEGO는 아이와 어른 모두에게 창의적이고 다양한 블록을 제공합니다. 다양한 테마와 새로운 제품을 지금 만나보세요!"
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <!-- 트위터에서 사용할 이미지 -->
+
+        <!-- 기타 메타 태그 -->
+        <meta name="theme-color" content="#ff0000" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <!-- 로고, 네비게이션 메뉴 등 -->
+                <nav class="nav">
+                    <h1 class="logo">
+                        <a href="index.html"><i class="hidden">LEGO</i></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li><a href="new.html">New</a></li>
+                        <li><a href="best.html">Best</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="sub.html">shop</a></li>
+                        <li><a href="Community.html">Community</a></li>
+                    </ul>
+
+                    <div class="util-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="wishlist"><img src="./img/wishlist.svg" alt="찜" /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cart"><img src="./img/shoppingcart.svg" alt="장바구니" /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu"><img src="./img/app-gnb.svg" alt="메뉴" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="visual">
+                <div class="inner">
+                    <div class="visual-content">
+                        <strong>LEGO KOREA</strong>
+                        <p>틀을 깨고, 새로운 것을 창조하세요!</p>
+                        <h1 class="visual-title">상상의 한계를 넘어, 나만의 세계를 완성하다</h1>
+                        <a href="sub.html" class="visual-btn"> 더 알아보기 <img src="./img/arrow.svg" alt="" /> </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-products">
+                <div class="inner">
+                    <!-- 새 제품 카드들 -->
+
+                    <div class="utility-bar">
+                        <div class="util-menu-bottom">
+                            <button class="icon-button wishlist">
+                                <span><img src="./img/wishlist-dark.svg" alt="" class="wish-icon" /></span>
+                            </button>
+                            <button class="icon-button cart">
+                                <span><img src="./img/shoppingcart-dark.svg" alt="" class="cart-icon" /></span>
+                            </button>
+                        </div>
+                        <form class="search-form" action="#" method="get">
+                            <input type="search" name="search" placeholder="Search" aria-label="검색" />
+                            <button type="submit" class="search-button">
+                                <span><img src="./img/search.svg" alt="" class="search-icon" /></span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <h2>New</h2>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <img src="img/new-darkside.jpg" alt="새로운 다크 사이드" />
+                            <div class="card-info">
+                                <p>새로운 다크 사이드의 힘을 느껴보세요!</p>
+                                <a href="#" class="btn-card"
+                                    >자세히 보기 <img src="./img/arrow.svg" alt="" class="arrow-icon"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="product-bricks">
+                            <img src="img/new-bricks.jpg" alt="무한한 가능성" />
+                            <div class="bricks-info">
+                                <p>새로운 블록 무한한 가능성!</p>
+                                <a href="#" class="btn-card"
+                                    >자세히 보기 <img src="./img/arrow.svg" alt="" class="arrow-icon"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="best">
+                <div class="inner">
+                    <div class="best-header">
+                        <p class="best-title">best</p>
+                        <h2>Bestsellers</h2>
+                        <p>지금까지 한 번도 없었던,<br />전 세계가 사랑하는 레고 베스트셀러!</p>
+                    </div>
+
+                    <div class="bestsellers-slider">
+                        <div class="swiper top-slider">
+                            <div class="swiper-wrapper">
+                                <!-- slider-item들을 swiper-wrapper 안에 배치 -->
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img1.jpg" alt="꽃다발" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>꽃다발</dt>
+                                            <dd>89,900 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img2.jpg" alt="미니 디즈니 캐슬" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>미니 디즈니 캐슬</dt>
+                                            <dd>95,000 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img3.jpg" alt="대형 레고 미니피겨" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>대형 레고 미니피겨</dt>
+                                            <dd>79,900 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img4.jpg" alt="나는 그루트다" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>나는 그루트다</dt>
+                                            <dd>74,900 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img5.jpg" alt="나는 그루트다" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>별이 빛나는 밤에</dt>
+                                            <dd>229,900 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <a href="#" class="slider-item swiper-slide">
+                                    <img src="./img/best-img6.jpg" alt="나는 그루트다" />
+                                    <div class="slider-info">
+                                        <dl>
+                                            <dt>크리스마스 트리</dt>
+                                            <dd>60,000 원</dd>
+                                        </dl>
+                                        <button class="wishlist-btn" aria-label="찜하기"></button>
+                                    </div>
+                                </a>
+                                <!-- 다른 상품 카드들도 동일한 방식으로 추가 -->
+                            </div>
+
+                            <!-- 스크롤바 추가 -->
+                            <!-- <div class="swiper-scrollbar"></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="event">
+                <div class="inner">
+                    <h2>Event</h2>
+                    <p>구매 시 선물 증정!</p>
+                    <!-- 이벤트 배너 -->
+                    <div class="event-slider-wrap">
+                        <div class="swiper event-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="./img/event-img1.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-img2.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-img3.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-img4.png" alt="" />
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sale">
+                <div class="inner">
+                    <div class="sale-header">
+                        <h3>Sale</h3>
+                        <p>세일 중! 놓치지 말고 할인받자!</p>
+                    </div>
+                    <div class="sale-items">
+                        <a href="#" class="sale-item">
+                            <img src="./img/sale-img1.png" alt="Fender Stratocaster" />
+                            <div class="sale-info">
+                                <div class="sale-info-content">
+                                    <h4>Fender Stratocaster</h4>
+                                    <p class="price"><del>115,000 원</del> 111,000 원</p>
+                                </div>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                            <span class="discount-badge">30%</span>
+                        </a>
+                        <a href="#" class="sale-item">
+                            <img src="./img/sale-img2.jpg" alt="헐크버스터" />
+                            <div class="sale-info">
+                                <div class="sale-info-content">
+                                    <h4>헐크버스터</h4>
+                                    <p class="price"><del>589,900 원</del> 499,900 원</p>
+                                </div>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                            <span class="discount-badge">30%</span>
+                        </a>
+                        <a href="#" class="sale-item">
+                            <img src="./img/sale-img3.jpg" alt="수선화" />
+                            <div class="sale-info">
+                                <div class="sale-info-content">
+                                    <h4>수선화</h4>
+                                    <p class="price"><del>15,900 원</del> 12,810 원</p>
+                                </div>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                            <span class="discount-badge">30%</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Theme">
+                <div class="inner">
+                    <h2>Theme</h2>
+
+                    <!-- 테마별 탭 버튼 -->
+                    <ul class="theme-tabs">
+                        <li><button class="tab-button active" data-theme="아키텍처">아키텍처</button></li>
+                        <li><button class="tab-button" data-theme="클래식">클래식</button></li>
+                        <li><button class="tab-button" data-theme="마인크래프트">마인크래프트</button></li>
+                        <li><button class="tab-button" data-theme="마블">마블</button></li>
+                        <li><button class="tab-button" data-theme="해리포터">해리포터</button></li>
+                    </ul>
+
+                    <!-- 테마별 제품 리스트 -->
+                    <div class="product-carousel">
+                        <!-- 아키텍처 테마 -->
+                        <div class="theme-slider" data-theme="아키텍처">
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img1.jpg" alt="파리 노트르담" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>파리 노트르담</dt>
+                                        <dd>299,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>기자의 피라미드</dt>
+                                        <dd>189,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>자유의 여신상</dt>
+                                        <dd>149,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>히메 성</dt>
+                                        <dd>209,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>에펠탑</dt>
+                                        <dd>850,000 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>우주 발사 시스템</dt>
+                                        <dd>349,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>싱가포르</dt>
+                                        <dd>89,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/architecture-img8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>미국 뉴욕 록펠러 센터</dt>
+                                        <dd>79,000 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+
+                            <!-- 추가 아키텍처 제품들 -->
+                        </div>
+
+                        <!-- 클래식 테마 -->
+                        <div class="theme-slider" data-theme="클래식" style="display: none">
+                            <!-- 클래식 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>파스텔톤 조립 놀이</dt>
+                                        <dd>29,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 자동차</dt>
+                                        <dd>79,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 우주 행성</dt>
+                                        <dd>44,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>판타지 세계</dt>
+                                        <dd>129,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>브릭 한 꾸러미</dt>
+                                        <dd>89,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 하우스</dt>
+                                        <dd>79,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 색상 놀이</dt>
+                                        <dd>102,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>파티 박스</dt>
+                                        <dd>72,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 마인크래프트 테마 -->
+                        <div class="theme-slider" data-theme="마인크래프트" style="display: none">
+                            <!-- 마인크래프트 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/main1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>거북이 해변의 집</dt>
+                                        <dd>39,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>얼어붙은 산꼭대기</dt>
+                                        <dd>49,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>아기 돼지의 생일파티</dt>
+                                        <dd>29,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>깊고 어두운 전장</dt>
+                                        <dd>94,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>황무의 폐광</dt>
+                                        <dd>89,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>검의 전초기지</dt>
+                                        <dd>64,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>해적선 항해</dt>
+                                        <dd>19,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>아이언 골렘 요새</dt>
+                                        <dd>157,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 마블 테마 -->
+                        <div class="theme-slider" data-theme="마블" style="display: none">
+                            <!-- 마블 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>어벤져스 퀸젯</dt>
+                                        <dd>149,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>헐크 버스터</dt>
+                                        <dd>72,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>댄싱 그루트</dt>
+                                        <dd>64,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>스파이더맨 마스크</dt>
+                                        <dd>99,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>베놈 맥 로봇 대 마일스</dt>
+                                        <dd>19,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>토드 대 배틀 피겨</dt>
+                                        <dd>44,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>워 머신 맥 로봇</dt>
+                                        <dd>19,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/marvel8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>나노 건틀렛</dt>
+                                        <dd>99,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 해리포터 테마 -->
+                        <div class="theme-slider" data-theme="해리포터" style="display: none">
+                            <!-- 해리포터 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>호그와트 성</dt>
+                                        <dd>640,000 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>포드 앵글리아</dt>
+                                        <dd>19,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>호그와트 익스프레스</dt>
+                                        <dd>649,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>호그와트 아이콘</dt>
+                                        <dd>399,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>해그리드의 오두막</dt>
+                                        <dd>109,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>그린고트 마법사 은행</dt>
+                                        <dd>559,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>하우스 엘프 도비</dt>
+                                        <dd>45,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/harry8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>말하는 마법의 모자</dt>
+                                        <dd>149,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="Shop">
+                <div class="inner">
+                    <h2>Shop</h2>
+                    테마별 제품 카드들
+                </div>
+            </section> -->
+        </main>
+
+        <footer>
+            <div class="inner">
+                <!-- 푸터 내용 -->
+                <div class="footer-logo">
+                    <a href="index.html"><img src="./img/legoicon.svg" alt="LEGO" /></a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">쿠키</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <p>구독하기</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="YouTube"><img src="./img/youtube-line.svg" alt="" /></a>
+                        <a href="#" aria-label="Facebook"><img src="./img/facebook-line.svg" alt="" /></a>
+                        <a href="#" aria-label="Instagram"><img src="./img/instagram-line.svg" alt="" /></a>
+                        <a href="#" aria-label="Twitter"><img src="./img/twitter-x-line.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="legal-info">
+                    <p>LEGO System A/S, DK-7190 Billund, Denmark.</p>
+                    <p class="legal-info-text">
+                        만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+                        미니피겨 로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. <br />©2024 The
+                        LEGO Group. All rights reserved. 이 사이트를 이용하면 이용약관에 동의하는 것으로 간주됩니다.
+                        레고코리아(주) 대표이사 : CLAUS KRISTENSEN <br />
+                        (크라우스크리스텐센), 정희영 | 주소 : 서울특별시 강남구 강남대로 382, 메리츠타워 12층 우편번호
+                        06232 사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남 <br />
+                        -00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 업무시간 : 월요일-금요일
+                        오전9시-오후6시
+                    </p>
+                </div>
+                <div class="back-to-top">
+                    <a href="#top" aria-label="맨 위로 이동">
+                        <img src="./img/arrow-top.svg" alt="위로 가기" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

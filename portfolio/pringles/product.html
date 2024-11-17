@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>제품소개</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/icon" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/comman.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script src="./js/product.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <nav>
+                    <a href="index.html">
+                        <figure><img src="./img/logo.png" alt="로고" /></figure>
+                    </a>
+                    <ul class="desktop-menu">
+                        <li>
+                            <a href="product.html">제품소개</a>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="menu.html">메뉴</a>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="buy.html">구매처</a>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">☰</button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <figure>
+                                <img src="./img/icon1.svg" alt="" />
+                            </figure>
+                            <a href="product.html">제품소개</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon2.svg" alt="" />
+                            </figure>
+                            <a href="menu.html">메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon3.svg" alt="" />
+                            </figure>
+                            <a href="buy.html">구매처</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/icon4.svg" alt="" />
+                            </figure>
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <script>
+                    const TL = gsap.timeline();
+
+                    gsap.from("nav a figure", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li a", {
+                        y: -100,
+                        rotation: 90,
+                        duration: 1,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".desktop-menu li figure", {
+                        y: -100,
+                        // rotation: 90,
+                        duration: 3,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        stagger: 0.3,
+                        ease: "power4.inOut",
+                    });
+
+                    gsap.from(".mobile-menu-toggle", {
+                        x: 100,
+                        // rotation: 90,
+                        duration: 2,
+                        autoAlpha: 0,
+                        delay: 0.3,
+
+                        ease: "power4.inOut",
+                    });
+                </script>
+            </div>
+        </header>
+        <main>
+            <section class="sub">
+                <div class="inner">
+                    <div class="top-content">
+                        <h1>제품소개</h1>
+                    </div>
+                </div>
+
+                <div class="border-container">
+                    <div class="border footer-border"></div>
+                </div>
+
+                <section class="pringles">
+                    <div class="inner">
+                        <div class="product-wrap">
+                            <div class="product-title">
+                                <h2>프링글스는</h2>
+                                <p>
+                                    운송 도중 잘게 부스러지거나 기름에 부패된
+                                    감자칩을 본 소비자들의 불만을 해결하기 위해,
+                                    <br />프레드 바우어가 1956년부터 2년간
+                                    원통형 캔에 질소를 집어넣어 <br />
+                                    칩이 부서지는 것을 방지하는 캔을
+                                    개발하였습니다.
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./img/product-img-2.jpg" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="idea">
+                    <div class="inner">
+                        <div class="idea-wrap">
+                            <div class="idea-title">
+                                <h2>발상의 전환</h2>
+                                <p>
+                                    여러분의 창의력을 발휘하여 <br />
+                                    프링글스 통을 유용하고 재밌게 만들어보세요!
+                                </p>
+                            </div>
+
+                            <div class="idea-img-wrap">
+                                <li>
+                                    <figure>
+                                        <img src="./img/idea4.jpg" alt="" />
+                                    </figure>
+                                    <p>꽃병</p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="./img/idea2.jpg" alt="" />
+                                    </figure>
+                                    <p>무드등</p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="./img/idea3.png" alt="" />
+                                    </figure>
+                                    <p>로켓</p>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="./img/idea1.jpg" alt="" />
+                                    </figure>
+                                    <p>국수보관함</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brand-story">
+                    <div class="inner">
+                        <div class="story-wrap">
+                            <figure>
+                                <img src="./img/brand-story-1.jpg" alt="" />
+                            </figure>
+                            <div class="story-title">
+                                <h2>프링글스 칩의 이야기</h2>
+                                <strong
+                                    >프링글스는 다른 칩들과 다릅니다.</strong
+                                >
+                                <p>
+                                    프링글스의 감자칩은 단순한 평면보다
+                                    <br />구조적으로 더 강하고 부서지기
+                                    어렵습니다. <br />이는 감자칩이 포장과 운반
+                                    과정에서 <br />더 잘 견딜 수 있도록
+                                    해줍니다. <br />
+                                    <br />또한, 감자칩을 깔끔하게 쌓을 수 있게
+                                    해줘서, <br />통에 넣었을 때 더 많은 칩을
+                                    넣을 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="brand-wrap">
+                            <div class="brand-title">
+                                <h2>브랜드 이미지</h2>
+                                <strong
+                                    >여러분들에게 큰 즐거움을
+                                    선사합니다.</strong
+                                >
+                                <p>
+                                    8가지가 넘는 다양한 맛과, <br />
+                                    칩으로 즐기는 여러가지 방법은<br />
+                                    프링글스만의 독특한 차별점입니다. <br />
+
+                                    <br />또한 새로운 맛들이 출시하며
+                                    여러분들에게
+                                    <br />
+                                    즐거운 시간을 만들 수 있음을
+                                    노력하고있습니다. <br />
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./img/brand-story-2.jpg" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="end">
+                    <div class="inner">
+                        <div class="end-wrap">
+                            <div class="end-title">
+                                <h2>
+                                    한 번 시작하면 멈출 수 없는 맛,<strong>
+                                        프링글스!</strong
+                                    >
+                                </h2>
+                                <p>
+                                    독특한 칩과 함께 매 순간을 더 즐겁게
+                                    만들어보세요.
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./img/main1.png" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.png" alt="" /></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border footer-border"></div>
+            </div>
+
+            <div class="inner">
+                <div class="footer-content">
+                    <div class="foot-text">
+                        <a href="">고객센터</a>
+                        <a href="">FAQ</a>
+                        <a href="">문의하기</a>
+                        <a href="">개인정보 보호정책</a>
+                        <a href="">이용약관</a>
+                        <a href="">접근성</a>
+                    </div>
+
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/PringlesUS">
+                            <figure>
+                                <img src="./img/facebook.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/pringles/">
+                            <figure>
+                                <img src="./img/instargram.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.tiktok.com/@pringles">
+                            <figure>
+                                <img src="./img/tiktok.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://x.com/Pringles">
+                            <figure>
+                                <img src="./img/x-logo.svg" alt="" />
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/Pringles">
+                            <figure>
+                                <img src="./img/youtube.svg" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Kellanova</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="btn-top"><i class="hidden"></i></a>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/btn.js"></script>
+    </body>
+</html>

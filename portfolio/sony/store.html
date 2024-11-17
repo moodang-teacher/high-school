@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>store</title>
+
+        <link href="https://fonts.cdnfonts.com/css/greater-theory" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/store.css" />
+
+        <link rel="apple-touch-icon-precomposed" href="./img/Group 72.png" />
+        <link rel="icon" href="./img/Group 72.png" sizes="64x64" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/store.js"></script>
+    </head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
+        <div class="top-banner">
+            <div class="top-banner-con">
+                <p>Your New Colour, Smoky Pink - 1000XM5의 새로운 컬러</p>
+                <a href="#"><i class="ri-close-line"></i></a>
+            </div>
+        </div>
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <i class="hidden">logo</i>
+                        </a>
+                    </h1>
+                    <ul class="gnb-list">
+                        <li><a href="#">추천제품</a></li>
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">카메라</a></li>
+                        <li><a href="#">렌즈</a></li>
+                        <li><a href="#">오디오</a></li>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">고객지원</a></li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href="#"><i class="ri-search-line"></i></a>
+                        <a href="#"><i class="ri-user-line"></i></a>
+                        <a href="#"><i class="ri-shopping-bag-4-line"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+            <section class="visual">
+                <div class="main-banner">
+                    <!-- Slider main container -->
+                    <div class="swiper main">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper main-wrap">
+                            <!-- Slides -->
+                            <div class="swiper-slide main-con">
+                                <div class="banner-con">
+                                    <h2>기록의 완성</h2>
+                                    <p>브이로그용 카메라 ZV-E10 II</p>
+                                </div>
+                                <figure><img src="./img/store-banner.png" alt="" /></figure>
+                            </div>
+                            <div class="swiper-slide main-con">
+                                <div class="banner-con">
+                                    <h2>SEL85F14GM2</h2>
+                                    <p>인물 사진의 차원을 높이다</p>
+                                </div>
+                                <figure><img src="./img/store-banner2.png" alt="" /></figure>
+                            </div>
+                            <div class="swiper-slide main-con">
+                                <div class="banner-con">
+                                    <h2>WF-C510</h2>
+                                    <p>일상을 함께하는 나의 데일리 이어폰</p>
+                                </div>
+                                <figure><img src="./img/store-banner3.png" alt="" /></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="inner">
+                    <h3><i class="hidden">product</i></h3>
+                    <div class="product-categories">
+                        <ul class="categorise-list">
+                            <li>
+                                <a href="#"><img src="./img/store-pd-list1.png" alt="" /></a>
+                                <p>카메라</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/store-pd-list2.png" alt="" /></a>
+                                <p>
+                                    비디오<br />
+                                    카메라
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/store-pd-list3.png" alt="" /></a>
+                                <p>렌즈</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/store-pd-list4.png" alt="" /></a>
+                                <p>오디오</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/store-pd-list5.png" alt="" /></a>
+                                <p>액세서리</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- WHAT'S HOT 섹션  -->
+                <div class="inner">
+                    <div class="whats-hot">
+                        <div class="hot-title">
+                            <h2>WHAT'S HOT</h2>
+                            <p>당신을 만족시킬 소니의 추천 제품을 만나보세요..</p>
+                        </div>
+
+                        <div class="hot-con">
+                            <ul class="hot-products">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/store-hot-pic1.jpg" alt="WF-1000XM5" /></figure>
+                                        <div class="text-con">
+                                            <h3>WF-1000XM5</h3>
+                                            <p>이것은 작게 진화한 헤드폰</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/store-hot-pic2.jpg" alt="ILCE-7CM2" /></figure>
+                                        <div class="text-con">
+                                            <h3>ILCE-7CM2</h3>
+                                            <p>원핸드 컴팩트 풀프레임 카메라</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/store-hot-pic3.jpg" alt="SEL1635GM2" /></figure>
+                                        <div class="text-con">
+                                            <h3>SEL1635GM2</h3>
+                                            <p>광곽 렌즈의 새로운 기준</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/store-hot-pic4.jpg" alt="Float Run" /></figure>
+                                        <div class="text-con">
+                                            <h3>Float Run</h3>
+                                            <p>달리면서 느끼는 진정한 자유로움</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="more-btn">
+                                <a href="#">추천제품 더 보러가기<i class="ri-add-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promotion">
+                <div class="promotion-con">
+                    <div class="promotion-tilte">
+                        <h2>기획전</h2>
+                        <p>소니의 다양한 기획상품을 만나보세요.</p>
+                    </div>
+                    <div class="promotion-info">
+                        <!-- Slider main container -->
+                        <div class="swiper promo">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper promo-wrap">
+                                <!-- Slides -->
+                                <div class="swiper-slide promo-list">
+                                    <a href="#">
+                                        <img src="./img/store-promo-pic1.jpg" alt="ZV 파우치 증정 프로모션" />
+                                        <div class="promo-text">
+                                            <h3>ZV 파우치 증정 프로모션</h3>
+                                            <p>
+                                                ZV 시리즈 구매하고 키티버니포니 파우치 받자! <br />
+                                                파우치와 함께 소니 ZV 카메라의 매력을 더해봐!
+                                            </p>
+                                            <span class="date">2024-10-25 ~ 선착순 한정 수량</span>
+                                            <strong>자세히 보기<i class="ri-add-line"></i></strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide promo-list">
+                                    <a href="#">
+                                        <img src="./img/store-promo-pic2.jpg" alt="링크버즈 오픈" />
+                                        <div class="promo-text">
+                                            <h3>
+                                                링크버즈 오픈 런칭 기념<br />
+                                                특별 적립 프로모션
+                                            </h3>
+                                            <p>링크버즈 오픈 제품을 구매하시면 구매 금액의 10%를 적립해 드립니다.</p>
+                                            <span class="date">2024-10-24 ~ 2024-11-18</span>
+                                            <strong>자세히 보기<i class="ri-add-line"></i></strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide promo-list">
+                                    <a href="#">
+                                        <img src="./img/store-promo-pic3.jpg" alt="ESP" />
+                                        <div class="promo-text text-w">
+                                            <h3>연장 서비스 플랜 ESP</h3>
+                                            <p>
+                                                보다 편리하게 소니 상품을 이용하실 수 있는 <br />
+                                                소니스토어 프리미엄 서비스를 경험해 보세요.
+                                            </p>
+                                            <span class="date">2024-10-30 ~ 선착순 한정 수량</span>
+                                            <strong>자세히 보기<i class="ri-add-line"></i></strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide promo-list">
+                                    <a href="#">
+                                        <img src="./img/store-promo-pic4.jpg" alt="무이자" />
+                                        <div class="promo-text">
+                                            <h3>소니 프리미엄 오디오 <br />무이자 프로모션</h3>
+                                            <p>프리미엄 사운드를 더욱 쉽게, 6개월 무이자 혜택으로 만나보세요!</p>
+                                            <span class="date">2024-11-01 ~ 2024-12-31</span>
+                                            <strong>자세히 보기<i class="ri-add-line"></i></strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide promo-list">
+                                    <a href="#">
+                                        <img src="./img/store-promo-pic5.jpg" alt="풀프레임" />
+                                        <div class="promo-text text-w">
+                                            <h3>
+                                                풀프레임으로 시작하자 <br />
+                                                시작부터 FULL
+                                            </h3>
+                                            <p>구매 후 정품 등록 및 사은품 신청 시 특별한 선물을 드립니다.</p>
+                                            <span class="date">2024-08-12 ~ 2024-12-01</span>
+                                            <strong>자세히 보기<i class="ri-add-line"></i></strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service">
+                <div class="service-banner">
+                    <!-- Slider main container -->
+                    <div class="swiper service-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper service-wrap">
+                            <!-- Slides -->
+                            <div class="swiper-slide service-con">
+                                <div class="service-info">
+                                    <div class="banner-text">
+                                        <p>소니가 도와드릴까요?</p>
+                                        <h2>내 제품은 내가 직접 관리한다!<br />셀프 수리 서비스</h2>
+                                        <div class="banner-controls">
+                                            <button class="prev">
+                                                <i class="ri-arrow-left-s-line"></i>
+                                            </button>
+                                            <button class="next">
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner-video">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/WK-4qul-qgI?si=BYQ_7XbRQS3S9cBZ&amp;controls=0&amp;start=5&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=WK-4qul-qgI"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide service-con">
+                                <div class="service-info">
+                                    <div class="banner-text">
+                                        <p>소니가 도와드릴까요?</p>
+                                        <h2>블루투스 연결하기</h2>
+                                        <div class="banner-controls">
+                                            <button class="prev">
+                                                <i class="ri-arrow-left-s-line"></i>
+                                            </button>
+                                            <button class="next">
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner-video">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/b3QmgdUVYos?si=K4igGQzwGmJpC2OX&amp;controls=0&amp;start=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=b3QmgdUVYos"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide service-con">
+                                <div class="service-info">
+                                    <div class="banner-text">
+                                        <p>소니가 도와드릴까요?</p>
+                                        <h2>시리얼 넘버 찾기</h2>
+                                        <div class="banner-controls">
+                                            <button class="prev">
+                                                <i class="ri-arrow-left-s-line"></i>
+                                            </button>
+                                            <button class="next">
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner-video">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/Cf1Xe3Hf06M?si=pRIna_JfXfTjUzhB&amp;controls=0&amp;start=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Cf1Xe3Hf06M"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide service-con">
+                                <div class="service-info">
+                                    <div class="banner-text">
+                                        <p>소니가 도와드릴까요?</p>
+                                        <h2>ZV-E10, PC에 연결하기</h2>
+                                        <div class="banner-controls">
+                                            <button class="prev">
+                                                <i class="ri-arrow-left-s-line"></i>
+                                            </button>
+                                            <button class="next">
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner-video">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/3sMtN5F6aO0?si=BdvaP_Y8UngKbneh&amp;controls=0&amp;start=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=3sMtN5F6aO0"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="store">
+                <div class="inner">
+                    <div class="store-con">
+                        <div class="store-info">
+                            <div class="info-text">
+                                <p>오시는 길</p>
+                                <dl>
+                                    <dt>소니스토어 압구정점</dt>
+                                    <dd>
+                                        서울특별시 강남구 선릉로 801 <br />
+                                        (신사동 배강빌딩)
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="transportation">
+                                <div class="subway">
+                                    <i class="ri-subway-fill"></i>
+                                    <div class="subway-text">
+                                        <strong>지하철</strong>
+                                        <p>
+                                            <span class="line-7">7호선</span> 강남구청 3-1번 출구
+                                            <span class="line-bundang">분당선</span> 압구정로데오역 5번 출구
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bus">
+                                    <i class="ri-bus-fill"></i>
+                                    <div class="bus-text">
+                                        <strong>버스</strong>
+                                        <p>
+                                            <span class="blue">간선</span> 145, 301, 472
+                                            <span class="green">지선</span> 4412, 3011
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="car">
+                                    <i class="ri-car-fill"></i>
+                                    <div class="car-text">
+                                        <strong>승용차</strong>
+                                        <p>도산대로 학동사거리 배강빌딩 1층</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12657.349480310051!2d127.0388711!3d37.5235438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4789d82b34f%3A0x7b11ba16a3b514d5!2z7IaM64uIIOyKpO2GoOyWtCDslZXqtazsoJXsoJA!5e0!3m2!1sko!2skr!4v1730880250679!5m2!1sko!2skr"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="academy">
+                <div class="academy-banner">
+                    <div class="academy-text">
+                        <h2>알파 아카데미<br />11월 수강신청</h2>
+                        <a href="#" class="">자세히 보기 <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <img src="./img/store-academy-banner.png" alt="" />
+                </div>
+            </section>
+
+            <section class="support">
+                <div class="inner">
+                    <div class="support-con">
+                        <ul class="service-list">
+                            <li class="service-item">
+                                <a href="#">
+                                    <h3><i class="ri-rss-fill"></i> Support By Sony</h3>
+                                    <p>
+                                        나의 Sony 제품을 관리해주는 어플리케이션<br />지금 다운로드하고 실시간으로
+                                        정보를 받아보세요!
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="service-item">
+                                <a href="#">
+                                    <h3><i class="ri-customer-service-2-line"></i> 고객센터</h3>
+                                    <p>소니스토어의 담당자가 친절하고 신속하게<br />상담해 드리겠습니다.</p>
+                                </a>
+                            </li>
+                            <li class="service-item">
+                                <a href="#">
+                                    <h3><i class="ri-medal-line"></i> 등급&혜택 안내</h3>
+                                    <p>소니스토어 회원이 되시면<br />다양한 멤버십 혜택을 누리실 수 있습니다!</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="foot-con">
+                    <div class="foot-logo">
+                        <h1>
+                            <a href="#"><i class="hidden">SONY</i></a>
+                        </h1>
+                    </div>
+                    <div class="foot-middle">
+                        <dl>
+                            <dt>(주)소니코리아</dt>
+                            <dd>서울특별시 영등포구 국제금융로 10 원아이에프씨 24F</dd>
+                        </dl>
+                        <ul class="foot-list">
+                            <li>
+                                <dl>
+                                    <dt>대표</dt>
+                                    <dd>Okura Kikuo</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>106-81-23810</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화</dt>
+                                    <dd>소니코리아 고객지원센터 1588-091</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p>Copyright © Sony Korea Corporation. All rights reserved.</p>
+                    </div>
+                    <div class="foot-sns">
+                        <ul class="sns-list">
+                            <li><a href="#"></a><i class="hidden">insta</i><i class="ri-instagram-line"></i></li>
+                            <li><a href="#"></a><i class="hidden">facebook</i><i class="ri-facebook-fill"></i></li>
+                            <li><a href="#"></a><i class="hidden">youtude</i><i class="ri-youtube-line"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- button.btn-top>i.hidden{TOP} -->
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    </body>
+</html>

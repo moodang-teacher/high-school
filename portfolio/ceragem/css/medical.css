@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+
+/* header end */
+/* medicalstart */
+.medical-device {
+    padding: 80px 0 50px;
+}
+
+.medical-device-title {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 100px 0 0;
+    text-align: center;
+}
+
+.medical-device-explanation {
+    font-size: 20px;
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+.medical-device-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1290px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.product {
+    width: 360px;
+    text-align: center;
+    padding: 100px 0 25px;
+}
+
+.product figure {
+    width: 360px;
+    height: 360px;
+}
+
+.product figure img {
+    width: 360px;
+    height: 360px;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0 0;
+}
+
+.product-price {
+    font-size: 20px;
+    padding-top: 1.2rem;
+}
+
+.product dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    padding: 20px 0 0;
+}
+
+.purchase-button {
+    width: 150px;
+    height: 45px;
+    background: var(--ceragem-main-color);
+    color: var(--white90);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.product-preview-item dl dd {
+    padding: 0 0 20px;
+}
+
+.evaluate {
+    font-size: 15px;
+}
+
+#loadMore {
+    width: 150px;
+    height: 45px;
+    background: var(--ceragem-main-color);
+    color: var(--white90);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* medical end` */

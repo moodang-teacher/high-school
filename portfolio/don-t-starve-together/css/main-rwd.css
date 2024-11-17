@@ -1,0 +1,215 @@
+@charset 'utf-8';
+@media screen and (max-width: 1420px) {
+    #feature .pagination {
+        bottom: 9%;
+    }
+    #feature .sec-title {
+        margin-bottom: 4rem;
+    }
+    #feature .btn-next {
+        width: 6rem;
+    }
+    #feature .btn-prev {
+        width: 6rem;
+    }
+
+    .feature-list {
+        aspect-ratio: 460/360;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #character .btn-next {
+        right: 14%;
+    }
+    #character .btn-prev {
+        left: 14%;
+    }
+    .character-img {
+        width: 22.88732394366197vw;
+    }
+    .character-info {
+        width: 48.5915vw;
+    }
+    #intro p {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #feature .sec-title {
+        margin-bottom: 2rem;
+    }
+    #feature .btn-next {
+        top: 90%;
+        right: 20%;
+    }
+    #feature .btn-prev {
+        top: 90%;
+        left: 20%;
+    }
+    #hero {
+        height: 100vh;
+    }
+    #hero .willow {
+        top: 50%;
+        width: 45vw;
+        right: -10rem;
+    }
+    #hero .wilson {
+        top: 50%;
+        width: 45vw;
+        left: -10rem;
+    }
+    .hero-logo {
+        width: 35vw;
+    }
+    #character {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+    #reviews .reviews-card {
+        width: 60%;
+    }
+    .feature-list p {
+        font-size: 2rem !important;
+    }
+    .feature-list h4 {
+        font-size: 2.4rem !important;
+    }
+    .sec-title {
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #intro figure {
+        width: 100%;
+    }
+    #hero .wilson {
+        top: 55%;
+    }
+    #hero .willow {
+        top: 55%;
+    }
+    .feature-list {
+        aspect-ratio: 400/500;
+    }
+    .character-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .character-info-wrap {
+        height: auto;
+        width: 100%;
+    }
+    .character-select {
+        display: none;
+    }
+    .character-img {
+        width: 20rem;
+    }
+    .character-info-wrap .ico-img {
+        justify-content: center;
+        gap: 4rem;
+    }
+    #character {
+        padding-top: 4rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    #feature .btn-next {
+        right: 4rem;
+    }
+    #feature .btn-prev {
+        left: 4rem;
+    }
+    .hero-logo {
+        width: 50vw;
+    }
+    #hero .wilson {
+        width: 55vw;
+    }
+    #hero .willow {
+        width: 55vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    #hero .wilson {
+        width: 80vw;
+    }
+    .hero-logo {
+        width: 50vw;
+        top: 20%;
+    }
+    .sec-title {
+        font-size: 7rem;
+    }
+    #hero .Gomsol {
+        width: 54rem;
+    }
+    #intro .sec-title {
+        font-size: 4.5rem;
+    }
+
+    .character-info-wrap .character-feature {
+        display: none;
+    }
+    .character-info {
+        width: 100%;
+    }
+    .intro-video-wrap .video {
+        width: 100%;
+        aspect-ratio: 2/3;
+    }
+    .intro-video-wrap {
+        width: 100%;
+    }
+    #trailer .video-wrap {
+        width: 100%;
+    }
+    .intro-video-wrap .btn-close {
+        right: 0;
+        top: -55px;
+        width: 5rem;
+        height: 5rem;
+        background-color: transparent;
+    }
+
+    #trailer .video-wrap .video {
+        width: 100%;
+        aspect-ratio: 2/3;
+    }
+    #trailer .btn-close {
+        right: 0;
+        top: -55px;
+        width: 5rem;
+        height: 5rem;
+        background-color: transparent;
+    }
+    #reviews .btn-next {
+        width: 6rem;
+        right: 1rem;
+    }
+    #reviews .btn-prev {
+        width: 6rem;
+        left: 1rem;
+    }
+    #reviews .reviews-card {
+        width: 80%;
+        aspect-ratio: 1/0.5;
+    }
+    .feature-list {
+        justify-content: start;
+    }
+    #character .btn-next {
+        width: 6rem;
+        right: 5%;
+    }
+    #character .btn-prev {
+        width: 6rem;
+        left: 5%;
+    }
+}

@@ -1,0 +1,652 @@
+@charset 'utf-8';
+
+#header {
+    height: 100%;
+    background: var(--main-color);
+}
+
+nav {
+    padding: 3.8rem 0 86rem;
+}
+
+.visual-title {
+    font-family: "visual";
+    font-size: 25vw;
+    position: absolute;
+    color: #fff;
+    top: 15%;
+    left: 10%;
+
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s both;
+}
+
+.visual figure {
+    width: 40vw; /* 72rem -> 40vw */
+    height: 40vw;
+    position: absolute;
+    top: 15%;
+    left: 31%;
+}
+
+/* our story */
+.story-slider-wrap .story-slider {
+    height: 100%;
+}
+
+.story-slider {
+    margin-top: 5.3rem;
+    margin-bottom: 6.8rem;
+}
+
+/* 커스텀 버튼 */
+.story-pagination {
+    width: 8.6rem;
+    height: 3.2rem;
+    text-align: center;
+
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--gray1);
+    margin: 0 auto;
+    padding: 0.28rem 2.2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 70px;
+}
+
+.swiper-pagination-current {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.story-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13.8rem;
+}
+
+.story-con figure {
+    width: 69rem;
+    /* height: 48rem; */
+    aspect-ratio: 69/48;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.story-con dl {
+    width: 57.2rem;
+}
+
+.story-con dl dt {
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.story-con dl dd {
+    margin-top: 2.3rem;
+    font-size: 2.4rem;
+    color: var(--gray1);
+}
+
+/* products */
+.our-products {
+    position: relative;
+}
+
+.products-slider-wrap {
+    margin-top: 6.5rem;
+    height: 62.5rem;
+}
+
+.products-slider {
+    height: 100%;
+}
+
+/* 커스텀 버튼 */
+.products-prev {
+    background-image: url(../img/arrow-maincolor.svg);
+    background-color: #fff;
+    transform: rotateY(180deg);
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: -5.6rem;
+}
+
+.products-next {
+    background-image: url(../img/arrow-maincolor.svg);
+    background-color: #fff;
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: -5.6rem;
+}
+
+.product-item {
+    width: 45.3rem;
+    height: 70rem;
+}
+
+.product-item figure {
+    margin: 0 auto;
+    width: 12rem;
+    height: 41.3rem;
+    transition: 0.4s 0.4s;
+}
+
+.product-item figure.active {
+    width: 12rem;
+    height: 41.3rem;
+    transform: rotate(15deg);
+}
+
+.product-item .can {
+    margin: 0 auto;
+    width: 12rem;
+    height: 29rem;
+    margin-top: 12.2rem;
+}
+
+.product-item .active.can {
+    margin: 0 auto;
+    width: 12rem;
+    height: 29rem;
+    margin-top: 12.2rem;
+    transform: rotate(15deg);
+}
+
+.product-text {
+    margin-top: 3.4rem;
+    text-align: center;
+}
+
+.product-text strong {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.product-text p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--gray1);
+    padding: 0 4rem;
+}
+
+/* 이벤트 */
+.events {
+    background: var(--main-color);
+    margin-top: 24rem;
+    padding: 5rem 0 0;
+    height: 150rem;
+}
+
+.events .inner {
+    width: 159.6rem;
+}
+
+.events .main-title {
+    color: #fff;
+}
+
+.events .sub-title {
+    color: #fff;
+}
+
+.events .sec-title {
+    color: #fff;
+}
+
+.event-flex {
+    display: flex;
+    justify-content: center;
+    /* gap: 13rem; */
+}
+
+.event-flex .our-title {
+    flex: 0 1 40%;
+}
+
+.events-container {
+    /* width: 1013px; */
+    /* height: 2073px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 60%;
+}
+
+.events-container ul {
+    max-width: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+}
+
+.events-container ul:nth-child(1) {
+    transform: translateY(39rem);
+}
+
+.events-con {
+    background: var(--main-color);
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.events-con a figure {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.event-explain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.event-icon {
+    background: url(../img/event-arrow.svg);
+
+    aspect-ratio: 1/1;
+    height: 2.9rem;
+}
+
+.event-text {
+    color: #fff;
+    /* width: 33rem; */
+}
+
+.event-text strong {
+    font-weight: 600;
+    font-size: 3.3rem;
+}
+
+.event-text p {
+    font-size: 1.7rem;
+    color: var(--gray2);
+}
+
+/* 책임감잇는 음주문화 */
+
+.encouraging-wrap {
+    display: flex;
+    /* background: tomato; */
+}
+
+.encouraging-con-swiper {
+    width: 61.2rem;
+    /* background: #fff; */
+}
+
+.encouraging-text {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.encouraging-text > figure {
+    width: 10.5rem;
+    height: 10.5rem;
+    margin: 0 auto;
+}
+
+.encouraging-text dl {
+    text-align: center;
+    margin-top: 2.3rem;
+}
+
+.encouraging-text dl dt {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+.encouraging-text dl dd {
+    font-size: 2rem;
+    color: var(--gray3);
+    margin-top: 3rem;
+}
+
+.encouraging-icon {
+    width: 10.5rem;
+    height: 10.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.encouraging-img-swiper {
+    width: 57.2rem;
+    /* height: 70.4rem; */
+    aspect-ratio: 1/1.23;
+}
+
+.encouraging-img figure {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.encouraging-img figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 배너 */
+.banner {
+    position: relative;
+    margin-top: 26rem;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+video {
+    width: 100%;
+    height: 752px;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.banner-con {
+    position: absolute;
+    top: 9vw;
+    right: 20.7vw;
+}
+
+.banner-con p:nth-child(1) {
+    font-family: "banner";
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.banner-title {
+    font-family: "heineken";
+    font-size: 12.8rem;
+    line-height: 13rem;
+    color: #fff;
+}
+
+.warring {
+    font-size: 1.6rem;
+    margin-top: 16.8rem;
+    color: #fff;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-11-8 15:46:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: var(--main-color);
+    color: #fff;
+
+    transition: 0.4s cubic-bezier(1, 0.35, 0.38, 0.99);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding-top: 11rem;
+}
+
+.mobile-logo {
+    display: block;
+    width: 25rem;
+    height: 10rem;
+    background: url(../img/gnb-logo.svg) no-repeat 50% / contain;
+}
+
+.mobile-gnb {
+    margin-top: 6.5rem;
+}
+
+.mobile-gnb li a {
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    padding: 1.6rem 0;
+    text-align: center;
+}
+
+.btn-close {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../img/ico-close.svg) no-repeat 50%;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1280px) {
+    #header {
+        height: 65rem;
+    }
+
+    /* Our Story */
+    .story-con {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .story-con figure {
+        width: 100%;
+    }
+
+    .story-con dl {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Products */
+    .products-prev {
+        left: 2rem;
+    }
+
+    .products-next {
+        right: 2rem;
+    }
+
+    .product-text p {
+        padding: 0;
+    }
+
+    /* Events */
+
+    .events .inner {
+        width: 83.9%;
+    }
+
+    .events-container {
+        flex-direction: column;
+    }
+
+    .events-container ul {
+        gap: 0;
+    }
+
+    .events-container ul:nth-child(1) {
+        transform: none;
+    }
+
+    .events-con {
+        margin-top: 10rem;
+    }
+
+    /* Encouraging */
+
+    .encouraging-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 6rem;
+        /* max-width: 61.2rem; */
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .encouraging-img-swiper {
+        margin-top: 5rem;
+    }
+
+    .encouraging-text {
+        width: 100%;
+    }
+
+    .encouraging-img figure {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        height: 50rem;
+    }
+
+    .event-flex {
+        flex-direction: column;
+    }
+
+    .events-container li {
+        display: block;
+        margin-bottom: 7rem;
+    }
+
+    .encouraging-img-swiper {
+        margin-top: 5rem;
+        width: 45rem;
+    }
+
+    .encouraging-con-swiper {
+        width: 50rem;
+    }
+
+    .banner-con p:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .banner-title {
+        font-size: 9rem;
+        line-height: 10rem;
+    }
+
+    .warring {
+        margin-top: 28rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        height: 40rem;
+    }
+
+    .story-con dl dd {
+        font-size: 1.8rem;
+    }
+
+    .encouraging-img-swiper {
+        width: 30rem;
+    }
+
+    .encouraging-text > figure {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .encouraging-con-swiper {
+        width: 35rem;
+    }
+
+    .encouraging-text dl dt {
+        font-size: 3rem;
+    }
+
+    .encouraging-text dl dd {
+        font-size: 1.8rem;
+    }
+
+    .banner-con {
+        text-align: center;
+        top: 10%;
+        right: 0%;
+    }
+
+    .banner-con p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .banner-title {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .warring {
+        margin-top: 33rem;
+        font-size: 1.5rem;
+        padding: 0 6rem;
+    }
+}

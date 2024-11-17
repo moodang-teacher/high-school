@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>don't starve together</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main-rwd.css" />
+        <link rel="stylesheet" href="./css/header-rwd.css" />
+        <link rel="shortcut icon" href="./img/character/char1.webp" type="image/x-icon" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/swiper.js" defer></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="menu-screen">
+            <h2 class="menu-logo"></h2>
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력해 주세요." class="search-txt" />
+                <button class="btn-search"></button>
+            </div>
+            <ul class="menu-gnb">
+                <li><a href="#hero">게임 개요</a></li>
+                <li><a href="./character.html">캐릭터</a></li>
+                <li><a href="https://fall2024.dontstarvegame.com/">이벤트</a></li>
+                <li><a href="#character">트레일러</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="">LOG IN</a></li>
+                <li><a href="">/ SIGN UP</a></li>
+            </ul>
+        </div>
+        <div class="popup-wrap">
+            <div class="intro-dim"></div>
+            <div class="intro-video-wrap">
+                <div class="video">
+                    <iframe
+                        src="https://www.youtube.com/embed/bVbyn7c1X6E"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <button class="btn-close"></button>
+            </div>
+        </div>
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="./index.html"><img src="./img/character/char1.webp" alt="logo-char" /></a>
+                        <a href="./index.html">
+                            <img src="./img/logo-img.png" alt="logo-img" />
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li><a href="#hero">게임 개요</a></li>
+                        <li><a href="./character.html">캐릭터</a></li>
+                        <li><a href="https://fall2024.dontstarvegame.com/">이벤트</a></li>
+                        <li><a href="#character">트레일러</a></li>
+                        <li><a href="#reviews">리뷰</a></li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href="#" class="icon"><img src="./img/util-menu-user.png" alt="util-menu-user" /></a>
+                        <a href="#" class="icon"><img src="./img/util-menu-search.png" alt="util-menu-search" /></a>
+                        <div class="menu">
+                            <input type="checkbox" id="hamburger" />
+                            <label for="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section id="hero">
+                <div class="hero-visual">
+                    <div class="Gomsol"></div>
+                    <div class="background"></div>
+                    <div class="char-wrap-back">
+                        <div class="wilson"></div>
+                        <div class="willow"></div>
+                    </div>
+                </div>
+                <h2 class="hero-logo">
+                    <img src="./img/logo-main.png" alt="logo-main" />
+                </h2>
+            </section>
+            <section id="intro">
+                <h3 class="sec-title">Survive the Unknown, or Perish in the Dark</h3>
+                <div class="inner">
+                    <p>
+                        이 세계에서는 굶주림과 어둠이 당신의 최대 적입니다. <br />
+                        자원을 모아 불을 피우고, 자신을 지킬 방법을 찾아야만 합니다. <br />
+                        생존은 당신의 선택에 달렸습니다, 끝까지 버틸 수 있을까요?
+                    </p>
+                    <figure data-link="https://www.youtube.com/embed/bVbyn7c1X6E">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/bVbyn7c1X6E?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1&loop=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; loop; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/together-trailer.jpg" alt="intro-img" />
+                    </figure>
+                </div>
+            </section>
+            <figure class="brush-line">
+                <img src="./img/paper_tear_bottom_full_1.png" alt="intro-img" />
+            </figure>
+            <section id="feature">
+                <div class="background"></div>
+                <h3 class="sec-title">feature</h3>
+                <div class="inner feature-slider-wrap">
+                    <div class="swiper feature-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-background="./img/feature1.jpg">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature1.jpg" alt="feature-img" /></figure>
+                                    <h4>멀티플레이어</h4>
+                                    <p>온라인 협동 플레이를 통해 친구들과 함께 생존 전략을 계획하고 실행하세요!</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature2.png">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature2.png" alt="feature-img" /></figure>
+                                    <h4>캐릭터 커스터마이징</h4>
+                                    <p>
+                                        다양한 캐릭터와 그들의 고유한 능력을 선택할 수 있습니다. 각 캐릭터에 특정 능력을
+                                        이용하세요.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature3.jpg">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature3.jpg" alt="feature-img" /></figure>
+                                    <h4>계절의 변화</h4>
+                                    <p>게임 내에서 계절의 변화가 생존 전략에 큰 영향을 미칩니다. 겨울을 대비하세요.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature4.webp">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature4.webp" alt="feature-img" /></figure>
+                                    <h4>공예 시스템</h4>
+                                    <p>수집한 자원들을 활용하여 도구, 무기, 의류 등을 제작할 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature5.webp">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature5.webp" alt="feature-img" /></figure>
+                                    <h4>기지 건설</h4>
+                                    <p>안전한 장소를 찾아 기지를 건설하고, 자원을 효율적으로 관리하세요</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature6.webp">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature6.webp" alt="feature-img" /></figure>
+                                    <h4>탐험과 모험</h4>
+                                    <p>
+                                        무작위 생성되는 맵에서 새로운 지역을 탐험하고, 다양한 생물과 자원을 발견할 수
+                                        있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature7.png">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature7.png" alt="feature-img" /></figure>
+                                    <h4>다양한 생물과 몬스터</h4>
+                                    <p>게임 내에는 다양한 몬스터와 동식물이 존재하며, 다양한 상호작용을 하세요.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-background="./img/feature8.webp">
+                                <div class="feature-list">
+                                    <figure><img src="./img/feature8.webp" alt="feature-img" /></figure>
+                                    <h4>모드 지원</h4>
+                                    <p>
+                                        게임의 커뮤니티에서 제작한 다양한 모드를 적용하여 새로운 경험을 즐길 수
+                                        있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class="btn-prev"></div>
+                <div class="btn-next"></div>
+            </section>
+            <section id="character">
+                <h3 class="sec-title">character</h3>
+                <div class="inner character-wrap">
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                    <div class="swiper character-screen">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="./character.html" class="character-img">
+                                        <img src="./img/character/char1-wilson-card.webp" alt="wilson" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>윌슨(Wilson)</h4>
+                                            <p>신사 과학자</p>
+                                        </div>
+                                        <p class="character-comment">"내 정신력으로 모든 것을 정복하겠어!"</p>
+                                        <ul class="character-feature">
+                                            <li>멋진 수염이 자람</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char2-willow-card.webp" alt="willow" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>윌로우(Willow)</h4>
+                                            <p>방화범</p>
+                                        </div>
+                                        <p class="character-comment">"모든 게 아름다운 불길에 휩싸일 거야."</p>
+                                        <ul class="character-feature">
+                                            <li>불을 좋아하지만 추위는 싫어한다</li>
+                                            <li>신뢰할 수 있는 라이터가 있습니다</li>
+                                            <li>그녀의 귀여운 곰인형, 버니의 보호를 받는다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">120</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char3-Wolfgang-card.webp" alt="Wolfgang" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>볼프강(Wolfgang)</h4>
+                                            <p>차력사</p>
+                                        </div>
+                                        <p class="character-comment">"나는 강해! 나보다 강한 놈은 없어!"</p>
+                                        <ul class="character-feature">
+                                            <li>시간이 지나면서 겁쟁이가 된다.</li>
+                                            <li>칼로리를 많이 소모합니다.</li>
+                                            <li>겁이 많습니다.</li>
+                                            <li>강력해지려면 운동이 필요하다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">200</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">200</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char4-Wendy-card.webp" alt="Wendy" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>웬디(Wendy)</h4>
+                                            <p>유족</p>
+                                        </div>
+                                        <p class="character-comment">"아비게일? 돌아와! 너랑 더 놀고싶단 말이야!"</p>
+                                        <ul class="character-feature">
+                                            <li>쌍동이 동생 아비게일(유령)을 소환한다.</li>
+                                            <li>어둠 속에서도 편안함을 느낀다.</li>
+                                            <li>유령과 장난을 친다.</li>
+                                            <li>그다지 세지 않다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char5-wx-78-card.webp" alt="wx-78" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>WX-78</h4>
+                                            <p>영혼없는 기계</p>
+                                        </div>
+                                        <p class="character-comment">"공감 모듈 응답없음."</p>
+                                        <ul class="character-feature">
+                                            <li>회로를 통해 업그레이드 가능</li>
+                                            <li>까다롭지 않은 식성</li>
+                                            <li>번개로 충전 가능, 물에 손상</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">125</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">125</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">150</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char6-Wickerbottom-card.webp" alt="wickerbottom" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>위커바텀(Wickerbottom)</h4>
+                                            <p>사서</p>
+                                        </div>
+                                        <p class="character-comment">"쉬이이, 조용히 해요!"</p>
+                                        <ul class="character-feature">
+                                            <li>많은 것을 알고 있다.</li>
+                                            <li>스스로 책을 만들다.</li>
+                                            <li>불면증에 시달린다.</li>
+                                            <li>위장이 약하다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">125</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">250</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char7-Woodie-card.webp" alt="Woodie" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>우디(Woodie)</h4>
+                                            <p>나무꾼</p>
+                                        </div>
+                                        <p class="character-comment">"나무 참 이쁘구만 그래. 오래가진 않겠지만."</p>
+                                        <ul class="character-feature">
+                                            <li>사랑스러운 도끼를 가지고 있습니다...</li>
+                                            <li>매일 숲과 전쟁을 벌이고 있습니다.</li>
+                                            <li>Werebeaver의 저주를 받았습니다!</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char-8Wes-card.webp" alt="Wes" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>웨스(Wes)</h4>
+                                            <p>묵언가</p>
+                                        </div>
+                                        <p class="character-comment">"....."</p>
+                                        <ul class="character-feature">
+                                            <li>말을 할 수 없음</li>
+                                            <li>풍선마술을 연습함</li>
+                                            <li>숙련된 전사나 노동자가 아님</li>
+                                            <li>생존에 어려움을 겪음</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">75</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">75</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">75</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char9-Maxwell-card.webp" alt="Maxwell" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>맥스웰(Maxwell)</h4>
+                                            <p>인형사</p>
+                                        </div>
+                                        <p class="character-comment">"나에게는 자유가 어울리지"</p>
+                                        <ul class="character-feature">
+                                            <li>그는 멋지지만 연약해</li>
+                                            <li>마음을 조각으로 나눌 수 있어</li>
+                                            <li>그림자에서 힘을 이끌어내</li>
+                                            <li>한때 이 세상에 왕이였어</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">75</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char10-Wigfrid-card.webp" alt="Wigfrid" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>위그프리드(Wigfrid)</h4>
+                                            <p>공연예술가</p>
+                                        </div>
+                                        <p class="character-comment">"이 세상의 모든 것이 날 위한 무대이리니!"</p>
+                                        <ul class="character-feature">
+                                            <li>그녀는 전투에서 탁월해!</li>
+                                            <li>타락한 적의 힘을 흡수해...</li>
+                                            <li>압박 속에서도 강해!</li>
+                                            <li>오직 고기만 <strong>meat!</strong></li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">200</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">120</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">120</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char11-Webber-card.webp" alt="Webber" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>위그프리드(Webber)</h4>
+                                            <p>소화되지 않는 아이</p>
+                                        </div>
+                                        <p class="character-comment">"우린 언제나 함께야. 혼자가 아니라구!"</p>
+                                        <ul class="character-feature">
+                                            <li>그는 괴물이야?</li>
+                                            <li>거미와 친구가 될 수 있어?</li>
+                                            <li>매끈하고 부드러운 수염을 기르다?</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">175</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">175</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char14-Winona.webp" alt="Winona" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>위노나(Winona)</h4>
+                                            <p>숙련공</p>
+                                        </div>
+                                        <p class="character-comment">"피땀 흘려 일하면 뭐든지 고칠 수 있지"</p>
+                                        <ul class="character-feature">
+                                            <li>숙력된 거축가.</li>
+                                            <li>어둠으로부터 한번 타격을 막는다.</li>
+                                            <li>그녀만의 발명품을 만들다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char-12Warly-card.webp" alt="Warly" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>왈리(Warly)</h4>
+                                            <p>요리사</p>
+                                        </div>
+                                        <p class="character-comment">"배가 고프면 아무것도 할 수 없는 법!"</p>
+                                        <ul class="character-feature">
+                                            <li>휴대용 조리도구를 가지고 있습니다.</li>
+                                            <li>매운맛을 더할 수 있다.</li>
+                                            <li>식욕이 끝이 없다.</li>
+                                            <li>요리된 음식만 먹는다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">250</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char15-Walter.webp" alt="Walter" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>월터(Walter)</h4>
+                                            <p>강심장</p>
+                                        </div>
+                                        <p class="character-comment">"소나무 개척단은 항상 준비되어 있다!"</p>
+                                        <ul class="character-feature">
+                                            <li>다치는 것 외에는 아무것도 두려워하지 않는다</li>
+                                            <li>네 발 달린 친구가 있다?</li>
+                                            <li>새총을 잘 다룬다.</li>
+                                            <li>꿀벌 알레르기</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">130</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">110</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char17-Wortox.webp" alt="Wortox" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>워톡스(Wortox)</h4>
+                                            <p>굶주린 영혼</p>
+                                        </div>
+                                        <p class="character-comment">"내가 악수를 안 해도 용서해 줘."</p>
+                                        <ul class="character-feature">
+                                            <li>시간과 공간을 넘나드는 도깨비입니다.</li>
+                                            <li>물리적 음식으로 영양을 덜 섭취합니다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">200</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">175</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">150</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char13-Wormwood-card.webp" alt="Wormwood" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>웜우드(Wormwood)</h4>
+                                            <p>외톨이</p>
+                                        </div>
+                                        <p class="character-comment">"안녕, 친구?"</p>
+                                        <ul class="character-feature">
+                                            <li>식물은 그와 관련이 있습니다</li>
+                                            <li>식물이 죽으면 슬퍼합니다.</li>
+                                            <li>음식은 그의 배를 채우지만 마음은 채우지 못합니다.</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">150</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char18-Wurt.webp" alt="Wurt" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>워트(Wurt)</h4>
+                                            <p>꼬맹이</p>
+                                        </div>
+                                        <p class="character-comment">"어인들 칭-절-하기로 유명해, 뽀륵."</p>
+                                        <ul class="character-feature">
+                                            <li>늪에서 살고 있어요.</li>
+                                            <li>어인왕에 대한 큰 계획이 있습니다.</li>
+                                            <li>채식주의자</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Health.webp" alt="Health" />
+                                                <div class="text">150-250</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">200-250</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">150-200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-info">
+                                    <a href="#" class="character-img">
+                                        <img src="./img/character/char19-Wanda.webp" alt="Wanda" />
+                                    </a>
+                                    <div class="character-info-wrap">
+                                        <div class="character-name">
+                                            <h4>완다(Wanda)</h4>
+                                            <p>시간 관리자</p>
+                                        </div>
+                                        <p class="character-comment">"시간! 시간이 더 필요해!"</p>
+                                        <ul class="character-feature">
+                                            <li>시간 관리 능력이 뛰어납니다</li>
+                                            <li>자신이 느끼는 만큼만 늙습니다?</li>
+                                            <li>시간과의 끊임없는 경쟁에서..?</li>
+                                        </ul>
+                                        <div class="ico-img">
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/AgeTime.png" alt="Health" />
+                                                <div class="text">20~80세</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/hunger.webp" alt="Hunger" />
+                                                <div class="text">175</div>
+                                            </div>
+                                            <div class="ico-img-wrap">
+                                                <img src="./img/Sanity.webp" alt="Sanity" />
+                                                <div class="text">200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper character-select">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wilson"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character willow"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wolfgang"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wendy"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wx-78"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wickerbottom"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character woodie"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wes"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character maxwell"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wigfrid"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character webber"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character winona"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character warly"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character walter"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wortox"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wormwood"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wurt"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character-select-background">
+                                    <div class="ico-character wanda"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="trailer">
+                <h3 class="sec-title">trailer</h3>
+                <div class="dim"></div>
+                <div class="video-wrap">
+                    <div class="video">
+                        <iframe
+                            src="https://www.youtube.com/embed/N0QhvmisGWU"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <button class="btn-close"></button>
+                </div>
+                <ul class="inner trailer-wrap">
+                    <li data-link="https://www.youtube.com/embed/N0QhvmisGWU">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/N0QhvmisGWU?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer1.jpg" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/dU-aq2JbLkk">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/dU-aq2JbLkk?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1&loop=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer1.webp" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/_VkMlfN9E3M">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/_VkMlfN9E3M?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1&loop=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer2.webp" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/rmJ-mX9n5hM">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/rmJ-mX9n5hM?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer3.webp" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/0h136gKO3rE">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/0h136gKO3rE?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer4.webp" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/tAjbOJBfk5U">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/tAjbOJBfk5U?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer5.webp" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/Czf2HyXzHQ4">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/Czf2HyXzHQ4?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer6.jpg" alt="trailer-img" />
+                    </li>
+                    <li data-link="https://www.youtube.com/embed/9wuW3MXLyTI">
+                        <div class="hover-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/9wuW3MXLyTI?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <img src="./img/trailer7.webp" alt="trailer-img" />
+                    </li>
+                </ul>
+            </section>
+            <section id="reviews">
+                <div class="dim"></div>
+                <h3 class="sec-title">reviews</h3>
+                <div class="inner reviews-wrap">
+                    <div class="swiper reviews-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-card">
+                                    <div class="star-wrap">
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                    </div>
+                                    <h4 class="nickname">Jarda</h4>
+                                    <p>Don't Starve Together는 저와 제 아내에게 단순한 게임 이상의 것이었습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-card">
+                                    <div class="star-wrap">
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                    </div>
+                                    <h4 class="nickname">Lunsarshine</h4>
+                                    <p>아무도 음식이나 피난처를 챙기지 않았고, 살아가는 방법을 모른다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-card">
+                                    <div class="star-wrap">
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                    </div>
+                                    <h4 class="nickname">OhToffee</h4>
+                                    <p>
+                                        Klei는 10년 이상 이 게임을 개발하는 데 전념해 왔으며, 지금까지 업데이트 하고
+                                        있다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-card">
+                                    <div class="star-wrap">
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/active-filled.png" alt="active-filled" />
+                                        </div>
+                                    </div>
+                                    <h4 class="nickname">shyvara</h4>
+                                    <p>
+                                        이 게임은 그저 어울리고 싶고 약간의 혼란도 마다하지 않는 사람들에게 완벽합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                </div>
+                <a href="#" class="btn-review-write">
+                    <div class="img-size"></div>
+                    <span>리뷰 작성</span>
+                </a>
+            </section>
+        </main>
+        <footer id="footer">
+            <h3 class="foot-logo">
+                <a href="./index.html"><img src="./img/character/char1.webp" alt="foot-logo-img" /></a>
+                <a href="./index.html"><img src="./img/logo-img.png" alt="foot-logo-img" /></a>
+            </h3>
+            <div class="sns">
+                <a href="https://www.instagram.com/dont_starve_game/"
+                    ><img src="./img/ico-instagram.png" alt="instagram"
+                /></a>
+                <a href="https://x.com/klei"><img src="./img/ico-x.png" alt="X" /></a>
+                <a href="https://www.facebook.com/groups/DontStarveCommunity/"
+                    ><img src="./img/ico-facebook.png" alt="facebook"
+                /></a>
+                <a href="https://www.youtube.com/@kleient"><img src="./img/ico-youtube.png" alt="youtube" /></a>
+                <a href="https://store.steampowered.com/app/322330/Dont_Starve_Together/"
+                    ><img src="./img/ico-steam.png" alt="steam"
+                /></a>
+            </div>
+            <div class="copyright-wrap">
+                <div class="ko-wrap">
+                    <p>개인정보 보호정책</p>
+                    <p>법률</p>
+                    <p>이용약관</p>
+                    <p>저작권 정보</p>
+                </div>
+                <p class="copyright">© All Rights Reserved Klei Entertainment</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,2043 @@
+/* 전체 스타일 */
+@charset "utf-8";
+
+/* 전체 스타일 */
+
+/* 헤더 */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 3.125vw;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    margin-left: 9.11vw;
+}
+
+.main-logo img {
+    width: 10.42vw;
+    height: auto;
+    object-fit: contain;
+}
+
+#header nav {
+    flex: 2;
+    text-align: center;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 4.69vw;
+}
+
+#header nav ul li {
+    font-size: 1.04vw;
+}
+
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 9.11vw;
+}
+
+.language-selector {
+    position: relative;
+    margin-right: 1.04vw;
+    font-size: 1.04vw;
+}
+
+.language-selector span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 0.26vw;
+    padding: 0.26vw 0;
+    box-shadow: 0 0.1vw 0.26vw rgba(0, 0, 0, 0.1);
+}
+
+.language-selector:hover .language-options {
+    display: block;
+}
+
+.language-options li a {
+    display: block;
+    padding: 0.26vw 0.52vw;
+    color: #333;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.04vw;
+    padding: 0;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 1.3vw;
+    height: 0.1vw;
+    background-color: #fff;
+}
+
+/* 히어로 섹션 */
+.hero-swiper .swiper-slide .hero {
+    background: no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+    padding: 7.81vw 0 5.21vw;
+    height: 51.92vw;
+    top: -7.81vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-swiper .swiper-wrapper .swiper-slide {
+    height: 52.92vw;
+    margin-top: 5.83vw;
+}
+
+.hero-swiper .swiper-wrapper .swiper-pagination {
+    margin-top: 1.04vw;
+}
+
+.hero h2 {
+    font-size: 4.17vw;
+    font-weight: 700;
+    margin-top: 12.5vw;
+}
+
+.hero p {
+    font-size: 1.46vw;
+    font-weight: 600;
+    margin-top: 0.52vw;
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: 42.67vw;
+    left: 44.43vw;
+    bottom: 0;
+    height: 0.21vw;
+    position: absolute;
+    z-index: 10;
+    width: 10vw;
+    background: #fff;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: var(--point-color);
+}
+
+.btn {
+    top: 2.6vw;
+}
+.sp-event {
+    width: 20.73vw;
+    height: 3.07vw;
+    background: var(--main-color);
+    position: absolute;
+    top: 30.21vw;
+    left: 39.58vw;
+    z-index: 10;
+    border-radius: 2.6vw;
+    font-size: 1.41vw;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-stop {
+    color: #fff;
+    position: absolute;
+    width: 2.08vw;
+    height: 2.08vw;
+    border: 0.026vw solid #fff;
+    border-radius: 50%;
+    background: url(../img/stop.svg) no-repeat center center / 40% auto;
+    display: block;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    cursor: pointer;
+}
+
+.btn-stop.active {
+    background: url(../img/stop2.svg) no-repeat 53% 50% / 35% auto;
+    color: #fff;
+    position: absolute;
+    width: 2.08vw;
+    height: 2.08vw;
+    border: 0.026vw solid #fff;
+    border-radius: 50%;
+    display: block;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-prev {
+    color: #fff;
+    position: absolute;
+    width: 2.08vw;
+    height: 2.08vw;
+    border: 0.026vw solid #fff;
+    border-radius: 50%;
+    display: block;
+    top: 71%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    cursor: pointer;
+    background: url(../img/prev.svg) no-repeat 45% 50% / 20% auto;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next {
+    color: #fff;
+    position: absolute;
+    width: 2.08vw;
+    height: 2.08vw;
+    border: 0.026vw solid #fff;
+    border-radius: 50%;
+    display: block;
+    top: 71%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    cursor: pointer;
+    background: url(../img/next.svg) no-repeat 45% 50% / 20% auto;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.hero-swiper .swiper-slide:nth-child(1) .hero {
+    background-image: url("../img/main.jpg");
+}
+.hero-swiper .swiper-slide:nth-child(2) .hero {
+    background-image: url("../img/main-img2.jpg");
+}
+.hero-swiper .swiper-slide:nth-child(3) .hero {
+    background-image: url("../img/main-img3.jpg");
+}
+.hero-swiper .swiper-slide:nth-child(4) .hero {
+    background-image: url("../img/main-img4.jpg");
+}
+
+.slide-number {
+    position: absolute;
+    bottom: 29rem;
+    left: 81rem;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.num {
+    position: absolute;
+    bottom: 26rem;
+    left: 43%;
+    display: flex;
+    justify-content: space-between;
+    width: 24rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    z-index: 10;
+}
+/* 상품 섹션 */
+.products {
+    padding: 2.6vw 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -2.6vw;
+    gap: 1.14vw;
+}
+
+.nav-tabs .nav-item {
+    color: #333;
+    border: none;
+    border-radius: 1.04vw;
+    border: 0.052vw solid #555;
+    width: 10.42vw;
+    height: 2.34vw;
+    padding: 0.26vw 0;
+}
+
+.nav-tabs .nav-link {
+    font-size: 1.04vw;
+    font-weight: 700;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.08vw;
+    margin-top: 3.91vw;
+}
+
+.product-item {
+    flex: 0 0 calc(25% - 1.04vw);
+    margin-bottom: 1.56vw;
+    position: relative;
+    width: 14.17vw;
+    height: 18.02vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item .badge {
+    position: absolute;
+    top: 0.52vw;
+    left: 0.52vw;
+    background-color: #f37321;
+    width: 2.6vw;
+    height: 1.3vw;
+    color: #fff;
+    border-radius: 0.78vw;
+    font-size: 0.78vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    max-width: 12.08vw;
+    max-height: 15.42vw;
+    margin-top: 1.04vw;
+}
+
+.product-name {
+    font-size: 0.78vw;
+    font-weight: 700;
+    color: var(--dark100);
+}
+
+.product-price {
+    color: var(--sub-color);
+    font-weight: 700;
+    font-size: 0.78vw;
+}
+
+.more-btn {
+    display: block;
+    margin: 4.17vw auto 0;
+    padding: 0.52vw 1.56vw;
+    background-color: #fff;
+    color: var(--dark100);
+    border: 0.052vw solid var(--dark50);
+    border-radius: 2.6vw;
+    font-weight: 700;
+    width: 10.42vw;
+    font-size: 1.04vw;
+}
+
+/* 브랜드스토리 */
+
+.brand-story .inner {
+    margin: 0 auto;
+}
+
+.brand-img {
+    background: url(../img/brand-store.jpg) no-repeat 0 0 / contain;
+    width: 51.04vw;
+    height: 15.63vw;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 6.77vw;
+    padding-left: 5.21vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-img h2 {
+    font-size: 2.6vw;
+    font-weight: 700;
+    margin-bottom: 0.52vw;
+}
+
+.brand-img p {
+    font-size: 1.04vw;
+    font-weight: 300;
+    margin-bottom: 1.04vw;
+}
+
+.moer-arrow {
+    width: 2.08vw;
+    height: 0.21vw;
+    border-radius: 0 2.6vw 2.6vw 0;
+    background: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 13.02vw;
+    transition: 0.4s;
+}
+
+.moer-arrow::after {
+    content: "";
+    position: absolute;
+    background: url(../img/brand-sotry.svg) no-repeat 0 0 / cover;
+    width: 0.63vw;
+    height: 0.94vw;
+    top: -0.36vw;
+    right: 0;
+}
+
+.brand-img:hover .moer-arrow {
+    width: 7.81vw;
+}
+
+.event {
+    position: relative;
+    margin-top: 10.16vw;
+}
+
+.deco {
+    background: url(../img/deco.svg) no-repeat 0 0 / contain;
+    width: 173.7vw;
+    height: 148.8vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.event h3 {
+    font-weight: 700;
+    font-size: 2.86vw;
+    margin-bottom: 4.43vw;
+}
+
+.event-con {
+    position: relative;
+    gap: 3.39vw;
+    display: flex;
+    margin-bottom: 30vw;
+}
+
+.event-con dl dt {
+    font-weight: 700;
+    font-size: 1.98vw;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    top: 5.21vw;
+    left: 2.6vw;
+}
+
+.event-con dl dd {
+    font-weight: 700;
+    font-size: 1.04vw;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    top: 13.02vw;
+    left: 2.6vw;
+}
+
+.swiper2 {
+    width: 35.94vw;
+    height: 19.64vw;
+}
+
+.make {
+    width: 44.69vw;
+    height: 16.61vw;
+    background: var(--point-color);
+    border-radius: 2.6vw;
+    margin: -16.67vw auto 16.67vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5.21vw;
+    text-align: left;
+}
+
+.make .inner {
+    margin: 0 0 0 0;
+}
+
+.make-sec h4 {
+    font-size: 1.82vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.make-sec p {
+    font-weight: 500;
+    font-size: 1.04vw;
+    color: #fff;
+    margin-top: 0.52vw;
+}
+
+.mak-btn {
+    width: 8.07vw;
+    height: 2.86vw;
+    background: #ff6779;
+    font-weight: 700;
+    font-size: 1.04vw;
+    color: #fff;
+    border-radius: 2.6vw;
+    margin-top: 1.41vw;
+}
+
+.search {
+    margin-top: 2.19vw;
+    display: flex;
+    justify-content: center;
+}
+
+.search .inner {
+    margin: 0 0 0 0;
+}
+
+.search-title {
+    text-align: left;
+}
+
+.search-title h2 {
+    font-weight: 700;
+    font-size: 2.34vw;
+    color: var(--dark100);
+}
+
+.search-title p {
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: var(--dark100);
+}
+
+.search-box {
+    margin-top: 14.33vw;
+    font-weight: 500;
+    font-size: 1.3vw;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 46.88vw;
+}
+
+.search-box input {
+    outline: none;
+    width: 31.25vw;
+}
+
+.search-box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.26vw;
+    width: 33.85vw;
+    height: 0.1vw;
+    background-color: #000;
+}
+
+.btn-search {
+    display: block;
+    width: 1.56vw;
+    height: 2.08vw;
+    background: #fff url(../img/search.svg) no-repeat 0 0 / contain;
+    position: absolute;
+    right: 13.54vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-tags {
+    margin-top: 1.82vw;
+    font-weight: 700;
+    font-size: 0.94vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.52vw;
+    justify-content: flex-start;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f5f5;
+    border-radius: 2.6vw;
+    width: 8.07vw;
+    height: 2.45vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-right {
+    border: 0.026vw solid var(--dark50);
+    width: 21.35vw;
+    height: 26.15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.6vw;
+    background: #fff;
+}
+
+.search-results {
+    background: url(../img/products9.png) no-repeat 0 0 / contain;
+    width: 13.13vw;
+    height: 16.72vw;
+    position: relative;
+}
+
+.search-results h3 {
+    font-size: 1.04vw;
+    font-weight: 700;
+    color: var(--dark100);
+    position: absolute;
+    bottom: -2.08vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.search-results p {
+    color: var(--sub-color);
+    font-weight: 700;
+    font-size: 0.78vw;
+    position: absolute;
+    bottom: -3.65vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.search-results .badge {
+    position: absolute;
+    top: -2.6vw;
+    left: -2.08vw;
+    background-color: #f37321;
+    width: 2.6vw;
+    height: 1.3vw;
+    color: #fff;
+    border-radius: 0.78vw;
+    font-size: 0.78vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NMIXX {
+    display: flex;
+    margin-top: 19.11vw;
+    gap: 7.71vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.NMIXX-sec {
+    width: 46.25vw;
+    height: 21.35vw;
+    background: var(--main-color);
+    border-radius: 0 1.56vw 1.56vw 0;
+    text-align: left;
+    position: relative;
+}
+
+.NMIXX-img {
+    background: url(../img/NMIXX1.png) no-repeat 0 0 / contain;
+    width: 22.24vw;
+    height: 15.47vw;
+    position: absolute;
+    top: 5.99vw;
+    left: 24.17vw;
+}
+
+.NMIXX-sec h4 {
+    font-weight: 700;
+    font-size: 2.6vw;
+    color: #fff;
+    margin: 6.25vw 0 0 4.69vw;
+    padding: 5.21vw 0 0 0;
+}
+
+.NMIXX-sec p {
+    font-weight: 700;
+    font-size: 1.04vw;
+    color: #fff;
+    margin: 0.52vw 0 0 4.69vw;
+}
+
+.NMIXX-sec-2 {
+    width: 46.25vw;
+    height: 21.35vw;
+    background: var(--sub-color);
+    border-radius: 1.56vw 0 0 1.56vw;
+    text-align: left;
+    position: relative;
+}
+
+.NMIXX-sec-2 h4 {
+    font-weight: 700;
+    font-size: 2.6vw;
+    color: #fff;
+    margin: 6.25vw 0 0 4.69vw;
+    padding: 5.21vw 0 0 0;
+}
+
+.NMIXX-sec-2 p {
+    font-weight: 700;
+    font-size: 1.04vw;
+    color: #fff;
+    margin: 0.52vw 0 0 4.69vw;
+}
+
+.NMIXX-img-2 {
+    background: url(../img/NMIXX2.png) no-repeat 0 0 / contain;
+    width: 22.24vw;
+    height: 15.47vw;
+    position: absolute;
+    top: 8.65vw;
+    left: 23.49vw;
+}
+
+.NMIXX-arrow {
+    width: 5.21vw;
+    height: 0.21vw;
+    border-radius: 0 2.6vw 2.6vw 0;
+    background: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 16.67vw;
+    transition: 0.3s;
+    margin-left: 4.69vw;
+}
+
+.NMIXX-arrow::after {
+    content: "";
+    position: absolute;
+    background: url(../img/brand-sotry.svg) no-repeat;
+    width: 0.63vw;
+    height: 0.94vw;
+    top: -0.36vw;
+    right: 0;
+}
+
+.NMIXX-arrow-2 {
+    width: 5.21vw;
+    height: 0.21vw;
+    border-radius: 0 2.6vw 2.6vw 0;
+    background: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 16.67vw;
+    transition: 0.3s;
+    margin-left: 4.69vw;
+}
+
+.NMIXX-arrow-2::after {
+    content: "";
+    position: absolute;
+    background: url(../img/brand-sotry.svg) no-repeat;
+    width: 0.63vw;
+    height: 0.94vw;
+    top: -0.36vw;
+    right: 0;
+}
+
+.NMIXX-sec:hover .NMIXX-arrow {
+    width: 15.63vw;
+}
+
+.NMIXX-sec-2:hover .NMIXX-arrow-2 {
+    width: 15.63vw;
+}
+
+/* 뉴스 섹션 */
+.swiper-section3 {
+    background-color: #f0f0f0;
+    margin-top: 16.67vw;
+    padding: 5.99vw;
+    height: 50.21vw;
+    position: relative;
+}
+
+.swiper-section3 h2 {
+    font-size: 2.08vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.swiper-section3 h2 strong {
+    color: var(--sub-color);
+    font-size: 2.34vw;
+}
+
+.mySwiper3 .swiper-slide {
+    width: 39.9rem;
+    aspect-ratio: 1/1.12;
+    border-radius: 0.78vw;
+    overflow: hidden;
+    box-shadow: 0 0.21vw 0.52vw rgba(0, 0, 0, 0.1);
+    margin-top: 10rem;
+}
+
+.news-item {
+    width: 100%;
+    height: 100%;
+}
+
+.news-image {
+    width: 100%;
+    height: 53%;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-text {
+    background: var(--main-color);
+    height: 47%;
+}
+
+.news-item dl {
+    padding: 1.04vw;
+}
+
+.news-item dt {
+    color: #fff;
+    font-size: 0.94vw;
+    font-weight: 600;
+    margin-bottom: 0.52vw;
+    margin-top: 0.52vw;
+}
+
+.news-item dd {
+    color: #fff;
+    font-size: 0.73vw;
+    margin-bottom: 0.78vw;
+}
+
+.hashtags {
+    padding: 0 1.04vw 1.04vw;
+}
+
+.hashtags span {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.26vw 0.52vw;
+    border-radius: 1.04vw;
+    font-size: 0.63vw;
+    margin-right: 0.26vw;
+    margin-bottom: 0.26vw;
+}
+
+/* 푸터 */
+footer {
+    background-color: var(--main-color);
+    height: 22.24vw;
+    color: white;
+    padding: 4.48vw 0;
+}
+
+.footer-container {
+    text-align-last: left;
+    gap: 19.27vw;
+    display: flex;
+    justify-content: space-between;
+    max-width: 83.33vw;
+    margin: 0.73vw auto;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-logo {
+    display: block;
+    background: url(../img/fot-logo1.svg) no-repeat 0 0 / contain;
+    width: 13.03vw;
+    height: 2.14vw;
+    margin-bottom: 1.56vw;
+}
+
+.footer-address,
+.footer-copyright {
+    font-size: 0.63vw;
+    line-height: 1.5;
+    margin-bottom: 1.56vw;
+}
+
+.sns {
+    margin-top: 2.19vw;
+    display: flex;
+    gap: 1.04vw;
+    margin-left: 0.3vw;
+}
+
+.sns-link {
+    display: block;
+    width: 1.56vw;
+    height: 1.56vw;
+    background: url(../img/logo_fb.svg) no-repeat 0 0 / contain;
+}
+
+.sns-link:nth-child(2) {
+    background: url(../img/logo_inst.svg) no-repeat 0 0 / contain;
+}
+
+.sns-link:nth-child(3) {
+    background: url(../img/logo_x.svg) no-repeat 0 0 / contain;
+}
+
+.sns-link:nth-child(4) {
+    background: url(../img/logo_youtube.svg) no-repeat 0 0 / contain;
+}
+
+.sns-link:nth-child(5) {
+    background: url(../img/logo_tktk.svg) no-repeat 0 0 / contain;
+}
+
+.footer-right {
+    flex: 1;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.17vw;
+}
+
+.menu-column {
+    flex: 1;
+}
+
+.menu-column h3 {
+    font-size: 0.73vw;
+    margin-bottom: 0.52vw;
+}
+
+.menu-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-column ul li {
+    margin-bottom: 0.26vw;
+}
+
+.menu-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.63vw;
+}
+
+.footer-bottom {
+    border-top: 0.052vw solid rgba(255, 255, 255, 0.2);
+    margin-top: 1.04vw;
+    padding-top: 1.04vw;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 1.25vw;
+    height: 1.25vw;
+    margin: 0 0.26vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 태블릿 */
+
+@media screen and (max-width: 1200px) {
+    #header {
+        gap: 67.5rem;
+        gap: 65.918%;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+    .header-right {
+        gap: 2.5rem;
+        margin: 0 12rem 0 -6rem;
+    }
+
+    .hamburger-menu {
+        scale: 2.8;
+    }
+
+    .language-selector {
+        font-size: 3.8rem;
+    }
+
+    .main-logo img {
+        width: 21.1rem;
+    }
+
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 60.92vw;
+    }
+
+    .hero-swiper .swiper-slide .hero {
+        height: 90rem;
+    }
+
+    .hero h2 {
+        margin-top: 27.2rem;
+        margin-top: 28.8136%;
+        font-size: 7rem;
+    }
+    .hero p {
+        font-size: 3.1rem;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 90rem;
+        top: 89.8906%;
+        width: 90.5rem;
+        width: 87.8906%;
+        left: 4rem;
+    }
+
+    .num {
+        left: 5%;
+        bottom: 3rem;
+        width: 88rem;
+        width: 85.9375%;
+    }
+
+    .sp-event {
+        width: 36.6rem;
+        width: 35.7422%;
+        height: 6rem;
+        font-size: 2.7rem;
+        left: 32.8rem;
+        left: 32.0313%;
+        top: 77.2rem;
+        top: 75.3906%;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .btn-stop {
+        width: 4rem;
+        height: 4rem;
+        top: 86%;
+        left: 6%;
+    }
+
+    .btn-stop.active {
+        width: 4rem;
+        height: 4rem;
+        top: 87%;
+        left: 6%;
+    }
+
+    .swiper-section3 {
+        height: 100rem;
+        overflow: hidden;
+    }
+    .swiper-section3 h2 {
+        margin-top: 10rem;
+        font-size: 5.1rem;
+    }
+    .swiper-section3 h2 strong {
+        font-size: 5.8rem;
+    }
+
+    .mySwiper3 .swiper-slide {
+        width: 43.9rem;
+
+        border-radius: 5rem;
+        margin-top: 8rem;
+    }
+
+    .news-item dl dt {
+        font-size: 2rem;
+    }
+    .news-item dl dd {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .hashtags span {
+        width: 12.4rem;
+        width: 28.246%;
+        height: 3.2rem;
+        border-radius: 5rem;
+        font-size: 1.4rem;
+        padding: 0.6rem;
+        margin-top: 2rem;
+    }
+
+    .nav-tabs {
+        margin-top: 5.4vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner {
+        max-width: 94.4rem;
+        max-width: 92.1875%;
+    }
+
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 77.92vw;
+    }
+
+    .hero {
+        height: 100.5rem;
+    }
+
+    .products {
+        padding-top: 17.4rem;
+        padding-top: 16.9922%;
+    }
+
+    .nav-tabs .nav-item {
+        width: 21.9rem;
+        width: 23.1992%;
+        height: 5.8rem;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 2.7rem;
+    }
+    .products-row {
+        gap: 20rem;
+        gap: 19.5313%;
+    }
+
+    .product-item {
+        scale: 2;
+        margin-top: 10rem;
+    }
+
+    .more-btn {
+        margin-top: 13.3rem;
+        margin-top: 14.089%;
+        width: 19.6rem;
+        width: 20.7627%;
+        height: 5.3rem;
+        font-size: 2.4rem;
+    }
+
+    .products-item-sec:nth-child(7) {
+        display: none;
+    }
+    .products-item-sec:nth-child(8) {
+        display: none;
+    }
+
+    .brand-story {
+        /* width: 92.4rem; */
+        width: 100%;
+    }
+
+    .brand-img {
+        width: 100%;
+        height: 35rem;
+        background: url(../img/brand-store-tb.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .brand-img h2 {
+        font-size: 5.6rem;
+    }
+
+    .brand-img p {
+        font-size: 3rem;
+    }
+
+    .moer-arrow {
+        top: 26rem;
+        top: 77.5424%;
+        width: 11rem;
+        width: 10.7422%;
+        height: 0.3rem;
+    }
+
+    .moer-arrow::after {
+        content: "";
+        width: 0.8rem;
+        height: 1.2rem;
+        background: url(../img/brand-sotry.svg) no-repeat 50% 110% / 120% auto;
+    }
+
+    .brand-img:hover .moer-arrow {
+        width: 21rem;
+        width: 20.5078%;
+    }
+
+    .event h3 {
+        font-size: 5.5rem;
+        margin-top: 17.2rem;
+        margin-top: 16.7969%;
+        margin-bottom: 4rem;
+        /* margin-left: 120rem; */
+    }
+
+    .event-con img {
+        width: 100%;
+        height: 37.7rem;
+        object-fit: cover;
+    }
+
+    .event-con dl dt {
+        font-size: 3.8rem;
+        top: 11rem;
+        top: 20.415%;
+    }
+    .event-con dl dd {
+        font-size: 1.8rem;
+        top: 25rem;
+        top: 70.034%;
+    }
+
+    .make {
+        /* width: 102.4rem; */
+        width: 100%;
+        height: 33.4rem;
+        border-radius: 0;
+        /* overflow: hidden; */
+    }
+
+    .make-sec {
+        margin-left: 5rem;
+    }
+
+    .make-sec h4 {
+        font-size: 4.4rem;
+    }
+    .make-sec p {
+        font-size: 2.1rem;
+    }
+
+    .mak-btn {
+        width: 17.6rem;
+        width: 28.6441%;
+        height: 5.3rem;
+        font-size: 2.5rem;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-title {
+        text-align: center;
+    }
+
+    .search-title h2 {
+        font-size: 5.5rem;
+    }
+    .search-title p {
+        font-size: 3rem;
+    }
+
+    .search-right {
+        width: 40.7rem;
+        width: 43.1144%;
+        height: 59.1rem;
+        position: absolute;
+        margin-top: -1rem;
+    }
+
+    .search-results .badge {
+        width: 8.3rem;
+        height: 2.8rem;
+        font-size: 2rem;
+        border-radius: 50px;
+        top: -9rem;
+        left: -3rem;
+    }
+
+    .search-results {
+        background-size: cover;
+        background-position: center;
+        width: 26.7rem;
+        width: 60.5442%;
+        height: 34.5rem;
+    }
+
+    .search-results h3 {
+        font-size: 2.2rem;
+        top: 35rem;
+        top: 100%;
+    }
+    .search-results p {
+        font-size: 2.2rem;
+        top: 120%;
+    }
+
+    .search-box {
+        margin-top: 74rem;
+        margin-top: 100%;
+        width: 94rem;
+        width: 100%;
+        margin-left: -4rem;
+        display: flex;
+    }
+
+    .btn-search {
+        width: 4.4rem;
+        height: 4.2rem;
+        margin-top: -1rem;
+    }
+
+    .search-box input {
+        font-size: 3.5rem;
+        margin-top: -1rem;
+    }
+
+    .search-box::after {
+        height: 0.3rem;
+        width: 82rem;
+        width: 116%;
+    }
+
+    .search-tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tag {
+        width: 17rem;
+        /* width: 25.7967%; */
+        height: 6.4rem;
+        font-size: 2.4rem;
+    }
+
+    .NMIXX {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .NMIXX a {
+        width: 100%;
+    }
+
+    .NMIXX-sec {
+        width: 102.4rem;
+        width: 100%;
+        height: 42rem;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .NMIXX-sec-2 {
+        width: 102.4rem;
+        width: 100%;
+        height: 42rem;
+        border-radius: 0;
+    }
+
+    .NMIXX-sec h4 {
+        font-size: 5rem;
+        margin-left: 8rem;
+        padding: 5rem 0 0 0;
+    }
+    .NMIXX-sec p {
+        font-size: 2.4rem;
+        margin-left: 8rem;
+    }
+
+    .NMIXX-img {
+        background-size: cover;
+        background-position: center;
+        width: 50.7rem;
+        width: 49.5117%;
+        height: 33.5rem;
+        top: 8.5rem;
+        left: 57rem;
+    }
+
+    .NMIXX-arrow {
+        width: 10rem;
+        width: 9.7656%;
+        height: 0.3rem;
+        top: 33rem;
+
+        left: 3.5rem;
+    }
+    .NMIXX-arrow::after {
+        width: 0.8rem;
+        height: 1.2rem;
+        background: url(../img/brand-sotry.svg) no-repeat 50% 110% / 120% auto;
+    }
+    .NMIXX-sec-2 {
+        overflow: hidden;
+    }
+    .NMIXX-sec-2 h4 {
+        font-size: 5rem;
+        margin-left: 8rem;
+        padding: 5rem 0 0 0;
+    }
+    .NMIXX-sec-2 p {
+        font-size: 2.4rem;
+        margin-left: 8rem;
+    }
+
+    .NMIXX-img-2 {
+        background-size: cover;
+        background-position: center;
+        width: 50.7rem;
+        width: 49.5117%;
+        height: 33.5rem;
+        top: 8.6rem;
+        left: 57rem;
+    }
+
+    .NMIXX-arrow-2 {
+        width: 10rem;
+        width: 9.7656%;
+        height: 0.3rem;
+        top: 33rem;
+        left: 3.5rem;
+    }
+    .NMIXX-arrow-2::after {
+        width: 0.8rem;
+        height: 1.2rem;
+        background: url(../img/brand-sotry.svg) no-repeat 50% 110% / 120% auto;
+    }
+
+    footer {
+        height: 26.8rem;
+        padding: 3.48vw 0;
+    }
+
+    .footer-logo {
+        background-size: cover;
+        background-position: center;
+        width: 16.8rem;
+        width: 37.2506%;
+        height: 2.9rem;
+    }
+
+    .footer-address {
+        font-size: 1.5rem;
+        width: 45.1rem;
+        width: 84%;
+    }
+
+    .footer-copyright {
+        font-size: 1.5rem;
+    }
+
+    .sns {
+        margin-left: 0rem;
+    }
+
+    .footer-container {
+        gap: 6rem;
+
+        max-width: 93rem;
+        max-width: 90.8203%;
+    }
+
+    .footer-menu {
+        width: 45.1rem;
+        width: 100%;
+    }
+
+    .menu-column h3 {
+        font-size: 1.5rem;
+    }
+
+    .menu-column ul li a {
+        font-size: 1rem;
+    }
+
+    i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        gap: 70.918%;
+    }
+
+    #header h1 {
+        margin-left: 11rem;
+        margin-left: 23.75%;
+    }
+
+    .main-logo img {
+        width: 10rem;
+    }
+
+    .language-selector {
+        font-size: 2rem;
+    }
+    .hero {
+        height: 85rem;
+        background: url(../img/main.jpg) no-repeat 50% 50% / cover;
+    }
+
+    .hero h2 {
+        margin-top: 27.2rem;
+        font-size: 3.5rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 55rem;
+        width: 35.5rem;
+        width: 92.75%;
+        left: 2rem;
+    }
+
+    .num {
+        left: 5.5%;
+        bottom: 20rem;
+        bottom: 3.5%;
+        width: 35rem;
+        width: 89.74358974358974%;
+        font-size: 2.5rem;
+    }
+
+    .sp-event {
+        width: 19.2rem;
+        width: 48%;
+        height: 3.8rem;
+        font-size: 2.7rem;
+        left: 19.8rem;
+        left: 24.75%;
+        top: 42.2rem;
+        font-size: 1.9rem;
+        border-radius: 50px;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .btn-stop {
+        width: 3rem;
+        height: 3rem;
+        top: 83%;
+        left: 6%;
+    }
+
+    .btn-stop.active {
+        width: 4rem;
+        height: 4rem;
+        top: 87%;
+        left: 6%;
+    }
+
+    .nav-tabs {
+        margin-top: -11rem;
+    }
+
+    .nav-tabs .nav-item {
+        width: 8.2rem;
+        height: 3.7rem;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .products-row {
+        gap: 14rem;
+    }
+
+    .product-item {
+        margin-top: 18rem;
+    }
+
+    .product-item {
+        scale: 3.4;
+        left: 1rem;
+    }
+
+    .products-item-sec:nth-child(5) {
+        display: none;
+    }
+
+    .products-item-sec:nth-child(6) {
+        display: none;
+    }
+
+    .more-btn {
+        width: 14.5rem;
+        width: 36.25%;
+        border-radius: 5rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        margin-top: 12rem;
+    }
+
+    .search-title h2 {
+        font-size: 3.5rem;
+        margin-top: 19rem;
+    }
+    .search-title p {
+        font-size: 2rem;
+    }
+
+    .search-right {
+        width: 20.2rem;
+        width: 50.5%;
+        height: 29.5rem;
+        margin-top: 20rem;
+    }
+
+    .search-results {
+        width: 13rem;
+        width: 64.3564%;
+        height: 17rem;
+        margin-top: -4rem;
+    }
+
+    .search-results .badge {
+        width: 4.3rem;
+        height: 2rem;
+        font-size: 1rem;
+        top: -2rem;
+    }
+
+    .search-results h3 {
+        font-size: 1.3rem;
+        top: 18rem;
+    }
+    .search-results P {
+        font-size: 1.3rem;
+        top: 22rem;
+    }
+
+    .search-box {
+        width: 40rem;
+        width: 100%;
+        margin-left: 2rem;
+        margin-top: 40rem;
+    }
+
+    .search-box::after {
+        width: 35rem;
+        width: 87.5%;
+    }
+
+    .search-box input {
+        font-size: 1.6rem;
+        width: 29rem;
+        width: 82.8571%;
+    }
+
+    .tag {
+        width: 11.5rem;
+        width: 32.85714285714286%;
+        height: 3.7rem;
+        font-size: 1.3rem;
+        border-radius: 5rem;
+        margin-top: 1rem;
+    }
+
+    .tag:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .search-right {
+        width: 30.5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav-tabs {
+        margin-top: -3rem;
+    }
+
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 102.92vw;
+    }
+
+    .search-right {
+        width: 20.2rem;
+        width: 50.5%;
+        height: 29.5rem;
+        margin-top: 20rem;
+    }
+    .tag {
+        width: 22.857143%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .inner {
+        max-width: 39rem;
+        max-width: 97.5%;
+    }
+
+    #header {
+        gap: 26rem;
+        gap: 65%;
+        left: 3rem;
+        margin-top: 5rem;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+    .header-right {
+        gap: 2.5rem;
+        margin: 0 12rem 0 -6rem;
+    }
+
+    .hamburger-menu {
+        scale: 5.8;
+    }
+
+    .language-selector {
+        font-size: 3.8rem;
+        display: none;
+    }
+
+    #header h1 {
+        margin-left: 9.11vw;
+    }
+
+    .main-logo img {
+        width: 15rem;
+    }
+
+    .hero-swiper {
+        /* background: url(../img/main.jpg) no-repeat 50% 50% / cover; */
+        height: 85rem;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 75rem;
+    }
+
+    .sp-event {
+        width: 19.2rem;
+        width: 48%;
+        height: 3.8rem;
+        font-size: 2.7rem;
+        left: 9.8rem;
+        top: 42.2rem;
+        font-size: 1.9rem;
+        border-radius: 50px;
+    }
+
+    .btn-stop {
+        top: 85%;
+    }
+
+    .num {
+        bottom: 7%;
+    }
+
+    .brand-story {
+        width: 39rem;
+        width: 100%;
+        margin-top: 10rem;
+        /* background: #ff0; */
+    }
+
+    .brand-img {
+        height: 15rem;
+    }
+
+    .brand-img h2 {
+        font-size: 2.3rem;
+    }
+    .brand-img p {
+        font-size: 1.1rem;
+    }
+
+    .moer-arrow {
+        top: 12rem;
+        width: 8rem;
+    }
+
+    .moer-arrow::after {
+        height: 2rem;
+        width: 2rem;
+        background: url(../img/brand-sotry.svg) no-repeat 110% -60% / 50% auto;
+    }
+
+    .event h3 {
+        font-size: 2.3rem;
+    }
+
+    .event-con {
+        margin-bottom: 30rem;
+        /* margin-left: 13rem; */
+    }
+
+    .mySwiper2 .swiper-wrapper .swiper-slide {
+        width: 36.3rem !important;
+    }
+
+    .event-con img {
+        height: 20rem;
+    }
+
+    .event-con dl dt {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .event-con dl dd {
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+
+    .make {
+        width: 40rem;
+        width: 100%;
+        height: 14.7rem;
+    }
+
+    .make-sec {
+        margin-left: 1rem;
+    }
+
+    .make-sec h4 {
+        font-size: 2.3rem;
+    }
+    .make-sec p {
+        font-size: 1.2rem;
+    }
+
+    .mak-btn {
+        width: 10rem;
+        width: 34.0136%;
+        height: 3.1rem;
+        font-size: 1.4rem;
+        border-radius: 5rem;
+        margin-top: 2rem;
+    }
+
+    .NMIXX {
+        margin-top: 14rem;
+    }
+
+    .NMIXX-sec {
+        width: 40rem;
+        width: 100%;
+        height: 18rem;
+    }
+    .NMIXX-sec h4 {
+        font-size: 3.3rem;
+        padding-top: 0;
+        margin-left: 3rem;
+    }
+    .NMIXX-sec p {
+        font-size: 1.3rem;
+        margin-left: 3rem;
+    }
+
+    .NMIXX-img {
+        width: 19.2rem;
+        width: 48%;
+        height: 14rem;
+        top: 4.5rem;
+        left: 21rem;
+    }
+
+    .NMIXX-arrow {
+        top: 15.5rem;
+        left: 4rem;
+        width: 5rem;
+    }
+
+    .NMIXX-sec-2 {
+        width: 40rem;
+        width: 100%;
+        height: 18rem;
+    }
+
+    .NMIXX-sec-2 h4 {
+        font-size: 3.3rem;
+        padding-top: 0;
+        margin-left: 3rem;
+    }
+    .NMIXX-sec-2 p {
+        font-size: 1.3rem;
+        margin-left: 3rem;
+    }
+
+    .NMIXX-img-2 {
+        top: 5rem;
+        left: 18rem;
+        width: 22.7rem;
+        width: 56.75%;
+        height: 13rem;
+    }
+
+    .NMIXX-arrow-2 {
+        top: 15.5rem;
+        left: 4rem;
+        width: 5rem;
+    }
+
+    .swiper-section3 h2 {
+        font-size: 2.8rem;
+    }
+    .swiper-section3 h2 strong {
+        font-size: 3.2rem;
+    }
+
+    .mySwiper3 .swiper-slide {
+        width: 33rem;
+    }
+
+    .swiper-section3 {
+        height: 75rem;
+    }
+
+    .news-item dl dt {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+    .news-item dl dd {
+        font-size: 1.2rem;
+    }
+
+    .hashtags span {
+        width: 9rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    footer {
+        height: 16.8rem;
+        margin-top: 5rem;
+        /* aspect-ratio: 1/0.42; */
+    }
+
+    .footer-container {
+        max-width: 39rem;
+        max-width: 97.5%;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .footer-logo {
+        width: 8.6rem;
+        height: 1.5rem;
+    }
+
+    .footer-address {
+        font-size: 0.7rem;
+        width: 21rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+        width: 21rem;
+        width: 70.7071%;
+    }
+
+    .footer-menu {
+        width: 21rem;
+        width: 70.7071%;
+    }
+
+    .menu-column h3 {
+        font-size: 0.9rem;
+    }
+
+    .menu-column ul li a {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,611 @@
+@charset 'utf-8';
+
+.inner {
+    width: 132rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../img/legoicon.svg);
+    background-size: contain;
+}
+
+.gnb {
+    display: flex;
+    list-style: none;
+    margin-left: 8rem; /* 필요에 따라 조정 */
+    z-index: 1;
+}
+
+.gnb li {
+    margin: 0 4rem;
+}
+
+.gnb a {
+    position: relative; /* ::after 가상 요소의 기준점 설정 */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* 밑줄이 나타날 공간 확보 */
+}
+
+.gnb a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* 텍스트 바로 아래에 라인이 생김 */
+    left: 0;
+    width: 0; /* 기본적으로 보이지 않음 */
+    height: 2px;
+    background-color: #ff0000; /* 라인의 색상은 레고 컬러인 빨간색 */
+    transition: width 0.3s ease; /* 부드럽게 나타나는 애니메이션 */
+}
+
+.gnb a:hover {
+    color: #ff0000; /* 호버 시 레고 컬러로 강조 */
+}
+
+.gnb a:hover::after {
+    width: 100%; /* 호버 시 100% 너비로 확장 */
+}
+
+.util-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 자동으로 설정 */
+    justify-content: flex-end; /* 내부 요소들을 오른쪽으로 정렬 */
+    z-index: 1;
+}
+
+.util-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.util-menu li {
+    margin-left: 20px;
+}
+
+.util-menu a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.util-menu a img:hover {
+    opacity: 0.7; /* 호버 시 투명도 조정 */
+}
+
+.menu {
+    display: none;
+}
+
+/* ''''''''' */
+.visual {
+    background-image: url("../img/community-visual.jpg");
+    background-size: 80%;
+    background-position: center;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden; /* 자식 요소가 비주얼 영역을 벗어날 경우 숨김 */
+    flex-direction: column; /* 세로 배치로 변경 */
+    transform: translateY(-70px);
+    z-index: 0;
+}
+
+.visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 더 어두운 오버레이 */
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.visual-content {
+    position: relative;
+    z-index: 1; /* 텍스트가 오버레이 위에 보이도록 설정 */
+}
+
+.visual-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: -1.5rem;
+}
+
+.visual-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000; /* --main-color가 정의되지 않은 경우를 대비하여 기본 색상 설정 */
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    width: 19rem;
+    height: 5rem;
+    cursor: pointer;
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
+    margin: 0 auto;
+    margin-top: 6.4rem;
+}
+
+.visual-btn:hover {
+    background: #b91a1a;
+    color: #fff;
+}
+
+.visual-btn img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+/*  */
+
+.location {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--sub-color1);
+    width: 100%;
+    height: 6rem;
+    padding-left: 30rem;
+    transform: translateY(-70px);
+    gap: 1rem;
+}
+
+.home-link {
+    display: flex;
+}
+
+.home-link img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.4s;
+}
+
+.home-link img:hover {
+    opacity: 50%;
+}
+
+.arrow {
+    background-image: url(../img/arrow-right.svg);
+    width: 2rem;
+    height: 2rem;
+}
+
+.location-link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.location-link:hover {
+    opacity: 50%;
+}
+
+/* ''''''' */
+
+.community h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--title-color);
+}
+
+.community-con figure img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.community-con figure img:hover {
+    border-radius: 5rem;
+}
+
+.community h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--main-color);
+}
+.community-con p {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 120rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+/* ''''''' */
+
+.community-card {
+    display: flex;
+    gap: 2rem;
+    margin-top: 15rem;
+}
+
+.community-item img {
+    width: 42.7rem;
+    height: 27.8rem;
+    transition: 0.4s ease;
+    filter: brightness(60%);
+}
+
+.community-item:hover img {
+    filter: brightness(100%);
+}
+
+.community-item dl {
+    margin-top: 2rem;
+    width: 42.7rem;
+    text-align: center;
+}
+.community-item dl dt {
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+.community-item dl dd {
+    font-size: 2.3rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+/* ''''''' */
+.idea h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 15rem;
+    color: var(--title-color);
+}
+
+.idea p {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 120rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.swiper-wrapper {
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.swiper-slide img {
+    width: 42.7rem;
+    height: 42.7rem;
+    border-radius: 2rem;
+    border: 1px solid #f0f0f0;
+}
+
+/* '''''''''' */
+
+.container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-top: 5rem;
+}
+
+.idea-btn {
+    display: flex;
+    font-weight: 700;
+    font-size: 2.2rem;
+    background: #f00;
+    color: #fff;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    width: 26.8rem;
+    position: relative; /* img 이동을 위한 기준 설정 */
+    overflow: hidden; /* 이미지가 버튼 밖으로 나가지 않게 설정 */
+}
+
+.idea-btn img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform 0.3s ease; /* 이미지 이동에 대한 애니메이션 */
+}
+
+.idea-btn:hover {
+    background: var(--main-color);
+}
+
+.idea-btn:hover img {
+    transform: translateX(5px); /* 오른쪽으로 10px 이동 */
+}
+
+/* ''''''' */
+
+.designers h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 15rem;
+    color: var(--title-color);
+}
+
+.fen-card {
+    display: flex;
+    gap: 14rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.circle-btn-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fen-item {
+    padding: 3rem;
+}
+
+.fen-item p {
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.circle-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* 원형으로 만들기 */
+    overflow: hidden;
+    width: 30rem; /* 원의 크기 */
+    height: 30rem; /* 원의 크기 */
+}
+
+.default-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-image {
+    position: absolute;
+    width: 31.5rem;
+    height: 30.9rem;
+    bottom: -50%; /* 원 아래에 숨김 */
+    object-fit: none;
+    opacity: 0; /* 보이지 않도록 */
+    transform: translateX(-50%);
+    transition: bottom 0.8s ease, opacity 0.4s ease; /* 슬라이드 및 페이드 애니메이션 */
+}
+
+.circle-btn-container:hover .hover-image {
+    bottom: 10%; /* 호버 시 위로 이동 */
+    opacity: 1; /* 호버 시 보이도록 */
+}
+
+/* ''''''' */
+
+.update {
+    background: #fafafa;
+    padding-bottom: 15rem;
+}
+
+.update-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* 카드 간격 */
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.update-con {
+    display: flex;
+    flex-direction: column; /* 카드 내 요소들을 세로 배치 */
+}
+
+.update h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-top: 15rem;
+    padding-top: 17rem;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.update-card img {
+    width: 31.5rem;
+    height: 17.6rem;
+}
+
+.update-list {
+    padding: 2rem;
+    background: #fff;
+    width: 31.5rem;
+    border-radius: 0 0 2rem 2rem;
+    transition: background-color 0.4s ease;
+}
+
+.update-con:hover .update-list {
+    background-color: var(--main-color); /* 호버 시 메인 색상으로 배경 변경 */
+    color: #fff; /* 텍스트 색상도 변경 (필요시) */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.update-list strong {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.update-list h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.update-list p {
+    font-size: 1.6rem;
+    color: #777;
+    margin-top: 3rem;
+}
+
+.update-con:hover .update-list strong,
+.update-con:hover .update-list p {
+    color: #fff;
+}
+
+/* ''''''' */
+
+footer {
+    display: flex;
+    background: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 13.2rem;
+}
+
+.footer-logo a {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    /* text-decoration: underline; */
+    color: var(--sub-color1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.social-links p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.social-icons img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+.legal-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-info .legal-info-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+footer .back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    background-color: #fff;
+    margin-right: 22rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .back-to-top img {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .back-to-top::before {
+    content: "";
+    font-size: 20px;
+}
+
+footer .back-to-top:hover {
+    background-color: #e0e0e0;
+}

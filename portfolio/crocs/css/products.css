@@ -1,0 +1,405 @@
+@charset 'utf-8';
+
+/* 메인시작 */
+
+/* 베스트-------------------------------------------------- */
+.products-hero {
+    width: 176rem;
+    height: 30rem;
+    border-radius: 2.4rem;
+    background: url(../img/product-visual.png) no-repeat 50% 83% / cover;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* .products-hero::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.products-hero h2 {
+    font-weight: 600;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.products-intro {
+    width: 100%;
+    height: 20rem;
+    /* background: #f9f; */
+
+    position: relative;
+}
+
+.products-intro h2 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: #000;
+
+    position: absolute;
+    top: 50%;
+}
+
+.products-best-clog {
+    width: 100%;
+    height: 100rem;
+    /* background: #f00; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-clog-list {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem 2rem;
+}
+
+.best-clog-list li {
+    width: 31.5rem;
+    height: 100%;
+    /* background: #fff; */
+
+    position: relative;
+}
+
+.best-clog-list li figure {
+    width: 100%;
+    height: 23rem;
+    /* background: #412; */
+
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.best-clog-list li figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.best-clog-list li span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.best-clog-list li dl {
+    width: 100%;
+}
+.best-clog-list li dt {
+    font-weight: 700;
+    font-size: 2.8rem;
+
+    transition: 0.3s;
+}
+.best-clog-list li dd {
+    font-weight: 500;
+    font-size: 2.2rem;
+
+    transition: 0.3s;
+}
+
+.best-clog-list li a {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.4rem;
+}
+.best-clog-info {
+    padding: 1.5rem 2rem 2.4rem 2rem;
+}
+/* 호버 */
+.best-clog-list li:hover dl dt {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.best-clog-list li:hover dl dd {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+/* 베스트끝-------------------------------------------------- */
+
+/* 카테고리 베스트-------------------------------------------------- */
+.products-mens-best-sellers,
+.products-womens-best-sellers,
+.products-kids-best-sellers {
+    width: 100%;
+    height: 60rem;
+    /* background: #f00; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mens-best-list,
+.womens-best-list,
+.kids-best-list {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.mens-best-list,
+.womens-best-list,
+.kids-best-list {
+    width: 31.5rem;
+    height: 100%;
+    /* background: #fff; */
+
+    position: relative;
+}
+
+.mens-best-list figure,
+.womens-best-list figure,
+.kids-best-list figure {
+    width: 100%;
+    height: 23rem;
+    background: #e6e9e8;
+
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.mens-best-list figure img,
+.womens-best-list figure img,
+.kids-best-list figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mens-best-list span,
+.womens-best-list span,
+.kids-best-list span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.mens-best-list dl,
+.womens-best-list dl,
+.kids-best-list dl {
+    width: 100%;
+}
+.mens-best-list dt,
+.womens-best-list dt,
+.kids-best-list dt {
+    font-weight: 700;
+    font-size: 2.8rem;
+
+    transition: 0.4s;
+}
+.mens-best-list dd,
+.womens-best-list dd,
+.kids-best-list dd {
+    font-weight: 500;
+    font-size: 2.2rem;
+
+    transition: 0.4s;
+}
+
+.mens-best-list a,
+.womens-best-list a,
+.kids-best-list a {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.4rem;
+}
+.mens-best-info,
+.womens-best-info,
+.kids-best-info {
+    padding: 1.5rem 2rem 2.4rem 2rem;
+}
+
+.mens-best-list:hover dt,
+.womens-best-list:hover dt,
+.kids-best-list:hover dt {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.mens-best-list:hover dd,
+.womens-best-list:hover dd,
+.kids-best-list:hover dd {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+/* 개별수정 */
+
+.mens-best-swiper-wrapper div:nth-of-type(2) figure img {
+    transform: translateY(-14%);
+}
+.mens-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-8%);
+}
+
+.womens-best-swiper-wrapper div:nth-of-type(3) figure img {
+    transform: translateY(-8%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(4) figure img {
+    transform: translateY(10%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(5) figure img {
+    transform: translate(4%, -12%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-14%);
+}
+
+.kids-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-14%);
+}
+
+/* 페이지네이션 */
+.swiper-wrapper {
+    padding-bottom: 4rem;
+}
+
+.swiper-pagination {
+    position: static !important;
+    bottom: 0 !important; /* 컨테이너 하단에 위치 */
+}
+:root {
+    --swiper-theme-color: var(--main-color);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color) !important;
+}
+/* 지비츠베스트-------------------------------------------------- */
+
+.products-jibbitz-charms {
+    width: 100%;
+    height: 100rem;
+    /* background: #f00; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jibbitz-best-list {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+}
+
+.jibbitz-best-list li {
+    width: 65rem;
+    height: 20rem;
+    /* background: #fff; */
+
+    display: flex;
+    gap: 3rem;
+
+    position: relative;
+}
+
+.jibbitz-best-list li figure {
+    width: 26rem;
+    height: 100%;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #412;
+}
+
+.jibbitz-best-list li figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jibbitz-best-list li dl {
+    width: 100%;
+}
+.jibbitz-best-list li dt {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+.jibbitz-best-list li dd {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.jibbitz-best-list li span {
+    width: 10rem;
+    height: 3.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 50px;
+
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.6s;
+}
+
+.jibbitz-best-list li span b {
+    display: none;
+}
+
+.jibbitz-best-list li a {
+    position: absolute;
+    right: 4rem;
+    bottom: 2.4rem;
+}
+
+.jibbitz-best-list li:hover span {
+    width: 30rem;
+    background: #a6c76d;
+    border: 2px solid #a6c76d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.jibbitz-best-list li:hover span i {
+    display: none;
+}
+
+.jibbitz-best-list li:hover span b {
+    display: inline;
+}
+
+.jibbitz-best-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 지비츠베스트끝-------------------------------------------------- */
+
+/* 메인끝 */
