@@ -1,0 +1,185 @@
+@charset 'utf-8';
+
+.product h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 12rem;
+
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.product-list {
+    display: flex;
+    margin-top: 15rem;
+    gap: 8.5rem;
+}
+
+.product-list h3 {
+    margin-top: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.product-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-pic figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.product-pic figure::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.product-pic figure:hover::after {
+    opacity: 0.7;
+}
+
+.product-txet {
+    position: absolute;
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확한 중앙 정렬 */
+    opacity: 0;
+    text-align: center; /* 텍스트 가로 가운데 정렬 */
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.product-txet h4 {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.product-txet p {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff9cc;
+}
+
+.product-pic figure:hover .product-txet {
+    opacity: 1; /* 호버 시 텍스트 보이게 */
+}
+
+.notice {
+    margin-top: 20rem;
+}
+
+.notice h2 {
+    margin-top: 12rem;
+
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.notice-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    gap: 5rem;
+}
+
+.notice-pic {
+    width: 32rem;
+    height: 42rem;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    box-shadow: 15px 15px 22px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s;
+}
+
+.notice-pic:hover {
+    transform: translateY(-35px); /* 호버 시 위로 15px 이동 */
+}
+
+.notice-pic h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.notice-pic p {
+    font-weight: 300;
+    font-size: 1.8rem;
+
+    padding-top: 30rem;
+}
+
+.repair {
+    margin-top: 20rem;
+}
+
+.repair h2 {
+    font-weight: 600;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.repair-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 10rem;
+}
+
+.repair-pic {
+    background: #fff;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s;
+}
+
+.repair-pic:hover {
+    color: #fff;
+    background: var(--main-color);
+    transform: scale(1.05);
+}
+
+.repair-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.repair-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.repair-text h3 {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.repair-text p {
+    font-weight: 400;
+    font-size: 2.2rem;
+}

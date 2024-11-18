@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>푸라닭</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/event.css" />
+        <link rel="shortcut icon" href="./images/chicken_icon.svg" type="image/x-icon" />
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/custom.js"></script>
+        <meta
+            name="description"
+            content="푸라닭 - 차별화된 맛과 요리 같은 치킨을 제공하는 푸라닭 치킨. 다양한 치킨 메뉴와 이벤트, 온라인 주문 및 창업 안내 서비스를 제공합니다."
+        />
+        <meta name="keywords" content="푸라닭, 치킨, 온라인 주문, 이벤트, 창업 안내, 매장 찾기, 사이드 메뉴, 피자 메뉴, 푸레스트" />
+        <meta name="author" content="푸라닭" />
+        <meta property="og:title" content="푸라닭 - 요리 같은 치킨" />
+        <meta property="og:description" content="차별화된 맛과 포장을 제공하는 푸라닭에서 다양한 치킨 메뉴와 특별한 이벤트를 만나보세요!" />
+        <meta property="og:image" content="https://yourdomain.com/images/chicken_icon.svg" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="푸라닭 - 요리 같은 치킨" />
+        <meta name="twitter:description" content="차별화된 맛과 포장을 제공하는 푸라닭에서 다양한 치킨 메뉴와 특별한 이벤트를 만나보세요!" />
+        <meta name="twitter:image" content="https://yourdomain.com/images/chicken_icon.svg" />
+    </head>
+    <body>
+        <a href="#main"><i class="hidden">본문으로 바로가기</i></a>
+        <hr />
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html"><i class="hidden">푸라닭</i></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub.html">메뉴</a>
+                            <ul class="gnb-sub">
+                                <li><a href="sub.html">전체 메뉴</a></li>
+                                <li><a href="#">치킨 메뉴</a></li>
+                                <li><a href="#">사이드 메뉴</a></li>
+                                <li><a href="#">푸레스트</a></li>
+                                <li><a href="#">P - 피자</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">진행중인 이벤트</a></li>
+                                <li><a href="#">지난 이벤트</a></li>
+                                <li><a href="#">이벤트 FAQ</a></li>
+                                <li><a href="#">이벤트 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">매장 찾기</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">내 주변 매장 찾기</a></li>
+                                <li><a href="#">지역별 매장 검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 주문</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">주문하기</a></li>
+                                <li><a href="#">주문 내역 확인</a></li>
+                                <li><a href="#">주문 FAQ</a></li>
+                                <li><a href="#">주문 관련 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">창업 안내</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">창업 절차</a></li>
+                                <li><a href="#">창업 비용</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">창업 FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href="#" class="btn">로그인</a>
+                        <a href="#" class="btn">회원가입</a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button class="menu-btn">
+                            <i class="hidden">메뉴</i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-nav">
+                <div class="mobile-util-menu">
+                    <a href="#" class="mobile-login">로그인</a>
+                    <a href="#" class="mobile-signup">회원가입</a>
+                </div>
+                <ul class="mobile-gnb">
+                    <li>
+                        <a href="#">메뉴</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="sub.html">전체 메뉴</a></li>
+                            <li><a href="#">치킨 메뉴</a></li>
+                            <li><a href="#">사이드 메뉴</a></li>
+                            <li><a href="#">푸레스트</a></li>
+                            <li><a href="#">P - 피자</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="event.html">진행중인 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                            <li><a href="#">이벤트 FAQ</a></li>
+                            <li><a href="#">이벤트 문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장 찾기</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">내 주변 매장 찾기</a></li>
+                            <li><a href="#">지역별 매장 검색</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">온라인 주문</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">주문하기</a></li>
+                            <li><a href="#">주문 내역 확인</a></li>
+                            <li><a href="#">주문 FAQ</a></li>
+                            <li><a href="#">주문 관련 문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">창업 안내</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">창업 절차</a></li>
+                            <li><a href="#">창업 비용</a></li>
+                            <li><a href="#">창업 문의</a></li>
+                            <li><a href="#">창업 FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="close-area"></div>
+        </header>
+        <main id="main">
+            <section class="event">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2>진행중인 이벤트</h2>
+                        <div class="title-menu-wrap">
+                            <ul class="piece-of-bread">
+                                <li><a href="index.html">홈</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">진행중인 이벤트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figure><img src="./images/event-01.jpg" alt="진행중인 이벤트" /></figure>
+                </div>
+            </section>
+            <section class="past-event">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2>지난 이벤트</h2>
+                    </div>
+                    <div class="search-wrap">
+                        <a href="#" class="category">전체</a>
+                        <form action="#" class="search-form">
+                            <input type="text" placeholder="메뉴 검색" />
+                            <button class="btn-request" type="submit"><i class="hidden">메뉴 검색</i></button>
+                        </form>
+                    </div>
+                    <ul class="event-list">
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-02.jpg" alt="구황작물에디션 5천원 할인 프로모션" /></figure>
+                                <div class="event-con">
+                                    <strong>구황작물에디션 5천원 할인 프로모션</strong>
+                                    <p>2024-10-04 ~ 2024-10-13</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-03.jpg" alt="바떡추 '역주행 세트' 특별 판매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바떡추 '역주행 세트' 특별 판매 이벤트</strong>
+                                    <p>2024-10-01 ~ 2024-10-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-04.jpg" alt="바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트</strong>
+                                    <p>2024-09-19 ~ 2024-09-25</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-05.jpg" alt="푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트</strong>
+                                    <p>2024-09-13 ~ 2024-09-30</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-02.jpg" alt="구황작물에디션 5천원 할인 프로모션" /></figure>
+                                <div class="event-con">
+                                    <strong>구황작물에디션 5천원 할인 프로모션</strong>
+                                    <p>2024-10-04 ~ 2024-10-13</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-03.jpg" alt="바떡추 '역주행 세트' 특별 판매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바떡추 '역주행 세트' 특별 판매 이벤트</strong>
+                                    <p>2024-10-01 ~ 2024-10-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-04.jpg" alt="바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트</strong>
+                                    <p>2024-09-19 ~ 2024-09-25</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-05.jpg" alt="푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트</strong>
+                                    <p>2024-09-13 ~ 2024-09-30</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-02.jpg" alt="구황작물에디션 5천원 할인 프로모션" /></figure>
+                                <div class="event-con">
+                                    <strong>구황작물에디션 5천원 할인 프로모션</strong>
+                                    <p>2024-10-04 ~ 2024-10-13</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-03.jpg" alt="바떡추 '역주행 세트' 특별 판매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바떡추 '역주행 세트' 특별 판매 이벤트</strong>
+                                    <p>2024-10-01 ~ 2024-10-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-04.jpg" alt="바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>바•떡•추 먹어본 맛잘알들, 바•떡•추 어텀~?🍂 이벤트</strong>
+                                    <p>2024-09-19 ~ 2024-09-25</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./images/event-05.jpg" alt="푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트" /></figure>
+                                <div class="event-con">
+                                    <strong>푸라닭x코카-콜라, '띱띱 세트' 구매 이벤트</strong>
+                                    <p>2024-09-13 ~ 2024-09-30</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pagenation-wrap">
+                        <div class="pagenation">
+                            <a href="#" class="page-btn prev"><i class="hidden">이전</i></a>
+                            <ol class="page-list">
+                                <li><a href="#" class="page-btn active">1</a></li>
+                                <li><a href="#" class="page-btn">2</a></li>
+                                <li><a href="#" class="page-btn">3</a></li>
+                                <li><a href="#" class="page-btn">4</a></li>
+                                <li><a href="#" class="page-btn">5</a></li>
+                            </ol>
+                            <a href="#" class="page-btn next"><i class="hidden">다음</i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="inner">
+                <div class="copyright">
+                    <address>
+                        <div>
+                            <div>
+                                <dl>
+                                    <dt>법인명 (상호)</dt>
+                                    <dd>(주)아이더스에프앤비</dd>
+                                </dl>
+                                <dl>
+                                    <dt>대표자</dt>
+                                    <dd>장성식</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>112-88-00179</dd>
+                                </dl>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>서울특별시 강서구 강서로 404(등촌동, 아이더스빌딩)</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>대표번호</dt>
+                                    <dd>1599-9206</dd>
+                                </dl>
+                                <dl>
+                                    <dt>가맹문의</dt>
+                                    <dd>1668-2921</dd>
+                                </dl>
+                                <dl>
+                                    <dt>고객센터</dt>
+                                    <dd>02-323-9001</dd>
+                                </dl>
+                                <dl>
+                                    <dt>팩스</dt>
+                                    <dd>02-323-9003</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <p>&copy;IDUS FNB CO.LTD. All rights reserved.</p>
+                    </address>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"><img src="./images/facebook.svg" alt="페이스북" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/blog.svg" alt="블로그" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/instagram.svg" alt="인스타그램" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

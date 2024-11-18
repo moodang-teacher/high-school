@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>푸라닭</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="shortcut icon" href="./images/chicken_icon.svg" type="image/x-icon" />
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/custom.js"></script>
+        <meta
+            name="description"
+            content="푸라닭 - 차별화된 맛과 요리 같은 치킨을 제공하는 푸라닭 치킨. 다양한 치킨 메뉴와 이벤트, 온라인 주문 및 창업 안내 서비스를 제공합니다."
+        />
+        <meta name="keywords" content="푸라닭, 치킨, 온라인 주문, 이벤트, 창업 안내, 매장 찾기, 사이드 메뉴, 피자 메뉴, 푸레스트" />
+        <meta name="author" content="푸라닭" />
+        <meta property="og:title" content="푸라닭 - 요리 같은 치킨" />
+        <meta property="og:description" content="차별화된 맛과 포장을 제공하는 푸라닭에서 다양한 치킨 메뉴와 특별한 이벤트를 만나보세요!" />
+        <meta property="og:image" content="https://yourdomain.com/images/chicken_icon.svg" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="푸라닭 - 요리 같은 치킨" />
+        <meta name="twitter:description" content="차별화된 맛과 포장을 제공하는 푸라닭에서 다양한 치킨 메뉴와 특별한 이벤트를 만나보세요!" />
+        <meta name="twitter:image" content="https://yourdomain.com/images/chicken_icon.svg" />
+    </head>
+    <body>
+        <a href="#main"><i class="hidden">본문으로 바로가기</i></a>
+        <hr />
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html"><i class="hidden">푸라닭</i></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub.html">메뉴</a>
+                            <ul class="gnb-sub">
+                                <li><a href="sub.html">전체 메뉴</a></li>
+                                <li><a href="#">치킨 메뉴</a></li>
+                                <li><a href="#">사이드 메뉴</a></li>
+                                <li><a href="#">푸레스트</a></li>
+                                <li><a href="#">P - 피자</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event.html">이벤트</a>
+                            <ul class="gnb-sub">
+                                <li><a href="event.html">진행중인 이벤트</a></li>
+                                <li><a href="#">지난 이벤트</a></li>
+                                <li><a href="#">이벤트 FAQ</a></li>
+                                <li><a href="#">이벤트 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">매장 찾기</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">내 주변 매장 찾기</a></li>
+                                <li><a href="#">지역별 매장 검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 주문</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">주문하기</a></li>
+                                <li><a href="#">주문 내역 확인</a></li>
+                                <li><a href="#">주문 FAQ</a></li>
+                                <li><a href="#">주문 관련 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">창업 안내</a>
+                            <ul class="gnb-sub">
+                                <li><a href="#">창업 절차</a></li>
+                                <li><a href="#">창업 비용</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">창업 FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="util-menu">
+                        <a href="#" class="btn">로그인</a>
+                        <a href="#" class="btn">회원가입</a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button class="menu-btn">
+                            <i class="hidden">메뉴</i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-nav">
+                <div class="mobile-util-menu">
+                    <a href="#" class="mobile-login">로그인</a>
+                    <a href="#" class="mobile-signup">회원가입</a>
+                </div>
+                <ul class="mobile-gnb">
+                    <li>
+                        <a href="#">메뉴</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="sub.html">전체 메뉴</a></li>
+                            <li><a href="#">치킨 메뉴</a></li>
+                            <li><a href="#">사이드 메뉴</a></li>
+                            <li><a href="#">푸레스트</a></li>
+                            <li><a href="#">P - 피자</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="event.html">진행중인 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                            <li><a href="#">이벤트 FAQ</a></li>
+                            <li><a href="#">이벤트 문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장 찾기</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">내 주변 매장 찾기</a></li>
+                            <li><a href="#">지역별 매장 검색</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">온라인 주문</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">주문하기</a></li>
+                            <li><a href="#">주문 내역 확인</a></li>
+                            <li><a href="#">주문 FAQ</a></li>
+                            <li><a href="#">주문 관련 문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">창업 안내</a>
+                        <ul class="mobile-gnb-sub">
+                            <li><a href="#">창업 절차</a></li>
+                            <li><a href="#">창업 비용</a></li>
+                            <li><a href="#">창업 문의</a></li>
+                            <li><a href="#">창업 FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="close-area"></div>
+        </header>
+        <main id="main">
+            <section class="visual">
+                <div class="top-slider-wrap">
+                    <div class="pagination"></div>
+
+                    <div class="swiper top-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="visual-inner">
+                                    <div class="inner">
+                                        <div class="visual-con">
+                                            <h2>
+                                                차별화된 맛과 비주얼로<br />
+                                                요리와 같은 치킨을 만듭니다.
+                                            </h2>
+                                            <div class="download">
+                                                <strong>앱스토어 다운로드</strong>
+                                                <div class="download-btn">
+                                                    <a href="#" class="btn appstore">
+                                                        <p>Download on the<br /><b>AppStore</b></p>
+                                                    </a>
+                                                    <a href="#" class="btn googleplay">
+                                                        <p>GET IT ON<br /><b>GooglePlay</b></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="./images/visual2.png" alt="package" /></div>
+                            <div class="swiper-slide"><img src="./images/visual3.png" alt="blackmayo" /></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-menu">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>대표 메뉴</h2>
+                        <p>소중한 사람들과의 시간을 더욱 가치 있게</p>
+                    </div>
+                    <ul class="main-menu-list">
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/chili_mayonnaise_chicken.png" alt="순살고추마요" />
+                                </figure>
+                                <div>
+                                    <strong>순살 고추마요</strong>
+                                    <p>boneless chili mayonnaise chicken</p>
+                                    <p class="price">20,900원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/black_aglio_chicken.png" alt="순살블랙알리오" />
+                                </figure>
+                                <div>
+                                    <strong>순살 블랙알리오</strong>
+                                    <p>boneless black aglio chicken</p>
+                                    <p class="price">20,900원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/chili_mayonnaise_chicken.png" alt="순살콘소메이징" />
+                                </figure>
+                                <div>
+                                    <strong>순살 콘소메이징</strong>
+                                    <p>boneless corn-so amazing chicken</p>
+                                    <p class="price">20,900원</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a href="#">더보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="new-menu">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>신규 메뉴</h2>
+                        <p>딥하게 빠져드는 '신개념 찍먹 크런치 치킨’</p>
+                    </div>
+                    <div class="menu-con">
+                        <div class="menu-text">
+                            <h3>띱띱 크런치</h3>
+                            <p>
+                                다채로운 4종의 디핑소스에 찍어먹는<br />
+                                독보적 바삭함의 특제 콘 크러스트 치킨
+                            </p>
+                        </div>
+                        <div class="menu-img">
+                            <figure>
+                                <img src="./images/crunch_chicken_with_four_dips.png" alt="띱띱크런치" />
+                                <figcaption>(*디핑 소스 4종 제공 : 대파크림, 콘버터, 트러플마요, 홍고추마요)</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="packaging">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>“치킨, 그 이상의 가치”</h2>
+                        <p>DUST BAG 를 통한 포장의 차별화</p>
+                    </div>
+                    <div class="pack-con">
+                        <figure>
+                            <img src="./images/model.png" alt="고윤정" />
+                        </figure>
+                        <div class="pack-text">
+                            <h3>치킨, 요리가 되다.</h3>
+                            <p>
+                                푸라닭의 모든 치킨요리는 고급스러운 디자인과 실용성을<br />
+                                고려하여 제작한 포장박스와 더스트 백에 담아 제공합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recipe">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>“치킨, 그 이상의 가치”</h2>
+                        <p>트렌드를 리드하는 특별하고 근사한 선물</p>
+                    </div>
+                    <div class="recipe-con">
+                        <div class="recipe-text">
+                            <h3>치킨, 요리가 되다.</h3>
+                            <p>
+                                굽고 튀기는 독보적 오븐-후라이드 조리법을<br />
+                                기반으로 차별화 된 특제소스 토핑을 더해<br />
+                                요리와 같은 맛과 비주얼의 치킨을 만듭니다.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="./images/recipe.jpg" alt="조리법" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="inner">
+                <div class="copyright">
+                    <address>
+                        <div>
+                            <div>
+                                <dl>
+                                    <dt>법인명 (상호)</dt>
+                                    <dd>(주)아이더스에프앤비</dd>
+                                </dl>
+                                <dl>
+                                    <dt>대표자</dt>
+                                    <dd>장성식</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업자등록번호</dt>
+                                    <dd>112-88-00179</dd>
+                                </dl>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>서울특별시 강서구 강서로 404(등촌동, 아이더스빌딩)</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>대표번호</dt>
+                                    <dd>1599-9206</dd>
+                                </dl>
+                                <dl>
+                                    <dt>가맹문의</dt>
+                                    <dd>1668-2921</dd>
+                                </dl>
+                                <dl>
+                                    <dt>고객센터</dt>
+                                    <dd>02-323-9001</dd>
+                                </dl>
+                                <dl>
+                                    <dt>팩스</dt>
+                                    <dd>02-323-9003</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <p>&copy;IDUS FNB CO.LTD. All rights reserved.</p>
+                    </address>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"><img src="./images/facebook.svg" alt="페이스북" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/blog.svg" alt="블로그" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/instagram.svg" alt="인스타그램" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

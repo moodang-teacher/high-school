@@ -1,0 +1,151 @@
+@charset 'utf-8';
+
+.tidings {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.tidings h2 {
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.tidings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+    grid-template-rows: repeat(4, auto); /* 4개의 행 */
+    gap: 8.5rem;
+    margin-top: 15rem;
+}
+
+.tidings-grid-pic h3 {
+    color: #fff;
+    height: 3.5rem;
+
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tidings-grid-pic p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.tidings-announcement {
+    background: var(--main-color);
+    width: 12rem;
+    border-radius: 50px;
+}
+
+.tidings-junior {
+    background: #87c7f6;
+    width: 12rem;
+    border-radius: 50px;
+}
+
+.tidings-event {
+    background: #ffcf31;
+    width: 12rem;
+    border-radius: 50px;
+}
+.tidings-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+/* 탭메뉴 */
+.tab-tidings {
+    display: flex;
+}
+
+.tab-tidings li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 5rem;
+    height: 5rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.tab-tidings li:hover,
+.tab-tidings li a:hover {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.tab-tidings-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 5rem;
+    height: 5rem;
+
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+.tab-tidings-back:hover {
+    background: var(--main-color);
+}
+
+.pr-data {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.pr-data h2 {
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.pr-con {
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* 세로로 정렬 */
+}
+
+.pr-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -25%;
+    z-index: 1; /* 뒤로 배치 */
+}
+
+.pr-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 84rem;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 앞으로 배치 */
+}
+
+.pr-con h3 {
+    padding: 1rem 8rem;
+    margin-top: 20rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    background: var(--main-color);
+    color: #fff;
+}

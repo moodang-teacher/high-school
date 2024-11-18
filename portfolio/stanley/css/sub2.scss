@@ -1,0 +1,556 @@
+.series-slider .swiper-slide {
+  width: 356px;
+  height: 291px;
+}
+
+/* 수정: 고정 높이 제거하고 패딩으로 여백 조정 */
+.footer {
+  /* margin-top: 250px; */
+  background-color: #4a693b;
+  padding: 100px 200px 92px; /* 수정: 위아래 패딩 증가로 적절한 세로 공간 확보 */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 수정: gap 대신 마진으로 변경하여 더 정확한 간격 제어 */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 수정: 로고 마진 값 조정 */
+.footer-logo {
+  margin-bottom: 40px; /* 수정: 여백 증가 */
+  width: 129px; /* 수정: 로고 크기 지정 */
+  height: 92px;
+}
+
+/* 수정: 정보 리스트 간격 조정 */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0; /* 수정: 아래 마진 추가 */
+}
+
+.info-list li {
+  margin-bottom: 12px; /* 수정: 줄간격 증가 */
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5; /* 수정: 가독성을 위한 줄높이 추가 */
+}
+
+/* 수정: 저작권 텍스트 위치 조정 */
+.copyright {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-top: auto; /* 수정: 하단에 고정 */
+}
+
+/* 수정: 우측 영역 간격 조정 */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 수정: 상단 정렬 */
+}
+
+/* 수정: 뉴스레터 섹션 마진 조정 */
+.newsletter {
+  margin-bottom: 20px; /* 수정: 소셜 링크와의 간격 */
+}
+
+.newsletter p {
+  margin-bottom: 13px; /* 수정: 텍스트와 입력창 사이 간격 */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* 수정: 이메일 입력창 스타일 개선 */
+.email-input-wrapper {
+  display: flex;
+
+  width: 240px;
+  height: 44px;
+
+  align-items: center;
+  border-bottom: 1px solid #fff;
+
+  padding: 12px 16px; /* 수정: 패딩 증가 */
+  /* 수정: 하단 여백 추가 */
+}
+
+.email-input-wrapper input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 200px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.email-input-wrapper button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* 아이콘 크기 유지 */
+.submit-icon {
+  width: 20px;
+  height: 18px;
+}
+
+/* 소셜 아이콘 크기 유지 */
+.social-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* 호버 효과 */
+.social-links a:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease; /* 수정: 부드러운 전환 효과 추가 */
+}
+
+.email-input-wrapper button:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease; /* 수정: 부드러운 전환 효과 추가 */
+}
+
+/* 반응형 스타일 수정 */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 20px; /* 수정: 모바일에서 패딩 축소 */
+  }
+
+  .footer-right {
+    align-items: flex-start;
+    margin-top: 40px; /* 수정: 좌측 영역과의 간격 */
+  }
+
+  .newsletter {
+    text-align: left;
+    width: 100%; /* 수정: 모바일에서 전체 너비 사용 */
+  }
+
+  .email-input-wrapper {
+    width: 100%; /* 수정: 모바일에서 전체 너비 사용 */
+  }
+
+  .email-input-wrapper input {
+    width: 100%; /* 수정: 입력창 너비 확장 */
+  }
+}
+
+@media (max-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .hamburger-menu span {
+    width: 2.5rem;
+    height: 2px;
+    background-color: #000;
+    margin: 3px 0;
+  }
+  .hero-intro {
+    width: fit-content;
+    white-space: nowrap;
+
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      font-size: 17.319px;
+    }
+    img {
+      width: 10px;
+      height: auto;
+    }
+  }
+
+  .gnb-container {
+    .nav-series {
+      display: none;
+    }
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 70px;
+    height: 107px;
+    h1 {
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      height: 66px;
+      width: fit-content;
+    }
+    .hamburger-menu {
+      display: flex; /* 햄버거 메뉴 표시 */
+      margin-right: 241px;
+      /* margin-right: 37%; */
+    }
+  }
+  .inner {
+    width: 100%;
+  }
+  .mug {
+    padding: 88px 70px;
+    width: 100%;
+    .mug-title {
+      flex-direction: column;
+      gap: 96px;
+    }
+    .category {
+      justify-content: center;
+    }
+    .mug-list {
+      margin-top: 62px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 72px 42px;
+
+      > li:nth-child(n + 7) {
+        display: none;
+      }
+    }
+    .mug-list li figure {
+      border-radius: 24px;
+    }
+    .mug-con {
+      margin-top: 40px;
+    }
+    .mug-con p {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+    .mug-con strong {
+      font-size: 16px;
+    }
+  }
+
+  .page-btn {
+    margin-top: 89px;
+  }
+  .page-btn img {
+    height: 20px;
+  }
+
+  .s-series {
+    padding-left: 70px;
+  }
+  .ss-inner {
+    align-items: center;
+    width: 100%;
+  }
+  .series-info {
+    width: 619px;
+    min-width: 619px;
+  }
+
+  .series-slider-wrap {
+    width: auto;
+    flex: 1;
+    max-width: calc(100% - 619px - 21px);
+  }
+
+  .series-slider {
+    width: 100%;
+    .swiper-slide {
+      width: 356px;
+      height: 291px;
+    }
+  }
+  .footer {
+    padding: 28px 108px 75px;
+    align-items: center;
+    .footer-logo {
+      width: 68px;
+      height: 57px;
+      margin-bottom: 14px;
+    }
+    .info-list li {
+      color: #fff;
+      font-family: "Pretendard Variable";
+      font-size: 13.5px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%; /* 21.6px */
+    }
+    .copyright {
+      color: #fff;
+      font-family: "Pretendard Variable";
+      font-size: 13.5px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .newsletter p {
+      color: #fff;
+      font-family: "Pretendard Variable";
+      font-size: 14.814px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .email-input-wrapper input {
+      font-size: 13.333px;
+      width: 168px;
+    }
+    .social-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer .footer-logo {
+    height: auto;
+  }
+  .footer .email-input-wrapper input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 668px) {
+  .gnb-container {
+    padding: 0 20px;
+    h1 {
+      height: 52.648px;
+    }
+    .icons {
+      margin-left: 0;
+    }
+    .icon-cart {
+      display: none;
+    }
+  }
+  .sub-hero {
+    height: 260px;
+    background: url(../img/hero.jpg) no-repeat center center / cover;
+  }
+  .hero-intro {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12.863px;
+      margin-top: 9px;
+      margin-bottom: 18px;
+    }
+    a {
+      font-size: 12.376px;
+      padding: 12.376px 30.94px;
+    }
+    img {
+      width: 7px;
+      height: auto;
+    }
+  }
+  .mug {
+    padding: 62px 20px 80px;
+  }
+  .mug .mug-title {
+    gap: 37px;
+  }
+  .mug .category {
+    justify-content: space-between;
+    gap: 12px 0;
+    max-width: 430px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin: auto;
+    li {
+      flex: 1;
+      max-width: 40%;
+    }
+  }
+  .category li a {
+    font-size: 10px;
+    padding: 8px 22px;
+    white-space: nowrap;
+  }
+  .mug-title h4 {
+    font-size: 23.537px;
+  }
+  .mug .mug-list {
+    margin-top: 42px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 27px;
+
+    // 5번째 아이템부터 안보여주기
+    > li:nth-child(n + 5) {
+      display: none;
+    }
+  }
+  .mug .mug-list li figure {
+    border-radius: 16px;
+  }
+  .mug .mug-con {
+    margin-top: 26px;
+    p {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    strong {
+      font-size: 16px;
+    }
+  }
+  .page-btn {
+    height: 42px;
+    margin-top: 32px;
+    width: 143px;
+    img {
+      height: 12px;
+    }
+  }
+
+  .page-number {
+    font-size: 14px;
+  }
+
+  .s-series {
+    padding: 0;
+    height: fit-content;
+    margin-bottom: 42px;
+  }
+  .ss-inner {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .series-slider-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .series-info {
+    width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    margin: 0 20px;
+    height: 100px;
+    padding: 13.37px 31.198px;
+    border-radius: 13.37px;
+  }
+  .series-info strong {
+    font-size: 18px;
+  }
+  .series-info a {
+    font-size: 10px;
+    padding: 0 22px;
+    height: 23px;
+    width: 84px;
+    gap: 3px;
+    margin-top: 12px;
+    width: fit-content;
+    flex-shrink: 0;
+    vertical-align: middle;
+    align-items: center;
+    img {
+      width: 6px;
+      margin-left: 3px;
+      height: auto;
+    }
+  }
+  .series-slider .swiper-slide {
+    width: 158.663px;
+    height: 129.694px;
+  }
+  .footer {
+    padding: 0 36px 46px;
+    align-items: flex-start;
+  }
+  .footer .info-list li {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .footer .footer-logo {
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    width: fit-content;
+    display: block;
+  }
+  .info-list {
+    margin-bottom: 21px;
+  }
+  .footer .copyright {
+    font-size: 11px;
+  }
+  .footer-right {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .newsletter {
+    margin-bottom: 0;
+  }
+  .email-input-wrapper {
+    width: 163px;
+    padding: 0;
+    .submit-icon {
+      width: 18px;
+      height: auto;
+    }
+  }
+  .footer .newsletter p {
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+  .email-input-wrapper button {
+    height: 18px;
+  }
+
+  .gnb-container {
+    padding: 0 24px;
+    height: 75px;
+
+    h1 {
+      width: 150px;
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+    .icons {
+      margin-left: 0;
+      justify-content: flex-end;
+      gap: 51px;
+    }
+    .hamburger-menu {
+      margin-right: 0;
+    }
+    .icon-cart {
+      display: none;
+    }
+  }
+}

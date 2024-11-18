@@ -1,0 +1,404 @@
+@charset 'utf-8';
+
+.tab-list {
+    margin-top: 12rem;
+}
+.tab-menu {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.tab-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 22rem;
+    height: 6.2rem;
+
+    border: 1px solid #a5a5a5;
+    background: #fff;
+    font-weight: 400;
+    font-size: 2.8rem;
+}
+
+.tab-menu li a:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.tab-con {
+    height: 100%;
+}
+
+.tab-con-item {
+    display: flex;
+    height: 100%;
+    margin-top: 15rem;
+    /* border: 1px solid #000; */
+}
+
+.tab-con-item figure {
+    width: 36%;
+    /* border: 1px solid #000; */
+}
+
+.tab-text {
+    width: 74rem;
+    height: 44rem;
+
+    display: block;
+    flex-direction: column;
+    margin-top: -1.5rem;
+    margin-left: 11rem;
+    /* border: 1px solid #000; */
+}
+
+.tab-text h2 {
+    width: 40%;
+    padding-bottom: 3.5rem;
+    font-weight: 600;
+    font-size: 5rem;
+    border-bottom: 10px solid var(--main-color);
+}
+
+.tab-text p {
+    font-weight: 200;
+    font-size: 2.8rem;
+    margin-top: 5.7rem;
+    /* border: 1px solid #000; */
+}
+
+.swiper-wrapper {
+    margin-top: 18rem;
+}
+
+.swiper-slide figure {
+    position: relative;
+    display: inline-block; /* 이미지 크기에 맞추어 영역을 조정 */
+    overflow: hidden;
+    margin: 0;
+    transition: transform 0.3s ease; /* 전체 틀에 애니메이션 추가 */
+}
+
+.swiper-slide figure::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #940006, #ed1c24, #f5b35d);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* 그라디언트의 z-index 설정 */
+}
+
+.swiper-slide figure:hover::after {
+    opacity: 0.7; /* 호버 시 그라디언트 불투명도 증가 */
+}
+
+.swiper-slide figure:hover {
+    transform: translateY(-10px); /* 호버 시 위로 10px 이동 */
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%; /* 중앙 정렬을 위한 설정 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    color: #fff; /* 글자 색상 */
+    opacity: 0; /* 초기 상태에서 숨김 */
+    transition: opacity 0.3s ease;
+    text-align: center; /* 텍스트 정렬 */
+    font-size: 2rem; /* 글자 크기 조정 */
+    z-index: 2; /* 텍스트의 z-index 설정하여 위로 올리기 */
+}
+
+.swiper-slide figure:hover .slider-text {
+    /* 클래스 이름 변경 */
+    opacity: 1; /* 호버 시 텍스트 보이기 */
+}
+
+.video-inner {
+    height: 82rem;
+    margin-top: 25rem;
+}
+
+.video-inner h2 {
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.video-inner p {
+    font-weight: 300;
+    font-size: 2.6rem;
+    padding: 3rem 0;
+    width: 80%;
+}
+
+.video-inner iframe {
+    width: 100%;
+    height: 75%;
+}
+
+.overseas {
+    display: flex;
+    margin-top: 28rem;
+    height: 66rem;
+}
+
+.overseas h2 {
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.overseas-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    gap: 13rem;
+}
+
+.overseas-list li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+.overseas-list figure {
+    height: 13rem;
+}
+
+.overseas-list h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.overseas-list p {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.inquiry {
+    width: 25rem;
+    height: 7.4rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    margin: 9rem auto;
+
+    font-weight: 400;
+    font-size: 2.4rem;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.inquiry a {
+    padding-left: 2rem;
+}
+
+.inquiry::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/sub-imail.png) no-repeat center;
+    position: absolute;
+    right: -9rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 테블릿 */
+
+@media (max-width: 1024px) {
+    .tab-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tab-menu li a {
+        width: 27.4rem;
+        margin: 0 auto;
+    }
+
+    .tab-con-item {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .tab-con-item figure {
+        margin-top: 6rem;
+        width: 48rem;
+        height: 46rem;
+    }
+
+    .tab-text {
+        margin-top: 6rem;
+        margin-left: 0;
+    }
+
+    .tab-text h2 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+        border-bottom: 5px solid var(--main-color);
+    }
+    .tab-text p {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .swiper-wrapper {
+        margin-top: 6rem;
+        gap: 5.5rem;
+    }
+
+    .swiper-slide figure {
+        width: 24.4rem;
+    }
+
+    .video-inner h2 {
+        font-size: 4rem;
+    }
+    .video-inner p {
+        font-size: 2.2rem;
+    }
+
+    .video-inner iframe {
+        width: 100%;
+        height: 53.4rem;
+    }
+
+    .overseas h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .overseas-list {
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .overseas-business h3 {
+        font-size: 3rem;
+    }
+    .overseas-business p {
+        font-size: 3rem;
+    }
+
+    .inquiry {
+        margin-top: 7rem;
+    }
+}
+
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+
+@media (max-width: 400px) {
+    .tab-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr); /* 3개의 열을 각각 2fr씩 배분 */
+    }
+
+    .tab-menu li a {
+        width: 14.7rem;
+        height: 1.8em;
+        font-size: 1.8rem;
+    }
+
+    .tab-con-item figure {
+        margin: 0 auto;
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .tab-text {
+        margin-top: 3rem;
+        width: auto; /* 기본 가로 크기 유지 */
+        height: auto; /* 기본 세로 크기 유지 */
+    }
+
+    .tab-text h2 {
+        font-size: 2.6rem;
+    }
+
+    .tab-text p {
+        font-size: 1.6rem;
+    }
+
+    .swiper-wrapper {
+        margin-top: 6rem;
+        gap: 10.5rem;
+    }
+
+    .swiper-slide figure {
+        width: 18rem;
+    }
+
+    .video-inner {
+        margin-top: 5rem;
+    }
+
+    .video-inner iframe {
+        width: 100%;
+        height: 53.4rem;
+    }
+
+    .video-inner h2 {
+        font-size: 2.6rem;
+    }
+
+    .video-inner p {
+        font-size: 1.6rem;
+    }
+
+    .video-inner iframe {
+        width: 100%;
+    }
+
+    .overseas {
+        margin-top: 8rem;
+        position: relative; /* 상대 위치 지정 */
+        height: auto; /* 필요시 높이 조정 */
+    }
+
+    .overseas-business {
+        margin-top: 8rem;
+    }
+
+    .overseas h2 {
+        font-size: 3.8rem; /* 제목 크기 조정 */
+        text-align: center;
+    }
+
+    .overseas-list {
+        margin: 0;
+        flex-direction: column;
+        align-items: center; /* 가운데 정렬 */
+        justify-content: center; /* 가운데 정렬 */
+        gap: 5rem;
+    }
+}

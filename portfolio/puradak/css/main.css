@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+.visual {
+    padding: 0;
+    max-width: 192rem;
+    /* height: 90rem; */
+    /* aspect-ratio: 1/0.46875; */
+    margin: 0 auto;
+    background: #000;
+}
+.visual-inner {
+    width: 100%;
+    height: 100%;
+    background: url(../images/visual.jpg) no-repeat 50% / cover;
+}
+.visual-inner .inner {
+    display: flex;
+    align-items: center;
+}
+.visual-con {
+    width: 100%;
+}
+.visual-con h2 {
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 6rem;
+    font-size: clamp(3.1rem, 3.9062vw, 6rem);
+    color: #fff;
+}
+.top-slider-wrap {
+    position: relative;
+    height: calc(100vh - 10rem);
+}
+.top-slider {
+    height: 100%;
+}
+.swiper-slide {
+    max-width: 192rem;
+    /* height: 90rem; */
+    aspect-ratio: 1/0.46875;
+}
+.top-slider-wrap .pagination {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination .swiper-pagination-bullet {
+    background: #fff;
+}
+.pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+.download {
+    margin-top: 5.4rem;
+}
+.download strong {
+    display: block;
+    font-family: PuradakGentleGothicR, sans-serif;
+    color: #fff;
+}
+.download-btn {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.download-btn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+.download-btn .btn p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.download-btn .btn p b {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.download-btn .btn.appstore::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background: url(../images/appstore.svg) no-repeat 50% / cover;
+}
+.download-btn .btn.googleplay::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background: url(../images/googleplay.svg) no-repeat 50% / cover;
+}
+section {
+    padding: 12rem 0;
+}
+.sec-title {
+    text-align: center;
+    padding-bottom: 6.5rem;
+}
+.sec-title h2 {
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.sec-title p {
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 2rem;
+    color: #555;
+}
+.main-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.main-menu-list li {
+    background: #f5f5f5;
+    width: 100%;
+    max-width: 48rem;
+    min-height: 46rem;
+    display: flex;
+    align-items: center;
+}
+.main-menu-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main-menu-list li figure {
+    width: 88.99%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+}
+.main-menu-list li div {
+    padding: 0 4rem 4rem;
+}
+.main-menu-list li div strong {
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 2.4rem;
+    color: #333;
+}
+.main-menu-list li div p {
+    color: #333;
+}
+.main-menu-list li div .price {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.more {
+    display: flex;
+    justify-content: end;
+}
+.more a {
+    color: #666;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 0 0;
+}
+.more a::after {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 1.8rem;
+    background: url(../images/arrow.svg) no-repeat 50%;
+}
+.new-menu {
+    background: rgb(12, 12, 12);
+    background: linear-gradient(0deg, rgba(12, 12, 12, 1) 0%, rgba(40, 40, 40, 1) 100%);
+}
+.new-menu .sec-title p {
+    color: #f5f5f5;
+}
+.menu-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-text {
+    text-align: center;
+    width: 100%;
+}
+.menu-text h3 {
+    color: #c8c8c8;
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 6rem;
+}
+.menu-text p {
+    color: #f5f5f5;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.menu-img figure {
+    width: clamp(39rem, 47.2656vw, 65rem);
+    aspect-ratio: 1/1;
+    position: relative;
+}
+.menu-img figcaption {
+    color: #f5f5f5;
+    position: absolute;
+    bottom: 3.4rem;
+    width: 100%;
+    text-align: center;
+}
+.packaging {
+    padding-bottom: 0;
+}
+.pack-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.pack-con figure {
+    width: clamp(22.4rem, 31.25vw, 56rem);
+    aspect-ratio: 1/1.3214;
+    transform: scaleX(-1);
+}
+.pack-text {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 2rem 0;
+}
+.pack-text h3 {
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 5rem;
+    color: #333;
+}
+.pack-text p {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: #666;
+}
+.recipe {
+    background: rgb(12, 12, 12);
+    background: linear-gradient(0deg, rgba(12, 12, 12, 1) 0%, rgba(40, 40, 40, 1) 100%);
+}
+.recipe .sec-title p {
+    color: #f5f5f5;
+}
+.recipe-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recipe-con figure {
+    width: clamp(39rem, 46.875vw, 65rem);
+    aspect-ratio: 1/1;
+}
+.recipe-text h3 {
+    color: #c8c8c8;
+    font-family: PuradakGentleGothicR, sans-serif;
+    font-size: 5rem;
+}
+.recipe-text p {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+@media screen and (max-width: 1024px) {
+    .visual-con h2 {
+        text-align: center;
+        /* font-size: 4rem; */
+    }
+    .visual-con strong {
+        text-align: center;
+    }
+    .download-btn {
+        justify-content: center;
+    }
+    .pack-con {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 10rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .visual {
+        height: calc(100vh - 10rem);
+        aspect-ratio: unset;
+        background: #000;
+    }
+    .top-slider-wrap {
+        height: calc(100vh - 10rem);
+        aspect-ratio: unset;
+    }
+    .swiper-slide {
+        /* height: calc(100vh - 10rem); */
+    }
+    .sec-title h2 {
+        font-size: 4rem;
+    }
+    .sec-title p {
+        font-size: 2rem;
+    }
+    .main-menu-list {
+        flex-direction: column;
+    }
+    .menu-con {
+        flex-direction: column-reverse;
+    }
+    .menu-text h3 {
+        font-size: 4rem;
+    }
+    .menu-text p {
+        font-size: 1.8rem;
+    }
+    .menu-img figcaption {
+        font-size: 1.2rem;
+    }
+    .pack-text h3 {
+        font-size: 3.6rem;
+    }
+    .pack-text p {
+        font-size: 1.6rem;
+    }
+    .recipe-con {
+        flex-direction: column-reverse;
+    }
+    .recipe-text h3 {
+        font-size: 4rem;
+    }
+    .recipe-text p {
+        font-size: 1.8rem;
+    }
+    .more {
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+    .download-btn .btn {
+        width: 18.8rem;
+        height: 6rem;
+    }
+    .download-btn .btn.appstore::before {
+        width: 2.4rem;
+    }
+    .download-btn .btn.googleplay::before {
+        width: 2.4rem;
+    }
+    .download strong {
+        font-size: 1.4rem;
+    }
+    .download-btn .btn p {
+        font-size: 1.2rem;
+    }
+    .download-btn .btn p b {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .main-menu-list li {
+        width: 38rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .menu-img figure {
+        max-width: 30rem;
+    }
+    .recipe-con figure {
+        max-width: 30rem;
+    }
+    .main-menu-list li {
+        width: 30rem;
+    }
+    .download-btn > .btn > p {
+        font-size: 1rem;
+    }
+    .download .download-btn > .btn > p > b {
+        font-size: 1.4rem;
+    }
+}
